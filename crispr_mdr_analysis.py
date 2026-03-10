@@ -16,10 +16,18 @@ import matplotlib.pyplot as plt
 GUIDE_LEN = 20
 MAX_MISMATCH = 3
 
-TARGET_DIR = "data/targets"
+TARGET_MULTI_DIR = "data/targets_multistrain"
+print("Looking for FASTA files in:", TARGET_MULTI_DIR)
 PLASMID_DIR = "data/plasmids"
 GENOME_DIR = "data/genomes"
-RESULTS_DIR = "results"
+RESULTS_DIR = "results_panstrain"
+
+GENE_FILES = {
+    "blaKPC": "blaKPC_multi.fasta",
+    "blaNDM1": "blaNDM1_multi.fasta",
+    "mcr1": "mcr1_multi.fasta",
+    "mecA": "mecA_multi.fasta",
+}
 
 GENE_META = {
     "blaKPC":  {"label": "blaKPC",  "resistance": "Carbapenem"},
@@ -30,7 +38,7 @@ GENE_META = {
 
 
 # =========================================================
-# BASIC SEQUENCE HELPERS
+# BASIC HELPERS
 # =========================================================
 
 def reverse_complement(seq):
@@ -91,13 +99,12 @@ def hamming_distance(a, b):
 
 
 # =========================================================
-# PAM SCANNING
+# PAM / GUIDE DISCOVERY
 # =========================================================
 
 def find_spcas9_guides(sequence, guide_len=20):
     """
-    Find NGG PAMs on both strands.
-    Returns list of dicts.
+    Find NGG PAMs on both strands from a reference sequence.
     """
     results = []
     seq = sequence.upper()
@@ -181,16 +188,11 @@ def score_on_target(spacer, pam):
 # =========================================================
 
 def count_near_matches_in_sequence(guide, sequence, max_mismatch=3):
-    """
-    Count candidate off-target sites adjacent to SpCas9-like PAMs
-    on both strands. Returns dict mismatch_count -> hits.
-    """
     counts = {0: 0, 1: 0, 2: 0, 3: 0}
     seq = sequence.upper()
     rc = reverse_complement(seq)
     L = len(guide)
 
-    # forward strand scanning
     for i in range(len(seq) - L - 2):
         candidate = seq[i:i + L]
         pam = seq[i + L:i + L + 3]
@@ -200,7 +202,6 @@ def count_near_matches_in_sequence(guide, sequence, max_mismatch=3):
         if d <= max_mismatch:
             counts[d] += 1
 
-    # reverse strand scanning
     for i in range(len(rc) - L - 2):
         candidate = rc[i:i + L]
         pam = rc[i + L:i + L + 3]
@@ -215,20 +216,14 @@ def count_near_matches_in_sequence(guide, sequence, max_mismatch=3):
 
 def aggregate_offtarget_counts(guide, background_records, max_mismatch=3):
     total = {0: 0, 1: 0, 2: 0, 3: 0}
-
     for rec in background_records:
-        seq = rec["sequence"]
-        counts = count_near_matches_in_sequence(guide, seq, max_mismatch=max_mismatch)
+        counts = count_near_matches_in_sequence(guide, rec["sequence"], max_mismatch)
         for k in total:
             total[k] += counts[k]
-
     return total
 
 
 def offtarget_penalty(hit_counts):
-    """
-    Heavier penalty for exact/near-exact matches.
-    """
     penalty = (
         hit_counts[0] * 50 +
         hit_counts[1] * 20 +
@@ -239,12 +234,113 @@ def offtarget_penalty(hit_counts):
 
 
 def specificity_score_from_penalty(penalty):
-    """
-    Convert penalty into 0-100 specificity score.
-    Higher specificity is better.
-    """
     score = 100 * math.exp(-penalty / 50.0)
     return round(max(0, min(100, score)), 1)
+
+
+# =========================================================
+# CONSERVATION / PAN-STRAIN SCORING
+# =========================================================
+
+def scan_guide_in_sequence(guide, sequence, max_mismatch=1):
+    """
+    Returns best hit for guide in one strain sequence, requiring NGG PAM.
+    Checks both strands. Returns dict or None.
+    """
+    seq = sequence.upper()
+    rc = reverse_complement(seq)
+    L = len(guide)
+
+    best = None
+
+    # forward
+    for i in range(len(seq) - L - 2):
+        candidate = seq[i:i + L]
+        pam = seq[i + L:i + L + 3]
+        if not re.fullmatch(r"[ATCG]GG", pam):
+            continue
+        d = hamming_distance(guide, candidate)
+        if d <= max_mismatch:
+            record = {
+                "mismatches": d,
+                "pam": pam,
+                "strand": "+",
+                "position": i
+            }
+            if best is None or d < best["mismatches"]:
+                best = record
+
+    # reverse
+    for i in range(len(rc) - L - 2):
+        candidate = rc[i:i + L]
+        pam = rc[i + L:i + L + 3]
+        if not re.fullmatch(r"[ATCG]GG", pam):
+            continue
+        d = hamming_distance(guide, candidate)
+        if d <= max_mismatch:
+            genomic_pos = len(seq) - (i + L + 3)
+            record = {
+                "mismatches": d,
+                "pam": pam,
+                "strand": "-",
+                "position": genomic_pos
+            }
+            if best is None or d < best["mismatches"]:
+                best = record
+
+    return best
+
+
+def conservation_profile(guide, strain_records, max_mismatch=1):
+    """
+    Evaluate guide across all strains of a gene.
+    """
+    total = len(strain_records)
+    perfect = 0
+    one_mm_or_better = 0
+    pam_supported = 0
+
+    heatmap_values = []  # 1=perfect, 0.5=1mm, 0=no hit
+
+    for header, seq in strain_records:
+        hit = scan_guide_in_sequence(guide, seq, max_mismatch=max_mismatch)
+        if hit is None:
+            heatmap_values.append(0.0)
+            continue
+
+        pam_supported += 1
+
+        if hit["mismatches"] == 0:
+            perfect += 1
+            one_mm_or_better += 1
+            heatmap_values.append(1.0)
+        elif hit["mismatches"] == 1:
+            one_mm_or_better += 1
+            heatmap_values.append(0.5)
+
+    perfect_frac = perfect / total if total else 0
+    one_mm_frac = one_mm_or_better / total if total else 0
+    pam_frac = pam_supported / total if total else 0
+
+    # weighted conservation score
+    conservation_score = (
+        70 * perfect_frac +
+        20 * max(0, one_mm_frac - perfect_frac) +
+        10 * pam_frac
+    )
+    conservation_score = round(min(100, conservation_score), 1)
+
+    return {
+        "total_strains": total,
+        "perfect_match_strains": perfect,
+        "one_mismatch_or_better_strains": one_mm_or_better,
+        "pam_supported_strains": pam_supported,
+        "perfect_match_fraction": round(perfect_frac, 4),
+        "one_mismatch_or_better_fraction": round(one_mm_frac, 4),
+        "pam_supported_fraction": round(pam_frac, 4),
+        "conservation_score": conservation_score,
+        "heatmap_values": heatmap_values
+    }
 
 
 # =========================================================
@@ -253,13 +349,11 @@ def specificity_score_from_penalty(penalty):
 
 def load_background_sequences():
     background = []
-
-    for folder in [TARGET_DIR, PLASMID_DIR, GENOME_DIR]:
+    for folder in [PLASMID_DIR, GENOME_DIR]:
         seqs = load_all_fasta_from_dir(folder)
         for rec in seqs:
             rec["source_dir"] = folder
             background.append(rec)
-
     return background
 
 
@@ -268,23 +362,28 @@ def load_background_sequences():
 # =========================================================
 
 def classify_final_score(score):
-    if score >= 70:
+    if score >= 80:
         return "Excellent"
-    elif score >= 55:
+    elif score >= 65:
         return "Good"
-    elif score >= 40:
+    elif score >= 50:
         return "Moderate"
     else:
         return "Poor"
 
 
-def analyze_gene(gene_name, fasta_path, background_records, top_n=10):
-    records = parse_fasta(fasta_path)
-    if not records:
+def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20):
+    strain_records = parse_fasta(fasta_path)
+    if not strain_records:
         return None
 
-    header, sequence = records[0]
-    guides = find_spcas9_guides(sequence, guide_len=GUIDE_LEN)
+    ref_header, ref_sequence = strain_records[0]
+    guides = find_spcas9_guides(ref_sequence, guide_len=GUIDE_LEN)
+
+    print(f"\nAnalyzing {gene_name}")
+    print(f"Reference header: {ref_header[:70]}")
+    print(f"Number of strains: {len(strain_records)}")
+    print(f"Reference guide candidates: {len(guides)}")
 
     results = []
 
@@ -294,21 +393,24 @@ def analyze_gene(gene_name, fasta_path, background_records, top_n=10):
 
         on_target = score_on_target(spacer, pam)
 
-        # off-target search across all loaded backgrounds
-        hit_counts = aggregate_offtarget_counts(
+        off_counts = aggregate_offtarget_counts(
             spacer,
             background_records,
             max_mismatch=MAX_MISMATCH
         )
 
-        # subtract one intended perfect match if present
-        if hit_counts[0] > 0:
-            hit_counts[0] -= 1
-
-        penalty = offtarget_penalty(hit_counts)
+        penalty = offtarget_penalty(off_counts)
         specificity = specificity_score_from_penalty(penalty)
 
-        final_score = round((0.6 * on_target) + (0.4 * specificity), 1)
+        cons = conservation_profile(spacer, strain_records, max_mismatch=1)
+
+        # integrated paper-style score
+        final_score = round(
+            0.45 * on_target +
+            0.30 * specificity +
+            0.25 * cons["conservation_score"],
+            1
+        )
 
         results.append({
             "gene": gene_name,
@@ -318,14 +420,23 @@ def analyze_gene(gene_name, fasta_path, background_records, top_n=10):
             "pam": pam,
             "gc_content": gc_content(spacer),
             "on_target_score": on_target,
-            "offtarget_hits_0mm": hit_counts[0],
-            "offtarget_hits_1mm": hit_counts[1],
-            "offtarget_hits_2mm": hit_counts[2],
-            "offtarget_hits_3mm": hit_counts[3],
+            "offtarget_hits_0mm": off_counts[0],
+            "offtarget_hits_1mm": off_counts[1],
+            "offtarget_hits_2mm": off_counts[2],
+            "offtarget_hits_3mm": off_counts[3],
             "offtarget_penalty": penalty,
             "specificity_score": specificity,
+            "total_strains": cons["total_strains"],
+            "perfect_match_strains": cons["perfect_match_strains"],
+            "one_mismatch_or_better_strains": cons["one_mismatch_or_better_strains"],
+            "pam_supported_strains": cons["pam_supported_strains"],
+            "perfect_match_fraction": cons["perfect_match_fraction"],
+            "one_mismatch_or_better_fraction": cons["one_mismatch_or_better_fraction"],
+            "pam_supported_fraction": cons["pam_supported_fraction"],
+            "conservation_score": cons["conservation_score"],
             "final_score": final_score,
-            "classification": classify_final_score(final_score)
+            "classification": classify_final_score(final_score),
+            "heatmap_values": cons["heatmap_values"]
         })
 
     results.sort(key=lambda x: x["final_score"], reverse=True)
@@ -336,18 +447,19 @@ def analyze_gene(gene_name, fasta_path, background_records, top_n=10):
         "good": sum(1 for r in results if r["classification"] == "Good"),
         "moderate": sum(1 for r in results if r["classification"] == "Moderate"),
         "poor": sum(1 for r in results if r["classification"] == "Poor"),
-        "best_score": max([r["final_score"] for r in results], default=0),
-        "mean_score": round(sum(r["final_score"] for r in results) / len(results), 1) if results else 0
+        "best_score": max((r["final_score"] for r in results), default=0),
+        "mean_score": round(sum(r["final_score"] for r in results) / len(results), 1) if results else 0,
+        "best_conservation": max((r["conservation_score"] for r in results), default=0),
+        "mean_conservation": round(sum(r["conservation_score"] for r in results) / len(results), 1) if results else 0
     }
 
-    print(f"\nAnalyzing {gene_name}")
-    print(f"Sequence header: {header[:60]}")
-    print(f"Guide candidates: {len(results)}")
-    print(f"Best score: {stats['best_score']}")
-    print(f"Mean score: {stats['mean_score']}")
+    print(f"Best final score: {stats['best_score']}")
+    print(f"Mean final score: {stats['mean_score']}")
+    print(f"Best conservation: {stats['best_conservation']}")
 
     return {
         "gene": gene_name,
+        "strain_records": strain_records,
         "results": results,
         "top_results": results[:top_n],
         "stats": stats
@@ -361,52 +473,58 @@ def analyze_gene(gene_name, fasta_path, background_records, top_n=10):
 def save_csv_outputs(all_data):
     os.makedirs(RESULTS_DIR, exist_ok=True)
 
-    # full results
-    full_path = os.path.join(RESULTS_DIR, "all_guide_candidates.csv")
     fieldnames = [
         "gene", "position", "strand", "spacer", "pam", "gc_content",
         "on_target_score",
         "offtarget_hits_0mm", "offtarget_hits_1mm", "offtarget_hits_2mm", "offtarget_hits_3mm",
-        "offtarget_penalty", "specificity_score", "final_score", "classification"
+        "offtarget_penalty", "specificity_score",
+        "total_strains", "perfect_match_strains", "one_mismatch_or_better_strains",
+        "pam_supported_strains", "perfect_match_fraction",
+        "one_mismatch_or_better_fraction", "pam_supported_fraction",
+        "conservation_score", "final_score", "classification"
     ]
 
+    # full results
+    full_path = os.path.join(RESULTS_DIR, "all_panstrain_guide_candidates.csv")
     with open(full_path, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         for gene in all_data:
             for row in all_data[gene]["results"]:
-                writer.writerow(row)
+                clean_row = {k: v for k, v in row.items() if k in fieldnames}
+                writer.writerow(clean_row)
 
-    # top 10 per gene
-    top10_path = os.path.join(RESULTS_DIR, "top10_per_gene.csv")
-    with open(top10_path, "w", newline="") as f:
+    # top per gene
+    top_path = os.path.join(RESULTS_DIR, "top20_per_gene_panstrain.csv")
+    with open(top_path, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         for gene in all_data:
             for row in all_data[gene]["top_results"]:
-                writer.writerow(row)
+                clean_row = {k: v for k, v in row.items() if k in fieldnames}
+                writer.writerow(clean_row)
 
-    # top 20 global
+    # top global
     global_rows = []
     for gene in all_data:
         global_rows.extend(all_data[gene]["results"])
     global_rows.sort(key=lambda x: x["final_score"], reverse=True)
 
-    top20_global_path = os.path.join(RESULTS_DIR, "top20_global_guides.csv")
-    with open(top20_global_path, "w", newline="") as f:
+    global_path = os.path.join(RESULTS_DIR, "top30_global_panstrain_guides.csv")
+    with open(global_path, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
-        for row in global_rows[:20]:
-            writer.writerow(row)
+        for row in global_rows[:30]:
+            clean_row = {k: v for k, v in row.items() if k in fieldnames}
+            writer.writerow(clean_row)
 
-    # summary statistics
-    summary_path = os.path.join(RESULTS_DIR, "summary_statistics.csv")
+    # summary
+    summary_path = os.path.join(RESULTS_DIR, "summary_statistics_panstrain.csv")
     with open(summary_path, "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow([
-            "gene", "resistance", "total_guides",
-            "excellent", "good", "moderate", "poor",
-            "best_score", "mean_score"
+            "gene", "resistance", "total_guides", "excellent", "good", "moderate", "poor",
+            "best_score", "mean_score", "best_conservation", "mean_conservation"
         ])
         for gene in all_data:
             s = all_data[gene]["stats"]
@@ -419,12 +537,14 @@ def save_csv_outputs(all_data):
                 s["moderate"],
                 s["poor"],
                 s["best_score"],
-                s["mean_score"]
+                s["mean_score"],
+                s["best_conservation"],
+                s["mean_conservation"]
             ])
 
     print(f"\nSaved: {full_path}")
-    print(f"Saved: {top10_path}")
-    print(f"Saved: {top20_global_path}")
+    print(f"Saved: {top_path}")
+    print(f"Saved: {global_path}")
     print(f"Saved: {summary_path}")
 
 
@@ -432,77 +552,143 @@ def save_csv_outputs(all_data):
 # FIGURES
 # =========================================================
 
-def make_figures(all_data):
-    os.makedirs(RESULTS_DIR, exist_ok=True)
-
-    # Figure 1: score distributions
+def make_score_distribution(all_data):
     plt.figure(figsize=(10, 6))
     for gene in all_data:
         scores = [r["final_score"] for r in all_data[gene]["results"]]
         plt.hist(scores, bins=25, alpha=0.45, label=gene)
-    plt.xlabel("Final Score")
+    plt.xlabel("Pan-Guide Final Score")
     plt.ylabel("Guide Count")
-    plt.title("Final Guide Score Distribution Across MDR Genes")
+    plt.title("Pan-Strain Guide Score Distribution Across MDR Genes")
     plt.legend()
     plt.tight_layout()
-    plt.savefig(os.path.join(RESULTS_DIR, "Figure1_ScoreDistribution.png"), dpi=180)
+    plt.savefig(os.path.join(RESULTS_DIR, "Figure1_PanStrainScoreDistribution.png"), dpi=180)
     plt.close()
 
-    # Figure 2: top global guides
+
+def make_top_global_plot(all_data):
     global_rows = []
     for gene in all_data:
         global_rows.extend(all_data[gene]["results"])
     global_rows.sort(key=lambda x: x["final_score"], reverse=True)
     top = global_rows[:20]
 
-    if top:
-        labels = [f"{r['gene']}:{r['position']}" for r in top][::-1]
-        vals = [r["final_score"] for r in top][::-1]
-        plt.figure(figsize=(12, 8))
-        plt.barh(labels, vals)
-        plt.xlabel("Final Score")
-        plt.ylabel("Guide")
-        plt.title("Top 20 Guides Across All MDR Genes")
-        plt.tight_layout()
-        plt.savefig(os.path.join(RESULTS_DIR, "Figure2_TopGuides_Global.png"), dpi=180)
-        plt.close()
+    if not top:
+        return
 
-    # Figure 3: gene comparison
-    genes = list(all_data.keys())
-    mean_scores = [all_data[g]["stats"]["mean_score"] for g in genes]
-    best_scores = [all_data[g]["stats"]["best_score"] for g in genes]
+    labels = [f"{r['gene']}:{r['position']}" for r in top][::-1]
+    vals = [r["final_score"] for r in top][::-1]
 
-    x = range(len(genes))
-    plt.figure(figsize=(10, 6))
-    plt.bar([i - 0.2 for i in x], mean_scores, width=0.4, label="Mean Score")
-    plt.bar([i + 0.2 for i in x], best_scores, width=0.4, label="Best Score")
-    plt.xticks(list(x), genes)
-    plt.ylabel("Score")
-    plt.title("Mean vs Best Guide Scores by Gene")
-    plt.legend()
+    plt.figure(figsize=(12, 8))
+    plt.barh(labels, vals)
+    plt.xlabel("Final Pan-Guide Score")
+    plt.ylabel("Guide")
+    plt.title("Top 20 Pan-Strain Guides Across MDR Genes")
     plt.tight_layout()
-    plt.savefig(os.path.join(RESULTS_DIR, "Figure3_GeneComparison.png"), dpi=180)
+    plt.savefig(os.path.join(RESULTS_DIR, "Figure2_TopPanStrainGuides_Global.png"), dpi=180)
     plt.close()
 
-    # Figure 4: on-target vs specificity
+
+def make_gene_comparison_plot(all_data):
+    genes = list(all_data.keys())
+    mean_scores = [all_data[g]["stats"]["mean_score"] for g in genes]
+    mean_cons = [all_data[g]["stats"]["mean_conservation"] for g in genes]
+
+    x = range(len(genes))
+
+    plt.figure(figsize=(10, 6))
+    plt.bar([i - 0.2 for i in x], mean_scores, width=0.4, label="Mean Final Score")
+    plt.bar([i + 0.2 for i in x], mean_cons, width=0.4, label="Mean Conservation")
+    plt.xticks(list(x), genes)
+    plt.ylabel("Score")
+    plt.title("Mean Final Score vs Mean Conservation by Gene")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(os.path.join(RESULTS_DIR, "Figure3_PanStrainGeneComparison.png"), dpi=180)
+    plt.close()
+
+
+def make_specificity_vs_conservation_plot(all_data):
     plt.figure(figsize=(10, 6))
     for gene in all_data:
         rows = all_data[gene]["top_results"][:20]
-        xvals = [r["specificity_score"] for r in rows]
-        yvals = [r["on_target_score"] for r in rows]
+        xvals = [r["conservation_score"] for r in rows]
+        yvals = [r["specificity_score"] for r in rows]
         plt.scatter(xvals, yvals, label=gene, alpha=0.7)
-    plt.xlabel("Specificity Score")
-    plt.ylabel("On-Target Score")
-    plt.title("On-Target Efficiency vs Specificity (Top Guides)")
+
+    plt.xlabel("Conservation Score")
+    plt.ylabel("Specificity Score")
+    plt.title("Specificity vs Conservation of Top Pan-Strain Guides")
     plt.legend()
     plt.tight_layout()
-    plt.savefig(os.path.join(RESULTS_DIR, "Figure4_OnTarget_vs_OffTarget.png"), dpi=180)
+    plt.savefig(os.path.join(RESULTS_DIR, "Figure4_Specificity_vs_Conservation.png"), dpi=180)
     plt.close()
 
-    print(f"Saved: {os.path.join(RESULTS_DIR, 'Figure1_ScoreDistribution.png')}")
-    print(f"Saved: {os.path.join(RESULTS_DIR, 'Figure2_TopGuides_Global.png')}")
-    print(f"Saved: {os.path.join(RESULTS_DIR, 'Figure3_GeneComparison.png')}")
-    print(f"Saved: {os.path.join(RESULTS_DIR, 'Figure4_OnTarget_vs_OffTarget.png')}")
+
+def make_coverage_plot(all_data):
+    genes = list(all_data.keys())
+    frac90 = []
+    frac100 = []
+
+    for gene in genes:
+        rows = all_data[gene]["results"]
+        n = len(rows) if rows else 1
+        n90 = sum(1 for r in rows if r["perfect_match_fraction"] >= 0.90)
+        n100 = sum(1 for r in rows if r["perfect_match_fraction"] >= 1.00)
+        frac90.append(round(100 * n90 / n, 1))
+        frac100.append(round(100 * n100 / n, 1))
+
+    x = range(len(genes))
+
+    plt.figure(figsize=(10, 6))
+    plt.bar([i - 0.2 for i in x], frac90, width=0.4, label="Guides covering ≥90% strains")
+    plt.bar([i + 0.2 for i in x], frac100, width=0.4, label="Guides covering 100% strains")
+    plt.xticks(list(x), genes)
+    plt.ylabel("Percent of Guides")
+    plt.title("Pan-Strain Guide Coverage by Gene")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(os.path.join(RESULTS_DIR, "Figure5_GuideCoverageByGene.png"), dpi=180)
+    plt.close()
+
+
+def make_heatmap_for_gene(gene, gene_data, top_n=20):
+    rows = gene_data["top_results"][:top_n]
+    strain_records = gene_data["strain_records"]
+
+    if not rows or not strain_records:
+        return
+
+    matrix = [r["heatmap_values"] for r in rows]
+    labels = [f"{r['position']}:{r['spacer'][:8]}..." for r in rows]
+    strain_labels = [h[:18] for h, _ in strain_records]
+
+    plt.figure(figsize=(max(8, len(strain_labels) * 0.4), max(6, len(labels) * 0.35)))
+    plt.imshow(matrix, aspect="auto", interpolation="nearest")
+    plt.colorbar(label="Match quality (1=perfect, 0.5=1 mismatch, 0=no hit)")
+    plt.yticks(range(len(labels)), labels)
+    plt.xticks(range(len(strain_labels)), strain_labels, rotation=90)
+    plt.xlabel("Strains")
+    plt.ylabel("Top Guides")
+    plt.title(f"{gene} Top Guide Conservation Heatmap")
+    plt.tight_layout()
+    plt.savefig(os.path.join(RESULTS_DIR, f"Heatmap_{gene}_TopGuides.png"), dpi=180)
+    plt.close()
+
+
+def make_figures(all_data):
+    os.makedirs(RESULTS_DIR, exist_ok=True)
+
+    make_score_distribution(all_data)
+    make_top_global_plot(all_data)
+    make_gene_comparison_plot(all_data)
+    make_specificity_vs_conservation_plot(all_data)
+    make_coverage_plot(all_data)
+
+    for gene in all_data:
+        make_heatmap_for_gene(gene, all_data[gene], top_n=20)
+
+    print(f"Saved pan-strain figures in: {RESULTS_DIR}/")
 
 
 # =========================================================
@@ -510,18 +696,20 @@ def make_figures(all_data):
 # =========================================================
 
 def print_report(all_data):
-    print("\n" + "=" * 80)
-    print("CRISPR MDR GUIDE ANALYSIS REPORT")
-    print("=" * 80)
-    print(f"{'Gene':<10} {'Resistance':<22} {'Guides':<10} {'Best':<8} {'Mean':<8} {'Excellent'}")
-    print("-" * 80)
+    print("\n" + "=" * 100)
+    print("PAN-STRAIN CRISPR GUIDE ANALYSIS REPORT")
+    print("=" * 100)
+    print(f"{'Gene':<10} {'Resistance':<22} {'Guides':<10} {'Best':<8} {'Mean':<8} {'BestCons':<10} {'MeanCons'}")
+    print("-" * 100)
 
     for gene in all_data:
         s = all_data[gene]["stats"]
         resistance = GENE_META.get(gene, {}).get("resistance", "")
-        print(f"{gene:<10} {resistance:<22} {s['total_guides']:<10} {s['best_score']:<8} {s['mean_score']:<8} {s['excellent']}")
-
-    print("=" * 80)
+        print(
+            f"{gene:<10} {resistance:<22} {s['total_guides']:<10} {s['best_score']:<8} "
+            f"{s['mean_score']:<8} {s['best_conservation']:<10} {s['mean_conservation']}"
+        )
+    print("=" * 100)
 
 
 # =========================================================
@@ -531,36 +719,30 @@ def print_report(all_data):
 def main():
     os.makedirs(RESULTS_DIR, exist_ok=True)
 
-    target_files = {
-        "blaKPC": os.path.join(TARGET_DIR, "blaKPC.fasta"),
-        "blaNDM1": os.path.join(TARGET_DIR, "blaNDM1.fasta"),
-        "mcr1": os.path.join(TARGET_DIR, "mcr1.fasta"),
-        "mecA": os.path.join(TARGET_DIR, "mecA.fasta"),
-    }
-
     background_records = load_background_sequences()
     print(f"Loaded {len(background_records)} background FASTA records for off-target screening.")
 
     all_data = {}
 
-    for gene, path in target_files.items():
-        if not os.path.exists(path):
-            print(f"Missing target FASTA: {path}")
+    for gene, fname in GENE_FILES.items():
+        fpath = os.path.join(TARGET_MULTI_DIR, fname)
+        if not os.path.exists(fpath):
+            print(f"Missing multi-strain FASTA: {fpath}")
             continue
 
-        result = analyze_gene(gene, path, background_records, top_n=10)
+        result = analyze_multistrain_gene(gene, fpath, background_records, top_n=20)
         if result:
             all_data[gene] = result
 
     if not all_data:
-        print("No genes analyzed.")
+        print("No genes analyzed. Add multi-strain FASTA files first.")
         return
 
     save_csv_outputs(all_data)
     make_figures(all_data)
     print_report(all_data)
 
-    print(f"\nDone. Open '{RESULTS_DIR}/' for the upgraded outputs.")
+    print(f"\nDone. Open '{RESULTS_DIR}/' for pan-strain outputs.")
 
 
 if __name__ == "__main__":
