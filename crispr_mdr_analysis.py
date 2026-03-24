@@ -371,7 +371,6 @@ def classify_final_score(score):
     else:
         return "Poor"
 
-
 def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20):
     strain_records = parse_fasta(fasta_path)
     if not strain_records:
@@ -386,12 +385,25 @@ def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20
     print(f"Reference guide candidates: {len(guides)}")
 
     results = []
+    filtered_out_gc = 0
+    filtered_out_ontarget = 0
 
     for g in guides:
         spacer = g["spacer"]
         pam = g["pam"]
+        gc = gc_content(spacer)
+
+        # 🔴 HARD GC FILTER
+        if not (40 <= gc <= 70):
+            filtered_out_gc += 1
+            continue
 
         on_target = score_on_target(spacer, pam)
+
+        # 🔴 MINIMUM ON-TARGET FILTER
+        if on_target < 50:
+            filtered_out_ontarget += 1
+            continue
 
         off_counts = aggregate_offtarget_counts(
             spacer,
@@ -404,7 +416,6 @@ def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20
 
         cons = conservation_profile(spacer, strain_records, max_mismatch=1)
 
-        # integrated paper-style score
         final_score = round(
             0.45 * on_target +
             0.30 * specificity +
@@ -418,7 +429,7 @@ def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20
             "strand": g["strand"],
             "spacer": spacer,
             "pam": pam,
-            "gc_content": gc_content(spacer),
+            "gc_content": gc,
             "on_target_score": on_target,
             "offtarget_hits_0mm": off_counts[0],
             "offtarget_hits_1mm": off_counts[1],
@@ -442,6 +453,9 @@ def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20
     results.sort(key=lambda x: x["final_score"], reverse=True)
 
     stats = {
+        "total_reference_guides": len(guides),
+        "filtered_out_gc": filtered_out_gc,
+        "filtered_out_ontarget": filtered_out_ontarget,
         "total_guides": len(results),
         "excellent": sum(1 for r in results if r["classification"] == "Excellent"),
         "good": sum(1 for r in results if r["classification"] == "Good"),
@@ -453,6 +467,9 @@ def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20
         "mean_conservation": round(sum(r["conservation_score"] for r in results) / len(results), 1) if results else 0
     }
 
+    print(f"Filtered out by GC range: {filtered_out_gc}")
+    print(f"Filtered out by on-target threshold: {filtered_out_ontarget}")
+    print(f"Remaining scored guides: {len(results)}")
     print(f"Best final score: {stats['best_score']}")
     print(f"Mean final score: {stats['mean_score']}")
     print(f"Best conservation: {stats['best_conservation']}")
@@ -519,18 +536,22 @@ def save_csv_outputs(all_data):
             writer.writerow(clean_row)
 
     # summary
-    summary_path = os.path.join(RESULTS_DIR, "summary_statistics_panstrain.csv")
+        summary_path = os.path.join(RESULTS_DIR, "summary_statistics_panstrain.csv")
     with open(summary_path, "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow([
-            "gene", "resistance", "total_guides", "excellent", "good", "moderate", "poor",
+            "gene", "resistance", "total_reference_guides", "filtered_out_gc",
+            "filtered_out_ontarget", "total_guides", "excellent", "good", "moderate", "poor",
             "best_score", "mean_score", "best_conservation", "mean_conservation"
         ])
-        for gene in all_data:
-            s = all_data[gene]["stats"]
+        for gene, gene_data in all_data.items():
+            s = gene_data["stats"]
             writer.writerow([
                 gene,
                 GENE_META.get(gene, {}).get("resistance", ""),
+                s["total_reference_guides"],
+                s["filtered_out_gc"],
+                s["filtered_out_ontarget"],
                 s["total_guides"],
                 s["excellent"],
                 s["good"],
