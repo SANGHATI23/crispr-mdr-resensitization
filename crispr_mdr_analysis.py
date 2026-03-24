@@ -356,20 +356,18 @@ def load_background_sequences():
             background.append(rec)
     return background
 
-
-# =========================================================
-# ANALYSIS
-# =========================================================
-
 def classify_final_score(score):
-    if score >= 80:
+    if score >= 85:
         return "Excellent"
-    elif score >= 65:
+    elif score >= 75:
         return "Good"
-    elif score >= 50:
+    elif score >= 60:
         return "Moderate"
     else:
         return "Poor"
+# =========================================================
+# ANALYSIS
+# =========================================================
 
 def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20):
     strain_records = parse_fasta(fasta_path)
@@ -393,14 +391,14 @@ def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20
         pam = g["pam"]
         gc = gc_content(spacer)
 
-        # 🔴 HARD GC FILTER
+        # HARD GC FILTER
         if not (40 <= gc <= 70):
             filtered_out_gc += 1
             continue
 
         on_target = score_on_target(spacer, pam)
 
-        # 🔴 MINIMUM ON-TARGET FILTER
+        # MINIMUM ON-TARGET FILTER
         if on_target < 50:
             filtered_out_ontarget += 1
             continue
@@ -414,7 +412,7 @@ def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20
         penalty = offtarget_penalty(off_counts)
         specificity = specificity_score_from_penalty(penalty)
 
-        cons = conservation_profile(spacer, strain_records, max_mismatch=1)
+        cons = conservation_profile(spacer, strain_records)
 
         final_score = round(
             0.45 * on_target +
@@ -482,7 +480,6 @@ def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20
         "stats": stats
     }
 
-
 # =========================================================
 # CSV EXPORT
 # =========================================================
@@ -536,7 +533,7 @@ def save_csv_outputs(all_data):
             writer.writerow(clean_row)
 
     # summary
-        summary_path = os.path.join(RESULTS_DIR, "summary_statistics_panstrain.csv")
+    summary_path = os.path.join(RESULTS_DIR, "summary_statistics_panstrain.csv")
     with open(summary_path, "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow([
@@ -567,7 +564,7 @@ def save_csv_outputs(all_data):
     print(f"Saved: {top_path}")
     print(f"Saved: {global_path}")
     print(f"Saved: {summary_path}")
-
+        
 
 # =========================================================
 # FIGURES
@@ -588,23 +585,25 @@ def make_score_distribution(all_data):
 
 
 def make_top_global_plot(all_data):
-    global_rows = []
+    rows = []
     for gene in all_data:
-        global_rows.extend(all_data[gene]["results"])
-    global_rows.sort(key=lambda x: x["final_score"], reverse=True)
-    top = global_rows[:20]
+        gene_rows = all_data[gene]["results"][:5]   # top 5 per gene
+        rows.extend(gene_rows)
 
-    if not top:
+    if not rows:
         return
 
-    labels = [f"{r['gene']}:{r['position']}" for r in top][::-1]
-    vals = [r["final_score"] for r in top][::-1]
+    gene_order = {"blaKPC": 0, "blaNDM1": 1, "mcr1": 2, "mecA": 3}
+    rows.sort(key=lambda r: (gene_order.get(r["gene"], 999), r["final_score"]))
+
+    labels = [f"{r['gene']}:{r['position']}" for r in rows]
+    vals = [r["final_score"] for r in rows]
 
     plt.figure(figsize=(12, 8))
     plt.barh(labels, vals)
     plt.xlabel("Final Pan-Guide Score")
-    plt.ylabel("Guide")
-    plt.title("Top 20 Pan-Strain Guides Across MDR Genes")
+    plt.ylabel("Top 5 Guides per Gene")
+    plt.title("Top Pan-Strain Guides by Gene (Top 5 per Gene)")
     plt.tight_layout()
     plt.savefig(os.path.join(RESULTS_DIR, "Figure2_TopPanStrainGuides_Global.png"), dpi=180)
     plt.close()
@@ -612,17 +611,25 @@ def make_top_global_plot(all_data):
 
 def make_gene_comparison_plot(all_data):
     genes = list(all_data.keys())
+    best_scores = [all_data[g]["stats"]["best_score"] for g in genes]
     mean_scores = [all_data[g]["stats"]["mean_score"] for g in genes]
-    mean_cons = [all_data[g]["stats"]["mean_conservation"] for g in genes]
 
     x = range(len(genes))
 
     plt.figure(figsize=(10, 6))
-    plt.bar([i - 0.2 for i in x], mean_scores, width=0.4, label="Mean Final Score")
-    plt.bar([i + 0.2 for i in x], mean_cons, width=0.4, label="Mean Conservation")
+    plt.bar([i - 0.2 for i in x], best_scores, width=0.4, label="Best Final Score")
+    plt.bar([i + 0.2 for i in x], mean_scores, width=0.4, label="Mean Final Score")
     plt.xticks(list(x), genes)
     plt.ylabel("Score")
-    plt.title("Mean Final Score vs Mean Conservation by Gene")
+    plt.ylim(84.5, 88.5)
+
+    for i, v in enumerate(best_scores):
+        plt.text(i - 0.2, v + 0.05, f"{v:.1f}", ha="center", va="bottom", fontsize=9)
+
+    for i, v in enumerate(mean_scores):
+        plt.text(i + 0.2, v + 0.05, f"{v:.1f}", ha="center", va="bottom", fontsize=9)
+
+    plt.title("Cross-Gene Performance Comparison")
     plt.legend()
     plt.tight_layout()
     plt.savefig(os.path.join(RESULTS_DIR, "Figure3_PanStrainGeneComparison.png"), dpi=180)
@@ -630,16 +637,21 @@ def make_gene_comparison_plot(all_data):
 
 
 def make_specificity_vs_conservation_plot(all_data):
+    import random
+    random.seed(42)
+
     plt.figure(figsize=(10, 6))
+
     for gene in all_data:
         rows = all_data[gene]["top_results"][:20]
-        xvals = [r["conservation_score"] for r in rows]
-        yvals = [r["specificity_score"] for r in rows]
-        plt.scatter(xvals, yvals, label=gene, alpha=0.7)
+        xvals = [r["specificity_score"] + random.uniform(-0.3, 0.3) for r in rows]
+        yvals = [r["on_target_score"] for r in rows]
+        plt.scatter(xvals, yvals, label=gene, alpha=0.75)
 
-    plt.xlabel("Conservation Score")
-    plt.ylabel("Specificity Score")
-    plt.title("Specificity vs Conservation of Top Pan-Strain Guides")
+    plt.xlabel("Specificity Score")
+    plt.ylabel("On-Target Score")
+    plt.title("Efficiency vs. Specificity of Top Pan-Strain Guides")
+    plt.xlim(99.4, 100.6)
     plt.legend()
     plt.tight_layout()
     plt.savefig(os.path.join(RESULTS_DIR, "Figure4_Specificity_vs_Conservation.png"), dpi=180)
