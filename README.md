@@ -1,76 +1,126 @@
-# CRISPR-Cas Mediated Re-Sensitization of Multidrug-Resistant Bacteria
+# CRISPR-MDR Re-Sensitization
 
-**ACS Spring 2026 | BIOT: Division of Biochemical Technology | Paper ID: 4421933**  
+Computational CRISPR guide RNA design pipeline for antimicrobial resistance gene targeting in multidrug-resistant bacteria.
+
+**ACS Spring 2026**  
+**Division:** BIOT – Division of Biochemical Technology  
 **Session:** Microbial Engineering and Fermentation  
-**Date:** March 25, 2026  
+**Paper ID:** 4421933
 
 ---
 
 ## Overview
 
-This repository contains a computational pipeline for designing, scoring, and ranking **CRISPR-Cas9 guide RNAs (gRNAs)** targeting key antimicrobial resistance (AMR) genes.
+This repository presents a computational pipeline for designing, scoring, ranking, and comparing CRISPR guide RNA candidates targeting major antimicrobial resistance (AMR) genes in multidrug-resistant bacteria.
 
-The objective is to identify high-specificity, high-efficiency guides capable of **re-sensitizing multidrug-resistant (MDR) bacteria** by disrupting resistance genes at the DNA level.
+The project focuses on four clinically important resistance genes:
 
-A total of **6,373 guide RNA candidates** were screened across four critical MDR genes.
+- **blaKPC** – carbapenem resistance
+- **blaNDM1** – carbapenem resistance
+- **mcr1** – colistin resistance
+- **mecA** – methicillin resistance / MRSA
+
+The goal is to identify high-confidence CRISPR guide RNAs with strong predicted activity, low off-target risk, and improved pan-strain relevance for downstream experimental validation.
 
 ---
 
 ## Dataset Summary
 
+A total of **6,373 guide RNA candidates** were screened across four major multidrug-resistance genes.
+
 | Gene | Resistance Type | Total Guides | Excellent Guides | Best Score |
-|------|----------------|-------------:|-----------------:|-----------:|
+|------|------------------|-------------:|-----------------:|-----------:|
 | blaKPC | Carbapenem | 136 | 129 (94.9%) | 90.4 |
 | blaNDM1 | Carbapenem | 157 | 153 (97.5%) | 90.4 |
-| mcr1 | Colistin (last-resort) | 5,962 | 5,004 (83.9%) | 90.4 |
+| mcr1 | Colistin | 5,962 | 5,004 (83.9%) | 90.4 |
 | mecA | Methicillin / MRSA | 118 | 74 (62.7%) | 90.4 |
 
 ---
 
-## Background
+## Biological Motivation
 
-Antimicrobial resistance (AMR) causes approximately **1.27 million deaths annually**, with projections reaching **10 million deaths per year by 2050**.
+Antimicrobial resistance is one of the most urgent challenges in modern infectious disease research. This project explores a computational CRISPR-based strategy for **re-sensitization**, where resistance-associated genes are targeted to potentially reduce resistance burden and support future therapeutic or experimental interventions.
 
-CRISPR-Cas systems can be repurposed to selectively target and cleave resistance genes, offering a **precision alternative to antibiotics**.
+The selected genes represent major resistance mechanisms in clinically important bacterial pathogens:
 
-This project computationally identifies optimal guide RNAs for four high-priority resistance genes to support future experimental validation.
-
----
-
-## Pipeline
-Gene Sequence (FASTA)
-↓
-PAM Detection (NGG motifs)
-↓
-Spacer Extraction (20-nt)
-↓
-On-Target Scoring
-↓
-Off-Target Screening (0–3 mismatches)
-↓
-Conservation Analysis (multi-strain)
-↓
-Final Composite Scoring
-↓
-Ranked Guide RNA Candidates
+- **blaKPC**: carbapenemase-associated resistance
+- **blaNDM1**: metallo-beta-lactamase-mediated resistance
+- **mcr1**: plasmid-mediated colistin resistance
+- **mecA**: methicillin resistance in staphylococcal strains
 
 ---
 
-## Scoring Model
-Final Score = (On-Target × 0.45) + (Specificity × 0.30) + (Conservation × 0.25)
+## Project Objectives
 
-### Specificity Score
-Specificity = 100 * exp(-penalty / 50)
+- Identify CRISPR-Cas9 guide RNA candidates against key AMR genes
+- Rank guides using on-target, off-target, and conservation-aware scoring
+- Compare top candidates across multiple resistance genes
+- Extend analysis to pan-strain / multi-strain sequence contexts
+- Generate publication-ready figures and summary tables
 
-Where:
-Penalty = (0mm × 50) + (1mm × 20) + (2mm × 8) + (3mm × 3)
+---
+
+## Main Components
+
+### `crispr_mdr_analysis.py`
+Primary analysis script responsible for:
+- loading input target sequences
+- identifying PAM-compatible CRISPR guide candidates
+- scoring and ranking guides
+- generating summary tables
+- producing visual outputs
+
+### `data/targets_multistrain/`
+Contains the multi-strain sequence inputs used for pan-strain analysis of:
+- blaKPC
+- blaNDM1
+- mcr1
+- mecA
+
+### `results_panstrain/`
+Contains pan-strain outputs, including:
+- `all_panstrain_guide_candidates.csv`
+- `top20_per_gene_panstrain.csv`
+- `top30_global_panstrain_guides.csv`
+- `summary_statistics_panstrain.csv`
+- pan-strain heatmaps
+- conservation and specificity plots
+- ranked comparison figures
+
+---
+
+## Pipeline Workflow
+
+The computational workflow follows these steps:
+
+1. Load antimicrobial resistance gene sequences
+2. Detect PAM-compatible CRISPR target sites
+3. Extract candidate guide RNA sequences
+4. Estimate predicted on-target performance
+5. Evaluate off-target burden
+6. Incorporate multi-strain conservation evidence
+7. Compute composite guide scores
+8. Rank and export top candidates
+9. Generate visual summaries and comparison figures
+
+---
+
+## Scoring Strategy
+
+Guide candidates are prioritized using a composite scoring logic that considers:
+
+- **On-target efficiency**
+- **Off-target specificity**
+- **Pan-strain conservation / relevance**
+
+This helps prioritize guide RNAs that are not only effective in a single sequence context, but also more robust across multiple strain variants.
 
 ---
 
 ## Classification
 
 | Classification | Score |
-|----------------|------|
+|----------------|------:|
 | Excellent | ≥ 80 |
 | Good | 65 – 79 |
 | Moderate | 50 – 64 |
@@ -78,125 +128,31 @@ Penalty = (0mm × 50) + (1mm × 20) + (2mm × 8) + (3mm × 3)
 
 ---
 
+## Example Outputs
+
+This repository generates outputs including:
+
+- ranked guide candidate tables
+- per-gene top guide summaries
+- global top guide rankings
+- score distribution plots
+- pan-strain heatmaps
+- conservation versus specificity figures
+- comparative gene-level visualizations
+
+These outputs support interpretation, prioritization, and presentation of computational findings.
+
+---
+
 ## Repository Structure
+
+```text
 crispr-mdr-resensitization/
-│
 ├── data/
-│ ├── targets_multistrain/ # Multi-strain FASTA sequences
-│ ├── genomes/ # Background genomes
-│ └── plasmids/ # Plasmid sequences
-│
+│   └── targets_multistrain/
+├── results/
 ├── results_panstrain/
-│ ├── all_panstrain_guide_candidates.csv
-│ ├── top20_per_gene_panstrain.csv
-│ ├── top30_global_panstrain_guides.csv
-│ ├── summary_statistics_panstrain.csv
-│ ├── Figure1_PanStrainScoreDistribution.png
-│ ├── Figure2_TopPanStrainGuides_Global.png
-│ ├── Figure3_PanStrainGeneComparison.png
-│ ├── Figure4_Specificity_vs_Conservation.png
-│ ├── Figure5_GuideCoverageByGene.png
-│ └── Heatmap_<gene>_TopGuides.png
-│
-├── src/
-│ └── main_pipeline.py # Full pipeline script
-│
-├── requirements.txt
+├── .gitignore
+├── crispr_mdr_analysis.py
+├── guide_output.txt
 └── README.md
-
----
-
-## Output Columns
-
-| Column | Description |
-|--------|-------------|
-| gene | Target gene |
-| position | Genomic position |
-| strand | + / - |
-| spacer | 20-nt guide sequence |
-| pam | PAM sequence |
-| gc_content | GC % |
-| on_target_score | Efficiency score |
-| offtarget_hits_0mm | Exact matches |
-| offtarget_hits_1mm | 1 mismatch hits |
-| offtarget_hits_2mm | 2 mismatch hits |
-| offtarget_hits_3mm | 3 mismatch hits |
-| offtarget_penalty | Weighted penalty |
-| specificity_score | Off-target specificity |
-| conservation_score | Multi-strain coverage |
-| final_score | Composite score |
-| classification | Guide quality |
-
----
-
-## Top Guides (Score: 90.4)
-
-| Gene | Position | Spacer | PAM | GC% |
-|------|---------:|--------|-----|----:|
-| blaKPC | 756 | CACAATAGGTGCGCGCCCAG | TGG | 65 |
-| blaNDM1 | 677 | CGGTGATATTGTCACTGGTG | TGG | 50 |
-| mcr1 | 2650 | AACCTGCGCAGGTAACACAG | TGG | 55 |
-| mecA | 1965 | AAAGTGGCAGACAAATTGGG | TGG | 45 |
-
-All top guides show **zero off-target hits (0–3 mismatches)** in background genomes.
-
----
-
-## Known Limitations
-
-- GC filtering not enforced (40–70% recommended range)
-- Minor specificity inconsistency in subset of mcr1 guides
-- No minimum on-target threshold applied
-- Results are computational (no experimental validation yet)
-
----
-
-## Requirements
-
-- Python >= 3.8
-- numpy
-- pandas
-- matplotlib
-
-Install:
-pip install -r requirements.txt
-
----
-
-## Run Pipeline
-python src/main_pipeline.py
-
-Outputs will be saved in:
-results_panstrain/
-
----
-
-## Research Contribution
-
-This work provides a scalable computational framework for **CRISPR-based antimicrobial design**, focusing on:
-
-- Multi-strain conservation
-- Genome-wide off-target safety
-- High-confidence guide prioritization
-
----
-
-## Citation
-
-Basu, S.  
-CRISPR-Cas mediated re-sensitization of multidrug-resistant bacteria  
-ACS Spring 2026 | BIOT Division | Paper ID: 4421933  
-
----
-
-## Contact
-
-Sanghati Basu  
-GitHub: https://github.com/SANGHATI23  
-
----
-
-## Disclaimer
-
-This repository contains computational predictions only.  
-Experimental validation is required before biological or clinical application.# crispr-mdr-resensitization
