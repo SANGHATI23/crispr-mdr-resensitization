@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 GUIDE_LEN = 20
 MAX_MISMATCH = 3
 
-TARGET_MULTI_DIR = "data/targets_multistrain"
+TARGET_MULTI_DIR = os.path.join(os.getcwd(), "data", "targets_multistrain")
 print("Looking for FASTA files in:", TARGET_MULTI_DIR)
 PLASMID_DIR = "data/plasmids"
 GENOME_DIR = "data/genomes"
