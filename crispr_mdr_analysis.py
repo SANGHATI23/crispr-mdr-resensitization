@@ -293,19 +293,34 @@ def scan_guide_in_sequence(guide, sequence, max_mismatch=1):
 
 def conservation_profile(guide, strain_records, max_mismatch=1):
     """
-    Evaluate guide across all strains of a gene.
+    Robustness-aware conservation score across strains.
+
+    Scoring per strain:
+      - perfect match (0 mismatches): 100
+      - 1 mismatch: 70
+      - PAM-supported weaker match: 20
+      - no acceptable hit: 0
+
+    Final conservation score combines:
+      - mean strain score
+      - worst-case strain score
+      - PAM-supported fraction
+      - penalty for instability across strains
     """
     total = len(strain_records)
     perfect = 0
     one_mm_or_better = 0
     pam_supported = 0
 
-    heatmap_values = []  # 1=perfect, 0.5=1mm, 0=no hit
+    heatmap_values = []
+    strain_scores = []
 
     for header, seq in strain_records:
         hit = scan_guide_in_sequence(guide, seq, max_mismatch=max_mismatch)
+
         if hit is None:
             heatmap_values.append(0.0)
+            strain_scores.append(0.0)
             continue
 
         pam_supported += 1
@@ -314,21 +329,38 @@ def conservation_profile(guide, strain_records, max_mismatch=1):
             perfect += 1
             one_mm_or_better += 1
             heatmap_values.append(1.0)
+            strain_scores.append(100.0)
+
         elif hit["mismatches"] == 1:
             one_mm_or_better += 1
             heatmap_values.append(0.5)
+            strain_scores.append(70.0)
 
-    perfect_frac = perfect / total if total else 0
-    one_mm_frac = one_mm_or_better / total if total else 0
-    pam_frac = pam_supported / total if total else 0
+        else:
+            heatmap_values.append(0.2)
+            strain_scores.append(20.0)
 
-    # weighted conservation score
-    conservation_score = (
-        70 * perfect_frac +
-        20 * max(0, one_mm_frac - perfect_frac) +
-        10 * pam_frac
-    )
-    conservation_score = round(min(100, conservation_score), 1)
+    perfect_frac = perfect / total if total else 0.0
+    one_mm_frac = one_mm_or_better / total if total else 0.0
+    pam_frac = pam_supported / total if total else 0.0
+
+    if strain_scores:
+        mean_strain_score = sum(strain_scores) / len(strain_scores)
+        min_strain_score = min(strain_scores)
+        variance = sum((x - mean_strain_score) ** 2 for x in strain_scores) / len(strain_scores)
+        std_strain_score = math.sqrt(variance)
+    else:
+        mean_strain_score = 0.0
+        min_strain_score = 0.0
+        std_strain_score = 0.0
+
+    robust_conservation_score = (
+        0.50 * mean_strain_score +
+        0.35 * min_strain_score +
+        0.15 * (pam_frac * 100.0)
+    ) - (0.10 * std_strain_score)
+
+    robust_conservation_score = round(max(0.0, min(100.0, robust_conservation_score)), 1)
 
     return {
         "total_strains": total,
@@ -338,7 +370,10 @@ def conservation_profile(guide, strain_records, max_mismatch=1):
         "perfect_match_fraction": round(perfect_frac, 4),
         "one_mismatch_or_better_fraction": round(one_mm_frac, 4),
         "pam_supported_fraction": round(pam_frac, 4),
-        "conservation_score": conservation_score,
+        "mean_strain_score": round(mean_strain_score, 2),
+        "min_strain_score": round(min_strain_score, 2),
+        "std_strain_score": round(std_strain_score, 2),
+        "conservation_score": robust_conservation_score,
         "heatmap_values": heatmap_values
     }
 
@@ -356,6 +391,7 @@ def load_background_sequences():
             background.append(rec)
     return background
 
+
 def classify_final_score(score):
     if score >= 85:
         return "Excellent"
@@ -365,6 +401,8 @@ def classify_final_score(score):
         return "Moderate"
     else:
         return "Poor"
+
+
 # =========================================================
 # ANALYSIS
 # =========================================================
@@ -415,9 +453,9 @@ def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20
         cons = conservation_profile(spacer, strain_records)
 
         final_score = round(
-            0.45 * on_target +
+            0.40 * on_target +
             0.30 * specificity +
-            0.25 * cons["conservation_score"],
+            0.30 * cons["conservation_score"],
             1
         )
 
@@ -443,6 +481,9 @@ def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20
             "one_mismatch_or_better_fraction": cons["one_mismatch_or_better_fraction"],
             "pam_supported_fraction": cons["pam_supported_fraction"],
             "conservation_score": cons["conservation_score"],
+            "mean_strain_score": cons["mean_strain_score"],
+            "min_strain_score": cons["min_strain_score"],
+            "std_strain_score": cons["std_strain_score"],
             "final_score": final_score,
             "classification": classify_final_score(final_score),
             "heatmap_values": cons["heatmap_values"]
@@ -480,6 +521,7 @@ def analyze_multistrain_gene(gene_name, fasta_path, background_records, top_n=20
         "stats": stats
     }
 
+
 # =========================================================
 # CSV EXPORT
 # =========================================================
@@ -495,7 +537,8 @@ def save_csv_outputs(all_data):
         "total_strains", "perfect_match_strains", "one_mismatch_or_better_strains",
         "pam_supported_strains", "perfect_match_fraction",
         "one_mismatch_or_better_fraction", "pam_supported_fraction",
-        "conservation_score", "final_score", "classification"
+        "conservation_score", "mean_strain_score", "min_strain_score", "std_strain_score",
+        "final_score", "classification"
     ]
 
     # full results
@@ -564,7 +607,7 @@ def save_csv_outputs(all_data):
     print(f"Saved: {top_path}")
     print(f"Saved: {global_path}")
     print(f"Saved: {summary_path}")
-        
+
 
 # =========================================================
 # FIGURES
@@ -587,7 +630,7 @@ def make_score_distribution(all_data):
 def make_top_global_plot(all_data):
     rows = []
     for gene in all_data:
-        gene_rows = all_data[gene]["results"][:5]   # top 5 per gene
+        gene_rows = all_data[gene]["results"][:5]
         rows.extend(gene_rows)
 
     if not rows:
