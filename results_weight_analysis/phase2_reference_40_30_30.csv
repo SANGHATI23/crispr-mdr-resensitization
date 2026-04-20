@@ -1,0 +1,2 @@
+weight_scheme,mean_final_score,median_final_score,best_final_score,excellent_count,good_count,moderate_count,poor_count,top20_overlap_count_vs_40_30_30,top20_jaccard_vs_40_30_30,top_guide_gene,top_guide_spacer,top_guide_score
+40/30/30,89.85,91.2,93.6,131,12,2,0,20,1.0,blaNDM1,AATGGTTCGGTATGCGGGCG,93.6
