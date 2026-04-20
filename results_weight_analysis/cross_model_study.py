@@ -138,3 +138,52 @@ print("-", RESULTS_DIR / "top10_final_composite_model.csv")
 print("-", comparison_output)
 print("-", dropped_output)
 print("-", overlap_output)
+# ===== Figure: Cross-model agreement analysis =====
+import matplotlib.pyplot as plt
+
+figure_df = overlap_summary.copy()
+
+label_map = {
+    "Final vs On-target": "On-target-only\n(Activity baseline)",
+    "Final vs Off-target": "Off-target-only\n(Specificity baseline)",
+    "Final vs Conservation": "Conservation-only\n(Strain-awareness proxy)",
+    "Final vs Consensus": "Consensus (Avg.)\n(Ensemble baseline)",
+}
+
+figure_df["plot_label"] = figure_df["comparison"].map(label_map)
+
+plt.figure(figsize=(11, 7))
+
+bars = plt.bar(
+    figure_df["plot_label"],
+    figure_df["top10_overlap_count"]
+)
+
+plt.title("Cross-model Agreement Analysis", fontsize=20, fontweight="bold", pad=18)
+plt.suptitle("Top 10 Guide Overlap with the Proposed Composite Model (40/30/30)", fontsize=13, y=0.93)
+
+plt.xlabel("Model Comparison", fontsize=13)
+plt.ylabel("Overlap Count (Top 10)", fontsize=13)
+plt.ylim(0, 11)
+plt.yticks(range(0, 11, 2))
+plt.grid(axis="y", linestyle="--", alpha=0.5)
+plt.gca().set_axisbelow(True)
+
+for bar, value in zip(bars, figure_df["top10_overlap_count"]):
+    plt.text(
+        bar.get_x() + bar.get_width() / 2,
+        value + 0.08,
+        str(value),
+        ha="center",
+        va="bottom",
+        fontsize=12,
+        fontweight="bold"
+    )
+
+plt.tight_layout(rect=[0, 0, 1, 0.90])
+
+figure_path = RESULTS_DIR / "Figure_CrossModel_Agreement_Analysis.png"
+plt.savefig(figure_path, dpi=300, bbox_inches="tight")
+plt.close()
+
+print("-", figure_path)
