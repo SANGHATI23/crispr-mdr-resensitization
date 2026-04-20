@@ -1,5 +1,5 @@
 gene,resistance,total_reference_guides,filtered_out_gc,filtered_out_ontarget,total_guides,excellent,good,moderate,poor,best_score,mean_score,best_conservation,mean_conservation
-blaKPC,Carbapenem,42,8,0,34,34,0,0,0,92.8,91.0,100.0,100.0
+blaKPC,Carbapenem,42,8,0,34,26,6,2,0,92.8,86.7,100.0,100.0
 blaNDM1,Carbapenem,48,2,0,46,42,4,0,0,93.6,90.9,100.0,100.0
-mcr1,Colistin,43,1,0,42,41,1,0,0,92.8,90.9,100.0,99.1
+mcr1,Colistin,43,1,0,42,40,2,0,0,92.8,90.5,100.0,99.1
 mecA,Methicillin / MRSA,23,0,0,23,23,0,0,0,92.0,91.4,100.0,100.0

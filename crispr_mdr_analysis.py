@@ -384,25 +384,37 @@ def conservation_profile(guide, strain_records, max_mismatch=1):
 
 def load_background_sequences():
     background = []
-    for folder in [PLASMID_DIR, GENOME_DIR]:
-        seqs = load_all_fasta_from_dir(folder)
-        for rec in seqs:
-            rec["source_dir"] = folder
-            background.append(rec)
+
+    # Load all plasmids
+    plasmid_seqs = load_all_fasta_from_dir(PLASMID_DIR)
+    for rec in plasmid_seqs:
+        rec["source_dir"] = PLASMID_DIR
+        background.append(rec)
+
+    # Load only first 200 records from ONE genome file
+    genome_file = "staphylococcus_aureus_genome.fasta"   # change later for other genomes
+    path = os.path.join(GENOME_DIR, genome_file)
+
+    genome_records = parse_fasta(path)[:200]
+
+    for header, seq in genome_records:
+        background.append({
+            "source_file": genome_file,
+            "header": header,
+            "sequence": seq,
+            "source_dir": GENOME_DIR
+        })
+
     return background
-
-
 def classify_final_score(score):
     if score >= 85:
         return "Excellent"
-    elif score >= 75:
+    elif score >= 70:
         return "Good"
-    elif score >= 60:
+    elif score >= 50:
         return "Moderate"
     else:
         return "Poor"
-
-
 # =========================================================
 # ANALYSIS
 # =========================================================
