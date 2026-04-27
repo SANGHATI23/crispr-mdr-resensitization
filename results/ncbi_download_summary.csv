@@ -1,0 +1,5 @@
+gene,query,records_found,records_saved,fasta_path
+blaKPC,blaKPC[Title] AND bacteria[Organism],50,50,results_strain_expansion/fasta_raw/blaKPC_raw.fasta
+blaNDM-1,blaNDM-1[Title] AND bacteria[Organism],50,50,results_strain_expansion/fasta_raw/blaNDM-1_raw.fasta
+mcr-1,mcr-1[Title] AND bacteria[Organism],50,49,results_strain_expansion/fasta_raw/mcr-1_raw.fasta
+mecA,mecA[Title] AND bacteria[Organism],50,50,results_strain_expansion/fasta_raw/mecA_raw.fasta

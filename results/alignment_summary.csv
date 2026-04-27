@@ -1,0 +1,5 @@
+gene,raw_sequences,filtered_sequences,alignment_file,mafft_exit_code
+blaKPC,50,50,results_strain_expansion/aligned/blaKPC_aligned.fasta,0
+blaNDM-1,50,47,results_strain_expansion/aligned/blaNDM-1_aligned.fasta,0
+mcr-1,49,49,results_strain_expansion/aligned/mcr-1_aligned.fasta,0
+mecA,50,50,results_strain_expansion/aligned/mecA_aligned.fasta,0

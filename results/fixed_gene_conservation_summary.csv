@@ -1,0 +1,5 @@
+gene,guides,n_strains_mean,mean_conservation_pct,median_conservation_pct,retained_guides,mean_best_identity
+blaKPC,34,1.0,100.0,100.0,34,100.0
+blaNDM1,46,3.0,100.0,100.0,46,100.0
+mcr1,42,1.0,2.380952380952381,0.0,1,68.45238095238095
+mecA,23,1.0,100.0,100.0,23,100.0

@@ -1,0 +1,3 @@
+gene,guides_tested,mean_expanded_conservation_pct,median_expanded_conservation_pct,min_expanded_conservation_pct,max_expanded_conservation_pct,fully_conserved_guides,highly_conserved_guides
+blaKPC,34,31.65,0.0,0.0,100.0,6,9
+mecA,23,0.0,0.0,0.0,0.0,0,0
