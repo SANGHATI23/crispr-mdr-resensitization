@@ -1,0 +1,9 @@
+gene,top_k,overlap_count,overlap_fraction
+blaKPC,5,4,0.8
+blaKPC,10,7,0.7
+blaNDM1,5,2,0.4
+blaNDM1,10,4,0.4
+mcr1,5,5,1.0
+mcr1,10,10,1.0
+mecA,5,3,0.6
+mecA,10,3,0.3

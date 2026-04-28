@@ -1,0 +1,5 @@
+gene,n_guides,spearman_rho,spearman_p,pearson_r,pearson_p
+blaKPC,12,1.0,0.0,1.0,0.0
+blaNDM1,16,1.0,0.0,1.0,0.0
+mcr1,10,1.0,0.0,1.0,0.0
+mecA,52,,,,
