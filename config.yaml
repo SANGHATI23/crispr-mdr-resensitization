@@ -1,0 +1,54 @@
+input_files:
+  - data/amr_records.csv
+  - data/amr_records-2.csv
+  - data/amr_records-3.csv
+  - data/amr_records-4.csv
+  - data/amr_records-5.csv
+
+id_columns:
+  biosample: BioSample_ID
+  assembly: assembly_ID
+  genus: genus
+  species: species
+  organism: organism
+  antibiotic: antibiotic_name
+  phenotype: resistance_phenotype
+  gene_symbol: gene_symbol
+  amr_element_symbol: amr_element_symbol
+  drug_class: class
+  subclass: subclass
+
+phenotype_positive_values:
+  - resistant
+  - non-susceptible
+  - intermediate
+
+phenotype_negative_values:
+  - susceptible
+
+headline_crispr_genes:
+  mecA:
+    canonical_gene: mecA
+    mechanism: Methicillin resistance via PBP2a
+    primary_pathogen: Staphylococcus aureus
+    primary_drug_context: methicillin
+  blaKPC:
+    canonical_gene: blaKPC
+    mechanism: Serine carbapenemase
+    primary_pathogen: Klebsiella pneumoniae
+    primary_drug_context: meropenem/carbapenem
+  blaNDM:
+    canonical_gene: blaNDM
+    mechanism: Metallo-beta-lactamase carbapenemase
+    primary_pathogen: Klebsiella pneumoniae, Escherichia coli, Acinetobacter baumannii
+    primary_drug_context: meropenem/carbapenem
+  mcr:
+    canonical_gene: mcr
+    mechanism: Colistin resistance via phosphoethanolamine transferase
+    primary_pathogen: Escherichia coli, Klebsiella pneumoniae
+    primary_drug_context: colistin
+
+model:
+  min_samples_per_combo: 30
+  cv_folds: 5
+  random_state: 42
