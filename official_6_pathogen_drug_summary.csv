@@ -1,0 +1,5 @@
+species,antibiotic_name,pathogen_drug,total,resistant,susceptible
+Klebsiella pneumoniae,meropenem,Klebsiella pneumoniae + meropenem,5044,1996,3048
+Staphylococcus aureus,methicillin,Staphylococcus aureus + methicillin,3205,2264,941
+Klebsiella pneumoniae,imipenem,Klebsiella pneumoniae + imipenem,2777,1326,1451
+Klebsiella pneumoniae,ertapenem,Klebsiella pneumoniae + ertapenem,2273,1479,794
