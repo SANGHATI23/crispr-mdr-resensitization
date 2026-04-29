@@ -1,14 +1,14 @@
 🧬 CRISPR-MDR: Robust AMR Prediction to CRISPR Intervention Pipeline
 
 
-🔬 Overview
+ Overview
 Antimicrobial resistance (AMR) is driven by diverse and rapidly evolving genetic mechanisms. While machine learning models can accurately predict resistance phenotypes from genomic data, and CRISPR-based systems enable programmable targeting of resistance genes, these two domains are typically treated independently.
 This repository presents a unified computational framework that connects:
 Genotype → Phenotype Prediction → Resistance Drivers → CRISPR Target Prioritization
 Rather than stopping at prediction, this pipeline translates resistance-associated signals into actionable CRISPR intervention candidates, enabling computational prioritization of antimicrobial resensitization strategies.
 
 
-🚀 Core Contribution
+ Core Contribution
 This work introduces an integrated and robustness-tested pipeline that:
 Predicts AMR phenotypes from genomic features
 Identifies key resistance driver genes
@@ -17,11 +17,11 @@ Prioritizes guide RNAs using a multi-objective scoring framework
 Demonstrates stability of guide selection across scoring models and weighting schemes
 
 
-🔥 Key Idea
+ Key Idea
 Resistance prediction is not the endpoint — it becomes the input for intervention design.
 
 
-🧠 Conceptual Pipeline
+ Conceptual Pipeline
 Genomic data
    ↓
 AMR feature matrix
@@ -41,7 +41,7 @@ Multi-objective scoring
 Stable prioritized guides
 
 
-⚙️ Methodology
+ Methodology
 
 1. AMR Prediction
 Models: Logistic Regression, Random Forest, XGBoost
@@ -143,7 +143,7 @@ Conservation-based ranking
 Consensus models
 External comparators (CFD, MIT, CRISOT, RS3-style)
 
-📊 Key Results
+ Key Results
 🔹 ML Performance (CAMDA-aligned)
 ROC-AUC up to 0.98+
 Strong performance across pathogen-drug combinations
@@ -155,7 +155,7 @@ Cross-model agreement:
 Composite vs On-target → 10/10 overlap
 Composite vs CFD/MIT → 8/10 overlap
 
-👉 Conclusion:
+ Conclusion:
 Guide prioritization is robust and model-invariant
 
 🔹 CRISPR Targetability
@@ -166,7 +166,7 @@ mcr-1	5962	42
 mecA	118	23
 
 
-📁 Repository Structure
+ Repository Structure
 
 results/                     → Core CRISPR scoring outputs  
 results_external/           → CFD, MIT, CRISOT comparisons  
@@ -176,43 +176,43 @@ results_weight_analysis/    → Weight sensitivity experiments
 weight_sensitivity_results/ → Stability metrics and overlaps  
 
 
-🧪 Figures (Manuscript)
+ Figures (Manuscript)
 AMR prediction performance (ROC curves)
 Feature importance (driver genes)
 CRISPR score distributions
 Weight sensitivity robustness
 Cross-model comparisons (CFD, MIT)
 
-🔥 Integrated pipeline (Prediction → Intervention bridge)
+ Integrated pipeline (Prediction → Intervention bridge)
 
-⚠️ Limitations
+ Limitations
 
 Fully computational (no wet-lab validation)
 Gene presence ≠ expression or phenotypic dominance
 Conservation approximated via available strain data
 
-🔮 Future Directions
+ Future Directions
 
 Experimental validation of top-ranked guides
 Integration with expression data (transcriptomics)
 Expansion to broader pathogen-drug space
 CRISPR delivery strategy modeling
 
-🏆 Final Positioning
+ Final Positioning
 This work demonstrates that CRISPR guide prioritization for AMR targets can be made robust across scoring assumptions, and establishes a direct computational bridge from genomic prediction to intervention design.
 
-📌 Citation (if used)
+ Citation (if used)
 Basu, S. (2026)
 A Robust and Interpretable Framework Linking AMR Prediction to CRISPR-Based Intervention Prioritization
 
-🤝 Contact
+ Contact
 For collaboration or discussion:
 Sanghati Basu
 University of Illinois Springfield
 
-🔥 FINAL NOTE (THIS IS WHAT PIs SEE)
+ FINAL NOTE (THIS IS WHAT PIs SEE)
 This is not just:
 ML for AMR
 OR CRISPR scoring
-👉 It is:
+ It is:
 A unified, robustness-validated framework that connects prediction to intervention.
