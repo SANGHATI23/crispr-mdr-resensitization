@@ -1,0 +1,21 @@
+{
+  "purpose": "Final clean rerun for official CAMDA AMR species-antibiotic combinations",
+  "seed": 42,
+  "official_tasks": [
+    "staphylococcus_aureus",
+    "klebsiella_pneumoniae",
+    "acinetobacter_baumannii",
+    "escherichia_coli"
+  ],
+  "minimum_rows": 100,
+  "cv_splits": 5,
+  "split_logic": "Fixed 80/20 stratified train-test split",
+  "cv_logic": "Fixed 5-fold StratifiedKFold",
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost"
+  ],
+  "target": "y_resistant",
+  "feature_type": "AMR gene presence features only"
+}
