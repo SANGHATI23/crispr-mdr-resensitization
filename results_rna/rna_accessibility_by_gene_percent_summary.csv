@@ -1,0 +1,13 @@
+gene,rna_accessibility_class,guide_count,gene_total,percentage_within_gene
+blaKPC,Accessible,6,34,17.65
+blaKPC,Moderate,14,34,41.18
+blaKPC,Structurally_Risky,14,34,41.18
+blaNDM1,Accessible,9,46,19.57
+blaNDM1,Moderate,20,46,43.48
+blaNDM1,Structurally_Risky,17,46,36.96
+mcr1,Accessible,4,42,9.52
+mcr1,Moderate,14,42,33.33
+mcr1,Structurally_Risky,24,42,57.14
+mecA,Accessible,1,23,4.35
+mecA,Moderate,2,23,8.7
+mecA,Structurally_Risky,20,23,86.96

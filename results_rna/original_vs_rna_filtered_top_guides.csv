@@ -1,0 +1,9 @@
+selection_type,gene,position,strand,spacer,pam,final_score,conservation_score,full_sgrna_mfe,seed_paired_fraction,spacer_paired_fraction,spacer_accessibility_score,rna_accessibility_class
+Original_Top_By_Final_Score,blaKPC,171,+,AGAGCCTTACTGCCCGAAGG,CGG,92.8,100.0,-26.6,0.7,0.65,0.35,Structurally_Risky
+Top_After_RNA_Filter,blaKPC,81,-,AGCAGCAGCAGCAACAACGG,CGG,92.8,100.0,-21.8,0.4,0.45,0.55,Moderate
+Original_Top_By_Final_Score,blaNDM1,221,+,AATGGTTCGGTATGCGGGCG,TGG,93.6,100.0,-29.4,0.6,0.75,0.25,Structurally_Risky
+Top_After_RNA_Filter,blaNDM1,77,+,CCCGCTGCATTGATGCTGAG,CGG,92.8,100.0,-21.6,0.0,0.3,0.7,Accessible
+Original_Top_By_Final_Score,mcr1,104,+,CTGCTGCTGGCTGCTGCTGG,CGG,92.8,100.0,-26.8,0.4,0.5,0.5,Moderate
+Top_After_RNA_Filter,mcr1,104,+,CTGCTGCTGGCTGCTGCTGG,CGG,92.8,100.0,-26.8,0.4,0.5,0.5,Moderate
+Original_Top_By_Final_Score,mecA,56,+,ACTGAACGTCCGATAAAGGT,TGG,92.0,100.0,-22.3,0.0,0.4,0.6,Accessible
+Top_After_RNA_Filter,mecA,56,+,ACTGAACGTCCGATAAAGGT,TGG,92.0,100.0,-22.3,0.0,0.4,0.6,Accessible

@@ -1,0 +1,13 @@
+gene,rna_accessibility_class,guide_count
+blaKPC,Accessible,6
+blaKPC,Moderate,14
+blaKPC,Structurally_Risky,14
+blaNDM1,Accessible,9
+blaNDM1,Moderate,20
+blaNDM1,Structurally_Risky,17
+mcr1,Accessible,4
+mcr1,Moderate,14
+mcr1,Structurally_Risky,24
+mecA,Accessible,1
+mecA,Moderate,2
+mecA,Structurally_Risky,20
