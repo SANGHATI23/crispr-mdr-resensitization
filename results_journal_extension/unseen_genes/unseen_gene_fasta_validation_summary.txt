@@ -1,0 +1,16 @@
+Unseen Gene FASTA Validation Summary
+====================================
+
+Reference plan: /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/unseen_genes/unseen_gene_reference_plan.csv
+FASTA directory: /Users/sanghati/Documents/crispr-mdr-resensitization/data_journal_extension/unseen_genes
+Output table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/unseen_genes/unseen_gene_fasta_validation.csv
+
+Validation status counts:
+- Missing_sequence: 5
+
+Per-gene status:
+- vanA: file_exists=No | length=0 | status=Missing_sequence | notes=No sequence found.
+- tetM: file_exists=No | length=0 | status=Missing_sequence | notes=No sequence found.
+- ermB: file_exists=No | length=0 | status=Missing_sequence | notes=No sequence found.
+- aac6Ib: file_exists=No | length=0 | status=Missing_sequence | notes=No sequence found.
+- qnrS: file_exists=No | length=0 | status=Missing_sequence | notes=No sequence found.

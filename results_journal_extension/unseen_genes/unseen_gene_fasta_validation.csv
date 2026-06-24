@@ -1,0 +1,6 @@
+gene,fasta_path,file_exists,header,sequence_present,length_bp,valid_dna_alphabet,length_divisible_by_3,starts_with_atg,has_terminal_stop,validation_status,validation_notes
+vanA,data_journal_extension/unseen_genes/vanA.fa,No,,No,0,No,No,No,No,Missing_sequence,No sequence found.
+tetM,data_journal_extension/unseen_genes/tetM.fa,No,,No,0,No,No,No,No,Missing_sequence,No sequence found.
+ermB,data_journal_extension/unseen_genes/ermB.fa,No,,No,0,No,No,No,No,Missing_sequence,No sequence found.
+aac6Ib,data_journal_extension/unseen_genes/aac6Ib.fa,No,,No,0,No,No,No,No,Missing_sequence,No sequence found.
+qnrS,data_journal_extension/unseen_genes/qnrS.fa,No,,No,0,No,No,No,No,Missing_sequence,No sequence found.
