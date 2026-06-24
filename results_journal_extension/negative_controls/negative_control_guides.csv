@@ -1,0 +1,181 @@
+gene,control_type,spacer,pam,gc_content,control_reason,expected_priority,fotr_v2_priority_score,rna_accessibility_class,fotr_v2_recommendation_status,gc_flag,negative_control_label
+blaKPC,random_20nt_sequence,AAGCCCAATAAACCACTCTG,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,ACTGGCCGAATAGGGATATA,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,GGCAACGACATGTGCGGCGA,NGG,65.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,CCCTTGCGACAGTGACGCTT,NGG,60.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,TCGCCGTTGCCTAAACCTAT,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,TTGAAGGAGTCTAGCAGCCG,NGG,55.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,CAGTAAGGCACAATACCTCG,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,TCCGTGTTACCAGACCAAAC,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,AAGACGTCCTCTTCAATGTT,NGG,40.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,TAAATGACCCTCTCGTCATA,NGG,40.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,AAACCTTTCTACTATGTGTT,NGG,30.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,CCGCAAGAATCAACAACTAC,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,AATGGCGCGTCGTGAATAAC,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,GCGACGGCTGAGACGAACGG,NGG,70.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,CGCGTGAATGAAGCGCTTAA,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,ACAGCTCAGGAGCCAGTCCC,NGG,65.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,CTACGTCGCATATCCTGGCC,NGG,60.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,ACTGGAGGTGAAGCGAATGG,NGG,55.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,TATCGATACGTAGGAGGTGT,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,GCCTTCGTAGGCTGTTTCTC,NGG,55.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,AGGACGCCCAACTATTCTTT,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,CCAATCCTACATCTGTTTCT,NGG,40.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,TGCGTCGTAGCGGGACCCTC,NGG,70.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,CATTGTTACTTATTAGGTTC,NGG,30.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,random_20nt_sequence,TCGTTATGTCTCATAATCTC,NGG,35.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaKPC,extreme_high_gc_sequence,GCCCGCCCCCCCGCGGCGGG,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaKPC,extreme_low_gc_sequence,AAAAAAATAATTTAAATAAT,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaKPC,extreme_high_gc_sequence,CCGGGGCGGCCCGCGCCGCC,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaKPC,extreme_low_gc_sequence,TATATTTTTTAATTATTTAT,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaKPC,extreme_high_gc_sequence,CGCGCCCCCGGGGCCGCCCG,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaKPC,extreme_low_gc_sequence,ATATATTTTTTTTTTTAAAT,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaKPC,extreme_high_gc_sequence,GGGGCCCGGCGCGCGGCGGC,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaKPC,extreme_low_gc_sequence,ATAATTTTTAATTAATTAAA,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaKPC,extreme_high_gc_sequence,GCGGGCGCCCCCCGGGGCGG,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaKPC,extreme_low_gc_sequence,AAAAATTTTAATTTAATATA,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaKPC,lowest_fotr_v2_real_candidate,CAGGACTTTGGCGGCTCCAT,CGG,60.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,49.432,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaKPC,lowest_fotr_v2_real_candidate,CAGGACTTTGGCGGCTCCAT,CGG,60.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,49.432,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaKPC,lowest_fotr_v2_real_candidate,CTGTGCTTGTCATCCTTGTT,AGG,45.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,52.392,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaKPC,lowest_fotr_v2_real_candidate,AAACTCGAACAGGACTTTGG,CGG,45.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,58.362,Accessible,Lower_priority_candidate,GC_reasonable,Negative_control
+blaKPC,lowest_fotr_v2_real_candidate,AAACTCGAACAGGACTTTGG,CGG,45.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,58.362,Accessible,Lower_priority_candidate,GC_reasonable,Negative_control
+blaKPC,structurally_risky_real_candidate,GATAACGCCGCCGCCTAACA,AGG,60.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,82.71,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaKPC,structurally_risky_real_candidate,GGCGATAACGCCGCCGCCTT,CGG,70.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,79.51,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaKPC,structurally_risky_real_candidate,GCGATAACGCCGCCGCCTTC,GGG,70.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,79.15,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaKPC,structurally_risky_real_candidate,AGAGCCTTACTGCCCGAAGG,CGG,60.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,79.04,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaKPC,structurally_risky_real_candidate,TGTTGCTGCTGGCTGGCTGC,TGG,65.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,78.21,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,CCGCAACGGTATGTGTTAAT,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,GGAACAGACTTGCTTATGTG,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,GACGTTGTATAGGGATATTA,NGG,35.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,CGTTACGCGTTAACCGATAC,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,ATACTGGTTTCTCTCCAGTG,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,GAGGTCTTGGTTGCCTCTAG,NGG,55.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,TTTCTACGATATACTCATGG,NGG,35.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,TAGTGTAACGCATAATCGAA,NGG,35.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,GAGGGTCCTCCCATCTCCTG,NGG,65.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,TGATGCATGGTGTGCTTACT,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,GGGATGAATGCGCCGCAAGT,NGG,60.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,AGCAGGTCCCGGCGTGGATA,NGG,65.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,CCTGATAGATGGTGACTAGC,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,ATGTACAAGTAACCTTGTCT,NGG,35.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,ATTGAGCTTCGAGGATGCAT,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,ACAAGCCCACCCGCAGCCGC,NGG,75.0,Random sequence not selected from AMR target gene.,Low,,,,GC_extreme,Negative_control
+blaNDM1,random_20nt_sequence,AACAGCGACGACTAATTGAT,NGG,40.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,CAGTAATTTATTAAGCACGG,NGG,35.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,TGTTAACTTCTGTTTAGTGG,NGG,35.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,GCTAAAATAGCAGATGTAGG,NGG,40.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,GACCTCAGGAGCTAGACGGG,NGG,65.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,GACCTACAACTTTGCGGGAA,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,CCAAGTTTTTGCAGTAGTGA,NGG,40.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,CTAACGCCGGGAATTCCTCG,NGG,60.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+blaNDM1,random_20nt_sequence,ATATATAGTTTGATAGCTGA,NGG,25.0,Random sequence not selected from AMR target gene.,Low,,,,GC_extreme,Negative_control
+blaNDM1,extreme_high_gc_sequence,CGGCCGCCCGCGGGGCCGGG,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaNDM1,extreme_low_gc_sequence,ATAAAAATTTTTATATTTTA,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaNDM1,extreme_high_gc_sequence,CGCCCGGCCGGCCGCGCCGG,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaNDM1,extreme_low_gc_sequence,TATAAAATTATTTTTTATAT,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaNDM1,extreme_high_gc_sequence,GCCCGCGGCCCGGCCCGGCC,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaNDM1,extreme_low_gc_sequence,ATTAATTAAAAATAATATAA,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaNDM1,extreme_high_gc_sequence,GGCGCCGCCCGGCCGCCCCC,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaNDM1,extreme_low_gc_sequence,TAAATATTAATAATTATAAT,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaNDM1,extreme_high_gc_sequence,CGCGCCGCGCGGCGCGGGCC,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaNDM1,extreme_low_gc_sequence,ATTAAATAATATATAAATTA,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+blaNDM1,lowest_fotr_v2_real_candidate,CGTGGCGATCTGGTTTTCGA,TGG,55.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,75.45,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaNDM1,lowest_fotr_v2_real_candidate,TGGCGATCTGGTTTTCGATC,TGG,50.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,75.56,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaNDM1,lowest_fotr_v2_real_candidate,GGTATGCGGGCGTGGCGATC,TGG,70.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,76.65,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaNDM1,lowest_fotr_v2_real_candidate,AATGGTTCGGTATGCGGGCG,TGG,60.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,77.98,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaNDM1,lowest_fotr_v2_real_candidate,AATGGTTCGGTATGCGGGCG,TGG,60.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,77.98,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaNDM1,structurally_risky_real_candidate,GCGACCGGGTGCATAATATT,GGG,50.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,82.35,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaNDM1,structurally_risky_real_candidate,GGCGGCCGGCATGTCGAGAT,AGG,70.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,80.21,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaNDM1,structurally_risky_real_candidate,GGCGGCCGGCATGTCGAGAT,AGG,70.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,80.21,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaNDM1,structurally_risky_real_candidate,CGGTGCTCAGCTTCGCGACC,GGG,70.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,81.75,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+blaNDM1,structurally_risky_real_candidate,GATCGCCAGCATCAATGCAG,CGG,55.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,79.39,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,ATACCGTAGCTCAGAATTAT,NGG,35.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,GGAGAGCAGCAGGCTTCCAT,NGG,60.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,AGCACAGGTTGACGGAGGAG,NGG,60.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,TTTTGCTTGGATATCGGAAG,NGG,40.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,GGTTCTGTAGTGAATGCACT,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,ACACGGTACTGGTACGTGGC,NGG,60.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,AACTTAGGTCGTCACATCTA,NGG,40.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,GGAGGCCGCACCCTAGGTCA,NGG,70.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,AGTTTTACGATTGCCCTAAC,NGG,40.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,GCCGCGGAGCGCGACCCGAA,NGG,80.0,Random sequence not selected from AMR target gene.,Low,,,,GC_extreme,Negative_control
+mcr1,random_20nt_sequence,AAGCTATGGTCTGTAACTTT,NGG,35.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,TCGCGGGTCGAGCTAGTCCA,NGG,65.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,AGTTCCGGCCTTTGTAATTC,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,CGAAGTTGAATCGGTGATAC,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,GGATTGACATGGGCCTAAAC,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,GTTCCGGCTGGTGTAGGATG,NGG,60.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,ATGCATCTCCAACATGTCTC,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,TTACCGTTGCTGGGTCCGGC,NGG,65.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,GGCTGTGGGATTGCGAGAGT,NGG,60.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,GTCCGGCACCACCAATGTAC,NGG,60.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,ACTTTCGGGAACACTCATTC,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,GAAGAGGTTCTGCAGCTGCA,NGG,55.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,GGCCTTGATACCTGCAGTCT,NGG,55.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,GGGAGGCAATGCTGAGGCCC,NGG,70.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,random_20nt_sequence,TCTGTTCCATGAAACCCGTA,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mcr1,extreme_high_gc_sequence,GCGCGCGCCGCCGCCGGGGC,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mcr1,extreme_low_gc_sequence,TAAATATTAATTTTTTAATA,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mcr1,extreme_high_gc_sequence,GCGGGGCCCCGGCCGCGGGC,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mcr1,extreme_low_gc_sequence,AAAAAATAAATTAAAATATT,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mcr1,extreme_high_gc_sequence,GCGGCCCGGCCGCCCCCGCC,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mcr1,extreme_low_gc_sequence,ATAATATATTATATATATTA,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mcr1,extreme_high_gc_sequence,GGCCGGGGCGCCGGGGCGGC,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mcr1,extreme_low_gc_sequence,ATTTTTTTTTTATTATTTAA,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mcr1,extreme_high_gc_sequence,GGCCCGGCGCGCCCCCCGCG,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mcr1,extreme_low_gc_sequence,ATAAAAAATAAAAAATTATT,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mcr1,lowest_fotr_v2_real_candidate,TGATGCAGCATACTTCTGTG,TGG,45.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,54.622,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mcr1,lowest_fotr_v2_real_candidate,GGTGCCGTGATCGGTGGTGC,TGG,70.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,70.4025,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mcr1,lowest_fotr_v2_real_candidate,GGTGCTGCTGGTGCTATCGC,CGG,65.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,70.4225,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mcr1,lowest_fotr_v2_real_candidate,GGTGCTGCTGGTGCTATCGC,CGG,65.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,70.4225,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mcr1,lowest_fotr_v2_real_candidate,GGTGCTGCTGGTGCTATCGC,CGG,65.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,70.4225,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mcr1,structurally_risky_real_candidate,GGTTTCGGTGCCGTGATCGG,TGG,65.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,81.4825,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mcr1,structurally_risky_real_candidate,ATAACCAGCAGCAGCAGCAA,CGG,50.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,82.91,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mcr1,structurally_risky_real_candidate,GCTGGTTATGCGTTTGCTGC,TGG,55.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,82.19,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mcr1,structurally_risky_real_candidate,CGGTGCTGGTATCGCCGTGC,TGG,70.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,80.0625,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mcr1,structurally_risky_real_candidate,GGCGATAGCACCAGCAGCAC,CGG,65.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,79.8225,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,AATAAGGATCAACCCGGGTA,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,GTTCCGAAATTTTAACATTG,NGG,30.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,AACCTGAAGACGACCTAGCC,NGG,55.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,TGTCAGAATCAGTGAGTTCG,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,TTCTAGCAAGCTCTGGAAAG,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,TGGACACTTTAAAGAGTAGT,NGG,35.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,TACCTCCGGGTCACTGTGTA,NGG,55.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,GGCTCTACGATGTGTGTCGG,NGG,60.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,CTGCTGGTCGTGTGACCATC,NGG,60.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,TGATTCGCGCTTATTTTAGA,NGG,35.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,ACGCATGTAAAGCCTGTTCG,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,ATAGTAACGGGTCTGTATTG,NGG,40.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,AGAAAGACCCCGTTCTCCTT,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,ACTTTACCGAACGGCTAGTG,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,TTAGGTCGACGACGACGCTT,NGG,55.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,CTTCTCCTGCCGTAGATCCT,NGG,55.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,TTTTTTCAACGAGCGCTTAA,NGG,35.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,GGATCTACGATGGATACCGT,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,CCCCAGGCGGGGACTAGCCC,NGG,80.0,Random sequence not selected from AMR target gene.,Low,,,,GC_extreme,Negative_control
+mecA,random_20nt_sequence,CGCTTCGTTTAATGGTTGAA,NGG,40.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,TGATCTCTGGGGCTGAAATA,NGG,45.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,ACTTATCCGCGAGGAGCATG,NGG,55.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,CTAAACTACCTAAGATCTAC,NGG,35.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,TAAAGGGCTCCAACTGCCTT,NGG,50.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,random_20nt_sequence,CAACATGTGCCGACGAGCCT,NGG,60.0,Random sequence not selected from AMR target gene.,Low,,,,GC_reasonable,Negative_control
+mecA,extreme_high_gc_sequence,CGGCCGGCGGCCGCCCGCGG,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mecA,extreme_low_gc_sequence,AATAAATTTTTAATATAAAT,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mecA,extreme_high_gc_sequence,CGCCGGGGCGCGCGGGGGGC,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mecA,extreme_low_gc_sequence,TTATATAATTTATATTTATA,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mecA,extreme_high_gc_sequence,CGCGGGGGGGGCCCGGGCGC,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mecA,extreme_low_gc_sequence,ATTTATAAAAATATTTTATA,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mecA,extreme_high_gc_sequence,CGCCGCCCGGGGCGGCGCGC,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mecA,extreme_low_gc_sequence,TAAATTAATAAATTTAAATA,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mecA,extreme_high_gc_sequence,GCGGCCCCCCCCGGGGGGGG,NGG,100.0,Extreme GC content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mecA,extreme_low_gc_sequence,TTTTATATTTTAAATAATAA,NGG,0.0,Extreme AT content can reduce practical guide suitability.,Low,,,,GC_extreme,Negative_control
+mecA,lowest_fotr_v2_real_candidate,GCTGCTGCTGTTGCTGATGC,TGG,60.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,73.2,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mecA,lowest_fotr_v2_real_candidate,GTTGCTGATGCTGGTGCTAT,CGG,50.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,73.56,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mecA,lowest_fotr_v2_real_candidate,GGTGCTGGTGCTGCTGCTAT,CGG,60.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,76.06,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mecA,lowest_fotr_v2_real_candidate,ATGGTTAACGCTGCTGCTAT,CGG,45.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,76.06,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mecA,lowest_fotr_v2_real_candidate,GGTGCTGGTGCTGCTGCTAT,CGG,60.0,Real candidate with lowest FOTR v2 priority score for this gene.,Low,76.06,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mecA,structurally_risky_real_candidate,TATGACTGAACGTCCGATAA,AGG,40.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,84.37,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mecA,structurally_risky_real_candidate,AACGCTGCTGCTATCGGTGC,TGG,60.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,79.4,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mecA,structurally_risky_real_candidate,GGTGCTGCTGCTATCGGTGC,TGG,65.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,79.4,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mecA,structurally_risky_real_candidate,GGTGCTGCTGCTATCGGTGC,TGG,65.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,79.4,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
+mecA,structurally_risky_real_candidate,GGTGCTGCTGCTATCGGTGC,TGG,65.0,Real candidate classified as structurally risky by RNA accessibility screen.,Low_or_filtered,79.4,Structurally_Risky,Not_recommended_structural_risk,GC_reasonable,Negative_control
