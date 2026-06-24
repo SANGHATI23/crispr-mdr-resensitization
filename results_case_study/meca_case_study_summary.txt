@@ -1,0 +1,35 @@
+mecA FOTR v2 Case Study Summary
+================================
+
+Total mecA guide rows: 23
+
+RNA accessibility distribution:
+- Accessible: 1 / 23 (4.35%)
+- Moderate: 2 / 23 (8.70%)
+- Structurally risky: 20 / 23 (86.96%)
+
+Recommendation distribution:
+- Final recommended candidates: 3
+- High-priority recommended candidates: 1
+- Not recommended due to structural risk: 20
+
+Top mecA FOTR v2 candidate:
+- Spacer: ACTGAACGTCCGATAAAGGT
+- PAM: TGG
+- Position: 56
+- RNA accessibility class: Accessible
+- Target region: early_coding_region
+- Functional severity v1: 1.0
+- Context weight v1: 1.0
+- FOTR v1 rank within mecA: 1
+- FOTR v2 rank within mecA: 1
+- FOTR v2 priority score: 90.0
+- Recommendation status: High_priority_recommended
+- CRISOT available: True
+- CRISOT WT specificity: 0.666639
+
+Manuscript-ready interpretation:
+mecA provides a useful case study because RNA structural screening sharply narrows the candidate space. Among 23 mecA guide rows, 20 (86.96%) were classified as structurally risky, while only 1 (4.35%) was classified as accessible. The final top FOTR v2 candidate, ACTGAACGTCCGATAAAGGT with PAM TGG, remained accessible, targeted an early coding region, and was labelled as High_priority_recommended. This supports the use of RNA accessibility and functional-context filtering as interpretation layers beyond activity/conservation ranking alone.
+
+Boundary statement:
+This case study is computational prioritization only. RNAfold-derived accessibility is treated as a structural screening feature, not experimental proof of Cas9 loading, cleavage, antimicrobial resensitization, or clinical efficacy.
