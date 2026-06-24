@@ -1,0 +1,2 @@
+gene,top_spacer,pam,position,rna_accessibility_class,target_region,fotr_v2_priority_score,fotr_v2_recommendation_status,recommended_for_final_table,case_study_interpretation
+mecA,ACTGAACGTCCGATAAAGGT,TGG,56,Accessible,early_coding_region,90.0,High_priority_recommended,True,"mecA showed the strongest RNA-structure filtering effect; most guide rows were structurally risky, while the top final candidate remained accessible and targeted an early coding region."

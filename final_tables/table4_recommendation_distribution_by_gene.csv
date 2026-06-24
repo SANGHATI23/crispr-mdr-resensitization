@@ -1,0 +1,5 @@
+gene,High_priority_recommended,Moderate_priority_candidate,Not_recommended_structural_risk,Lower_priority_candidate,total_guides
+blaKPC,1.0,13.0,14.0,6.0,34.0
+blaNDM1,8.0,21.0,17.0,0.0,46.0
+mcr1,1.0,15.0,24.0,2.0,42.0
+mecA,1.0,2.0,20.0,0.0,23.0

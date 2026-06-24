@@ -1,0 +1,5 @@
+gene,top_spacer,fotr_v2_priority_score,pam,rna_accessibility_class,target_region,fotr_v2_recommendation_status,recommended_for_final_table
+blaKPC,TTGTCATCCTTGTTAGGCGG,92.85,CGG,Accessible,early_coding_region,High_priority_recommended,True
+blaNDM1,ATTGCCCAATATTATGCACC,92.61,CGG,Accessible,early_coding_region,High_priority_recommended,True
+mcr1,ACCATCCAGTACCAGAAGAA,96.61,CGG,Accessible,early_coding_region,High_priority_recommended,True
+mecA,ACTGAACGTCCGATAAAGGT,90.0,TGG,Accessible,early_coding_region,High_priority_recommended,True
