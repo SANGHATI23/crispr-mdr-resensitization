@@ -1,0 +1,15 @@
+Prospective Unseen AMR Gene Panel Summary
+=========================================
+
+Output table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/unseen_genes/unseen_amr_gene_panel.csv
+Total unseen genes: 5
+
+Genes included:
+- vanA: vancomycin resistance | priority=High | context=mobile_element_or_gene_cluster
+- tetM: tetracycline resistance | priority=Moderate | context=mobile_element_or_conjugative_element
+- ermB: macrolide resistance | priority=Moderate | context=mobile_element_or_resistance_gene_cluster
+- aac6Ib: aminoglycoside resistance | priority=High | context=plasmid_or_integron
+- qnrS: fluoroquinolone resistance | priority=Moderate | context=plasmid
+
+Interpretation:
+This panel defines prospective AMR targets not used in the original four-gene FOTR-CRISPR core. It is intended for journal-extension generalizability testing before guide generation, external-genome screening, and multiplex guide-set design.
