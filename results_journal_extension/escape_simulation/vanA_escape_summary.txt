@@ -3,12 +3,17 @@ vanA Single-Mutation Escape Simulation Summary
 
 Total vanA guides analyzed: 102
 Total single-mutant target sequences simulated: 6120
-High escape-resilience guides: 0
+
+Relative escape-resilience distribution:
+- High_escape_resilience: 49
+- Moderate_escape_resilience: 18
+- Lower_escape_resilience: 35
 
 Top escape-resilient guide:
 - Spacer: CATGGCAAGTCAGGTGAAGA
 - PAM: TGG
-- Escape resilience score: 48.5
-- Escape resilience class: Low_escape_resilience
+- Escape resilience score: 44.17
+- Escape resilience percentile: 76.47
+- Escape resilience class: High_escape_resilience
 - First-pass unseen-gene score: 100.0
 - Recommendation v1: High_priority_unseen_candidate
