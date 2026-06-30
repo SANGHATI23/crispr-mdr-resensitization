@@ -1,0 +1,6 @@
+database_refined_signal,supporting_columns_used,hit_rows_with_signal,total_hit_rows,fraction_of_hits
+AMR_or_resistance_signal,is_amr_keyword; db_amr_confirmed,524,1997,0.2624
+Virulence_signal,is_virulence_keyword; db_virulence_confirmed,92,1997,0.0461
+Essential_like_signal,is_essential_keyword; db_essential_confirmed,180,1997,0.0901
+Mobile_or_plasmid_signal,is_amr_keyword; is_virulence_keyword; is_essential_keyword; is_mobile_keyword; is_low_mismatch_hit; is_high_interest_functional_hit; db_mobile_confirmed,1108,1997,0.5548
+High_confidence_functional_signal,db_refined_high_confidence_functional_hit,1218,1997,0.6099

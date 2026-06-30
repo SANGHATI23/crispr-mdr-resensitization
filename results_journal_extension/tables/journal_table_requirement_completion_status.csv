@@ -1,0 +1,7 @@
+requirement,analysis_layer,journal_status,main_evidence,manuscript_claim
+Requirement 1,Expanded Cas-OFFinder genome-wide off-target hit table,Complete computationally,"36-accession expanded panel; 1,997 parsed off-target hits; 20/20 guides audited",Real candidate off-target sites were generated and mapped to selected guides.
+Requirement 2,Functional annotation of off-target hits,Complete computationally,"1,997/1,997 hits annotated using matched GFF features and database-refined dictionaries",Candidate off-targets were assigned genomic and functional context.
+Requirement 3,"Mobile-context, plasmid, SCCmec, integron, IS, transposon mapping",Complete computationally,+/-10 kb neighborhood mapping plus direct evidence layers,Mobile-genetic context was integrated into off-target prioritization.
+Requirement 4,Off-target conservation across strain genomes,Complete computationally,Guide-level and site-level recurrence across 36 accessions,Recurring off-target burden was quantified across the expanded genome panel.
+MIC planning,MIC-resensitization validation planning,Planning complete; wet lab not performed,Candidate/control/fold-change templates created,The final guide set was translated into a validation-ready MIC planning framework.
+Wet-lab MIC validation,Experimental MIC testing,Not done,"No experimental MIC values, growth curves, cleavage assays, or plasmid-curing data available",No wet-lab resensitization claim is made.
