@@ -1,0 +1,43 @@
+Functional Off-Target Risk Modeling Summary
+==========================================
+
+Total guides analyzed: 145
+Unique genes: 4
+Unique spacers: 105
+CRISOT available rows: 145
+
+Annotation-derived functional severity distribution:
+- low: 49
+- moderate: 48
+- high: 48
+
+High functional off-target risk label distribution:
+- not high risk: 97
+- high risk: 48
+
+Model performance:
+- no_features / majority_baseline_manual: balanced accuracy=0.500 +/- 0.000, macro-F1=0.401 +/- 0.000, ROC-AUC=0.500 +/- 0.000
+- sequence_and_annotation_numeric_baseline / logistic_regression_probe: balanced accuracy=0.959 +/- 0.035, macro-F1=0.961 +/- 0.035, ROC-AUC=0.993 +/- 0.008
+- sequence_and_annotation_numeric_baseline / ridge_classifier_probe: balanced accuracy=0.943 +/- 0.035, macro-F1=0.946 +/- 0.039, ROC-AUC=0.982 +/- 0.018
+- dnabert_embedding_only / logistic_regression_probe: balanced accuracy=0.828 +/- 0.072, macro-F1=0.820 +/- 0.059, ROC-AUC=0.911 +/- 0.047
+- dnabert_embedding_only / ridge_classifier_probe: balanced accuracy=0.824 +/- 0.060, macro-F1=0.810 +/- 0.046, ROC-AUC=0.899 +/- 0.053
+- dnabert_plus_annotation_hybrid / logistic_regression_probe: balanced accuracy=0.933 +/- 0.035, macro-F1=0.930 +/- 0.028, ROC-AUC=0.960 +/- 0.040
+- dnabert_plus_annotation_hybrid / ridge_classifier_probe: balanced accuracy=0.933 +/- 0.044, macro-F1=0.938 +/- 0.045, ROC-AUC=0.964 +/- 0.034
+
+Top 10 risk-aware guide candidates:
+- blaNDM1 | AATGGTTCGGTATGCGGGCG | base_score=93.600 | predicted_risk=0.000 | risk_aware_score=1.000
+- blaNDM1 | AATGGTTCGGTATGCGGGCG | base_score=93.600 | predicted_risk=0.001 | risk_aware_score=1.000
+- blaNDM1 | ACGCCCAATGGTTCGGTATG | base_score=92.800 | predicted_risk=0.000 | risk_aware_score=0.976
+- blaNDM1 | ACGCCCAATGGTTCGGTATG | base_score=92.800 | predicted_risk=0.000 | risk_aware_score=0.976
+- blaKPC | GCCTTACTGCCCGAAGGCGG | base_score=92.800 | predicted_risk=0.000 | risk_aware_score=0.976
+- blaNDM1 | CCATTGGGCGTTGGTCACGG | base_score=92.800 | predicted_risk=0.001 | risk_aware_score=0.975
+- blaKPC | AGCAGCAGCAACAACGGCGG | base_score=92.800 | predicted_risk=0.001 | risk_aware_score=0.975
+- blaNDM1 | CCCGCTCAGCATCAATGCAG | base_score=92.800 | predicted_risk=0.001 | risk_aware_score=0.975
+- blaNDM1 | CCCGCTCAGCATCAATGCAG | base_score=92.800 | predicted_risk=0.001 | risk_aware_score=0.975
+- blaNDM1 | GATCGCCAGCATCAATGCAG | base_score=92.800 | predicted_risk=0.001 | risk_aware_score=0.975
+
+Interpretation for MLCB paper:
+This analysis adds a functional off-target consequence layer to FOTR-CRISPR. The labels are annotation-derived weak labels, not experimental measurements. The ML contribution is the use of frozen DNABERT-2 representations, alone and in combination with biological annotation features, to estimate functional risk and re-rank AMR guide candidates under safety-aware constraints.
+
+Safe wording:
+Use: 'annotation-derived functional severity', 'weakly supervised risk model', 'foundation-model-augmented risk-aware ranking'. Avoid: 'experimentally validated off-target prediction' or 'therapeutic safety proven'.

@@ -1,0 +1,26 @@
+Starting MLCB dataset preparation...
+Project root: /Users/sanghati/Documents/crispr-mdr-resensitization
+Searching candidate input files...
+FOUND: results/final_comparison_table.csv
+FOUND: results/cross_model_comparison.csv
+FOUND: results_case_study/meca_case_study_all_guides.csv
+FOUND: final_tables/table3_top_fotr_v2_guides_by_gene.csv
+FOUND: results_external/crisot/merged/crisot_guide_level_summary.csv
+FOUND: results_case_study/meca_case_study_top_candidates.csv
+
+Selected input file: results/final_comparison_table.csv
+Loaded input shape: (145, 12)
+Normalized columns: ['gene', 'position', 'guide_sequence', 'rs3_score', 'cfd_score', 'conservation', 'final_score', 'rank_rs3', 'rank_cfd', 'rank_final', 'mit_score', 'crisot_score']
+No PAM column found. mlcb_pam set to NNN placeholder.
+No GC column found. Calculated GC content from spacer.
+No target-region column found. mlcb_target_region_bin set to unknown.
+No RNA accessibility column found. mlcb_rna_accessibility_class set to unknown.
+No escape-risk column found. mlcb_escape_risk_class set to unknown.
+Using score column: final_score
+No recommendation column found. mlcb_original_recommendation set to unknown.
+Rows before sequence cleaning: 145
+Rows after sequence cleaning:  145
+
+Wrote dataset: results_mlcb/tables/mlcb_guide_dataset.csv
+Wrote summary: results_mlcb/tables/mlcb_guide_dataset_summary.csv
+Final output shape: (145, 21)
