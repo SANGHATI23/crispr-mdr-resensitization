@@ -1,0 +1,5 @@
+target_gene,guides,mean_of_mean_accession_burden,max_mean_accession_burden,mean_fraction_accessions_nonzero,max_fraction_accessions_nonzero
+blaKPC,4,8.888875,19.9722,0.4514,0.9444
+blaNDM1,5,1.2999800000000001,3.3333,0.15556,0.3889
+mcr1,5,34.27224,105.6111,0.55558,0.9722
+mecA,5,31.816660000000002,135.4444,0.58888,1.0
