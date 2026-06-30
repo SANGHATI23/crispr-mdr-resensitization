@@ -1,0 +1,5 @@
+target_gene,rgi_hit_rows,unique_guides_with_rgi_hits,unique_accessions_with_rgi_hits,unique_card_hits
+blaKPC,6,2,6,2
+blaNDM1,7,1,4,1
+mcr1,105,2,10,11
+mecA,78,1,20,20

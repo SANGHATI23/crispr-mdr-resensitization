@@ -1,0 +1,7 @@
+target_gene,guide_id,rgi_hit_rows,unique_accessions_with_rgi_hits,unique_card_hits
+blaKPC,blaKPC_riskaware_top2,3,3,1
+blaKPC,blaKPC_riskaware_top4,3,3,1
+blaNDM1,blaNDM1_riskaware_top4,7,4,1
+mcr1,mcr1_riskaware_top4,58,10,7
+mcr1,mcr1_riskaware_top5,47,10,5
+mecA,mecA_riskaware_top1,78,20,20
