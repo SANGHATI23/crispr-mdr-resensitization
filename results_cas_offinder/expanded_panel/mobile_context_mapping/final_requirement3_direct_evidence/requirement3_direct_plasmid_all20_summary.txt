@@ -1,0 +1,26 @@
+Requirement 3 Direct Plasmid Evidence All-20 Summary
+===================================================
+
+Input combined all-20 table: results_cas_offinder/expanded_panel/mobile_context_mapping/final_requirement3_combined/requirement3_combined_requirement2_requirement3_final_guide_table_ALL20.csv
+Input direct plasmid guide table: results_cas_offinder/expanded_panel/mobile_context_mapping/direct_plasmid_mapping/requirement3_direct_plasmid_guide_level_summary.csv
+Output all-20 table: results_cas_offinder/expanded_panel/mobile_context_mapping/final_requirement3_direct_evidence/requirement3_all20_with_direct_plasmid_evidence.csv
+
+Final guide rows: 20
+Unique guides: 20
+Zero-hit guides retained: 1
+
+Direct plasmid evidence strength counts:
+- No_direct_plasmid_evidence: 12
+- Low_direct_plasmid_evidence_single_hit: 4
+- Strong_direct_plasmid_evidence: 2
+- Moderate_direct_plasmid_evidence: 2
+
+Guides with direct plasmid-contig evidence:
+- blaKPC | blaKPC_riskaware_top2 | plasmid_hits=1 | total_hits=92 | fraction=0.011 | strength=Low_direct_plasmid_evidence_single_hit
+- blaNDM1 | blaNDM1_riskaware_top3 | plasmid_hits=1 | total_hits=2 | fraction=0.500 | strength=Strong_direct_plasmid_evidence
+- blaNDM1 | blaNDM1_riskaware_top4 | plasmid_hits=8 | total_hits=8 | fraction=1.000 | strength=Strong_direct_plasmid_evidence
+- mcr1 | mcr1_riskaware_top3 | plasmid_hits=1 | total_hits=31 | fraction=0.032 | strength=Low_direct_plasmid_evidence_single_hit
+- mcr1 | mcr1_riskaware_top4 | plasmid_hits=10 | total_hits=276 | fraction=0.036 | strength=Moderate_direct_plasmid_evidence
+- mcr1 | mcr1_riskaware_top5 | plasmid_hits=2 | total_hits=533 | fraction=0.004 | strength=Moderate_direct_plasmid_evidence
+- mecA | mecA_riskaware_top4 | plasmid_hits=1 | total_hits=14 | fraction=0.071 | strength=Low_direct_plasmid_evidence_single_hit
+- mecA | mecA_riskaware_top1 | plasmid_hits=1 | total_hits=659 | fraction=0.002 | strength=Low_direct_plasmid_evidence_single_hit

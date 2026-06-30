@@ -1,0 +1,21 @@
+target_gene,guide_id,total_offtarget_hits,coding_cds_hits,noncoding_or_intergenic_hits,amr_hits,virulence_hits,essential_like_hits,mobile_or_plasmid_hits,low_mismatch_hits,high_interest_hits,total_functional_burden,mean_functional_burden,functional_annotation_recommendation,recommendation_order,recommendation_clean,requirement2_rank_within_gene,requirement2_decision
+blaKPC,blaKPC_riskaware_top5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Strong_candidate_zero_detected_offtarget_burden,0.0,Strong zero-hit candidate,1,PRIORITIZE_OR_KEEP_AS_LOW_OFFTARGET_CANDIDATE
+blaKPC,blaKPC_riskaware_top3,2.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,9.0,4.5,Acceptable_candidate_moderate_functional_offtarget_burden,2.0,Acceptable moderate-burden candidate,2,KEEP_AS_BACKUP
+blaKPC,blaKPC_riskaware_top1,10.0,10.0,0.0,0.0,0.0,10.0,0.0,0.0,10.0,70.0,7.0,Avoid_or_deprioritize_high_functional_offtarget_burden,4.0,Avoid/deprioritize high-burden candidate,3,DEPRIORITIZE
+blaKPC,blaKPC_riskaware_top2,92.0,92.0,0.0,3.0,9.0,1.0,1.0,0.0,14.0,352.0,3.8260869565217392,Avoid_or_deprioritize_high_functional_offtarget_burden,4.0,Avoid/deprioritize high-burden candidate,4,DEPRIORITIZE
+blaKPC,blaKPC_riskaware_top4,98.0,98.0,0.0,0.0,24.0,12.0,0.0,0.0,36.0,481.0,4.908163265306122,Avoid_or_deprioritize_high_functional_offtarget_burden,4.0,Avoid/deprioritize high-burden candidate,5,DEPRIORITIZE
+blaNDM1,blaNDM1_riskaware_top1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,3.0,Strong_candidate_low_functional_offtarget_burden,1.0,Strong low-burden candidate,1,PRIORITIZE
+blaNDM1,blaNDM1_riskaware_top3,2.0,2.0,0.0,0.0,0.0,0.0,2.0,0.0,2.0,12.0,6.0,Acceptable_candidate_moderate_functional_offtarget_burden,2.0,Acceptable moderate-burden candidate,2,KEEP_AS_BACKUP
+blaNDM1,blaNDM1_riskaware_top2,14.0,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,35.0,2.5,Acceptable_candidate_moderate_functional_offtarget_burden,2.0,Acceptable moderate-burden candidate,3,KEEP_AS_BACKUP
+blaNDM1,blaNDM1_riskaware_top5,24.0,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,62.0,2.583333333333333,Acceptable_candidate_moderate_functional_offtarget_burden,2.0,Acceptable moderate-burden candidate,4,KEEP_AS_BACKUP
+blaNDM1,blaNDM1_riskaware_top4,8.0,8.0,0.0,8.0,0.0,0.0,0.0,8.0,8.0,104.0,13.0,Avoid_or_deprioritize_high_functional_offtarget_burden,4.0,Avoid/deprioritize high-burden candidate,5,DEPRIORITIZE
+mcr1,mcr1_riskaware_top1,15.0,15.0,0.0,0.0,0.0,2.0,3.0,0.0,5.0,62.0,4.133333333333334,Caution_candidate_elevated_functional_offtarget_burden,3.0,Caution elevated-burden candidate,1,USE_WITH_CAUTION
+mcr1,mcr1_riskaware_top3,31.0,31.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,95.0,3.064516129032258,Caution_candidate_elevated_functional_offtarget_burden,3.0,Caution elevated-burden candidate,2,USE_WITH_CAUTION
+mcr1,mcr1_riskaware_top2,37.0,36.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,120.0,3.2432432432432434,Caution_candidate_elevated_functional_offtarget_burden,3.0,Caution elevated-burden candidate,3,USE_WITH_CAUTION
+mcr1,mcr1_riskaware_top4,276.0,276.0,0.0,22.0,0.0,30.0,0.0,0.0,52.0,1080.0,3.9130434782608696,Avoid_or_deprioritize_high_functional_offtarget_burden,4.0,Avoid/deprioritize high-burden candidate,4,DEPRIORITIZE
+mcr1,mcr1_riskaware_top5,533.0,533.0,0.0,15.0,11.0,23.0,8.0,20.0,77.0,1969.0,3.694183864915572,Avoid_or_deprioritize_high_functional_offtarget_burden,4.0,Avoid/deprioritize high-burden candidate,5,DEPRIORITIZE
+mecA,mecA_riskaware_top2,12.0,12.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,36.0,3.0,Acceptable_candidate_moderate_functional_offtarget_burden,2.0,Acceptable moderate-burden candidate,1,KEEP_AS_BACKUP
+mecA,mecA_riskaware_top4,14.0,14.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,46.0,3.2857142857142856,Acceptable_candidate_moderate_functional_offtarget_burden,2.0,Acceptable moderate-burden candidate,2,KEEP_AS_BACKUP
+mecA,mecA_riskaware_top5,37.0,25.0,0.0,0.0,1.0,4.0,0.0,0.0,5.0,120.0,3.2432432432432434,Caution_candidate_elevated_functional_offtarget_burden,3.0,Caution elevated-burden candidate,3,USE_WITH_CAUTION
+mecA,mecA_riskaware_top3,132.0,132.0,0.0,16.0,6.0,1.0,0.0,0.0,23.0,542.0,4.106060606060606,Avoid_or_deprioritize_high_functional_offtarget_burden,4.0,Avoid/deprioritize high-burden candidate,4,DEPRIORITIZE
+mecA,mecA_riskaware_top1,659.0,658.0,0.0,13.0,21.0,20.0,1.0,10.0,65.0,2331.0,3.5371775417298936,Avoid_or_deprioritize_high_functional_offtarget_burden,4.0,Avoid/deprioritize high-burden candidate,5,DEPRIORITIZE

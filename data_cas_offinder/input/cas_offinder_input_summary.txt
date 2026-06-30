@@ -1,0 +1,34 @@
+Cas-OFFinder Input Preparation Summary
+=====================================
+
+Input guide file: /Users/sanghati/Documents/crispr-mdr-resensitization/results_final_selection/top5_per_gene_risk_aware_guides.csv
+Total guides prepared: 20
+
+blaKPC: 5 guides
+  blaKPC_riskaware_top1: GCCTTACTGCCCGAAGGCGG + NGG | rank=1 | mismatches=4
+  blaKPC_riskaware_top2: AGCAGCAGCAACAACGGCGG + NGG | rank=2 | mismatches=4
+  blaKPC_riskaware_top3: AACAAGGATGACAAGCACAG + NGG | rank=3 | mismatches=4
+  blaKPC_riskaware_top4: AGCAGCAGCAGCAACAACGG + NGG | rank=4 | mismatches=4
+  blaKPC_riskaware_top5: CGGCTCCATCGGTGTGTACG + NGG | rank=5 | mismatches=4
+
+blaNDM1: 5 guides
+  blaNDM1_riskaware_top1: AATGGTTCGGTATGCGGGCG + NGG | rank=1 | mismatches=4
+  blaNDM1_riskaware_top2: ACGCCCAATGGTTCGGTATG + NGG | rank=2 | mismatches=4
+  blaNDM1_riskaware_top3: CCATTGGGCGTTGGTCACGG + NGG | rank=3 | mismatches=4
+  blaNDM1_riskaware_top4: CCCGCTCAGCATCAATGCAG + NGG | rank=4 | mismatches=4
+  blaNDM1_riskaware_top5: GATCGCCAGCATCAATGCAG + NGG | rank=5 | mismatches=4
+
+mcr1: 5 guides
+  mcr1_riskaware_top1: GGCTGTGCCGTGTTCGGTGC + NGG | rank=1 | mismatches=4
+  mcr1_riskaware_top2: GCCGTTCTTCTGGTACTGGA + NGG | rank=2 | mismatches=4
+  mcr1_riskaware_top3: CGACGCCGTTCTTCTGGTAC + NGG | rank=3 | mismatches=4
+  mcr1_riskaware_top4: CTGCTGCTGCTGGCTGCTGC + NGG | rank=4 | mismatches=4
+  mcr1_riskaware_top5: GCTGCTGCTGGCTATGCTGC + NGG | rank=5 | mismatches=4
+
+mecA: 5 guides
+  mecA_riskaware_top1: GCTGCTGCTGTTGCTGATGC + NGG | rank=1 | mismatches=4
+  mecA_riskaware_top2: ACTGAACGTCCGATAAAGGT + NGG | rank=2 | mismatches=4
+  mecA_riskaware_top3: AACGCTGCTGCTATCGGTGC + NGG | rank=3 | mismatches=4
+  mecA_riskaware_top4: ATGGTTAACGCTGCTGCTAT + NGG | rank=4 | mismatches=4
+  mecA_riskaware_top5: TATGACTGAACGTCCGATAA + NGG | rank=5 | mismatches=4
+

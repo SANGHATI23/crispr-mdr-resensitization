@@ -1,0 +1,8 @@
+AGCAGCAGCAGCAACAACGGNNN	NZ_CP007539.2 Staphylococcus aureus strain FDAARGOS_5 chromosome, complete genome	175429	cGCAGCAaCAGCAACtAtGGGGG	-	4
+GCTGCTGCTGGCTATGCTGCNNN	NZ_CP007539.2 Staphylococcus aureus strain FDAARGOS_5 chromosome, complete genome	162897	GgTGCaGCTGGCTgTGCTGtAGG	-	4
+GCTGCTGCTGGCTATGCTGCNNN	NZ_CP007539.2 Staphylococcus aureus strain FDAARGOS_5 chromosome, complete genome	163164	GCTGCTGgTtGCgcTGCTGCTGG	-	4
+AACGCTGCTGCTATCGGTGCNNN	NZ_CP007539.2 Staphylococcus aureus strain FDAARGOS_5 chromosome, complete genome	823313	AAaGCaGCaGCTATtGGTGCTGG	+	4
+AACGCTGCTGCTATCGGTGCNNN	NZ_CP007539.2 Staphylococcus aureus strain FDAARGOS_5 chromosome, complete genome	823493	AAaGgTGCaGCgATCGGTGCTGG	+	4
+AACGCTGCTGCTATCGGTGCNNN	NZ_CP007539.2 Staphylococcus aureus strain FDAARGOS_5 chromosome, complete genome	2127085	AtCGgTGCTGCTATtGGTGCAGG	-	3
+TATGACTGAACGTCCGATAANNN	NZ_CP007539.2 Staphylococcus aureus strain FDAARGOS_5 chromosome, complete genome	1167127	TATGtCTGAACGTatcATAATGG	-	4
+TATGACTGAACGTCCGATAANNN	NZ_CP007539.2 Staphylococcus aureus strain FDAARGOS_5 chromosome, complete genome	1908911	TATaAagGAACGTCtGATAAAGG	-	4

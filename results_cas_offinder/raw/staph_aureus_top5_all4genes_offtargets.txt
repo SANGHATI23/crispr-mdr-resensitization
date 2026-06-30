@@ -1,0 +1,8 @@
+AGCAGCAGCAGCAACAACGGNNN	NC_007795.1 Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome	2219800	cGCAGCAaCAGCAACtAtGGGGG	+	4
+GCTGCTGCTGGCTATGCTGCNNN	NC_007795.1 Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome	2232065	GCTGCTGgTtGCgcTGCTGCTGG	+	4
+GCTGCTGCTGGCTATGCTGCNNN	NC_007795.1 Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome	2232332	GgTGCaGCTGGCTgTGCTGtAGG	+	4
+AACGCTGCTGCTATCGGTGCNNN	NC_007795.1 Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome	223498	AtCGgTGCTGCTATtGGTGCAGG	+	3
+AACGCTGCTGCTATCGGTGCNNN	NC_007795.1 Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome	1454336	AAaGgTGCaGCgATCGGTGCTGG	-	4
+AACGCTGCTGCTATCGGTGCNNN	NC_007795.1 Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome	1454516	AAaGCaGCaGCTATtGGTGCTGG	-	4
+TATGACTGAACGTCCGATAANNN	NC_007795.1 Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome	397899	TATaAagGAACGTCtGATAAAGG	+	4
+TATGACTGAACGTCCGATAANNN	NC_007795.1 Staphylococcus aureus subsp. aureus NCTC 8325 chromosome, complete genome	1113600	TATGtCTGAACGTatcATAATGG	+	4

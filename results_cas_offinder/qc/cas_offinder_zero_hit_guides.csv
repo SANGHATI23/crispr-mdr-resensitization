@@ -1,0 +1,5 @@
+guide_id,gene,spacer,original_rank,total_hits,genomes_with_hits,minimum_mismatches,maximum_mismatches,hits_mismatch_1,hits_mismatch_2,hits_mismatch_3,hits_mismatch_4,cas_offinder_status,explicitly_accounted_for
+blaKPC_riskaware_top3,blaKPC,AACAAGGATGACAAGCACAG,3,0,0,,,0,0,0,0,Zero_hits_detected_within_configured_search,True
+blaKPC_riskaware_top5,blaKPC,CGGCTCCATCGGTGTGTACG,5,0,0,,,0,0,0,0,Zero_hits_detected_within_configured_search,True
+blaNDM1_riskaware_top3,blaNDM1,CCATTGGGCGTTGGTCACGG,3,0,0,,,0,0,0,0,Zero_hits_detected_within_configured_search,True
+blaNDM1_riskaware_top4,blaNDM1,CCCGCTCAGCATCAATGCAG,4,0,0,,,0,0,0,0,Zero_hits_detected_within_configured_search,True

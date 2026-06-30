@@ -1,0 +1,44 @@
+Expanded Cas-OFFinder Parsed Summary
+===================================
+Raw files found: 36
+Expected raw files from manifest: 36
+Total raw lines parsed: 1997
+PASS parsed rows: 1997
+Failed parsed rows: 0
+Unique accessions with hits: 36
+Unique mapped guides: 19
+Unmapped rows: 0
+
+Hit count by target gene:
+target_gene
+mcr1       892
+mecA       854
+blaKPC     202
+blaNDM1     49
+Name: count, dtype: int64
+
+Hit count by mismatch count:
+mismatch_count
+0       8
+1      10
+2      20
+3     170
+4    1789
+Name: count, dtype: int64
+
+Top 10 guides by expanded hit count:
+guide_id
+mecA_riskaware_top1       659
+mcr1_riskaware_top5       533
+mcr1_riskaware_top4       276
+mecA_riskaware_top3       132
+blaKPC_riskaware_top4      98
+blaKPC_riskaware_top2      92
+mecA_riskaware_top5        37
+mcr1_riskaware_top2        37
+mcr1_riskaware_top3        31
+blaNDM1_riskaware_top5     24
+Name: count, dtype: int64
+
+Output hit table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/parsed/expanded_casoffinder_all_genome_offtarget_hits_parsed.csv
+QC status: PASS

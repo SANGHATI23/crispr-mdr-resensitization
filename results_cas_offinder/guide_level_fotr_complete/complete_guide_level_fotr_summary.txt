@@ -1,0 +1,55 @@
+Complete Guide-Level Cas-OFFinder/FOTR Summary
+============================================================================
+
+Input files
+----------------------------------------------------------------------------
+Completeness audit: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/qc/cas_offinder_guide_completeness_audit.csv
+Existing FOTR summary: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/guide_level_fotr/guide_level_functional_offtarget_risk_summary.csv
+Selected guides: /Users/sanghati/Documents/crispr-mdr-resensitization/results_final_selection/top5_per_gene_risk_aware_guides.csv
+
+Completion results
+----------------------------------------------------------------------------
+Total guide rows: 20
+Unique guide IDs: 20
+Observed genes: ['blaKPC', 'blaNDM1', 'mcr1', 'mecA']
+Zero-hit guides added: 4
+Guides with detected hits: 16
+
+Guide count per gene
+----------------------------------------------------------------------------
+mlcb_gene
+blaKPC     5
+blaNDM1    5
+mcr1       5
+mecA       5
+
+Zero-hit guides added
+----------------------------------------------------------------------------
+blaKPC_riskaware_top3	blaKPC	AACAAGGATGACAAGCACAG
+blaKPC_riskaware_top5	blaKPC	CGGCTCCATCGGTGTGTACG
+blaNDM1_riskaware_top3	blaNDM1	CCATTGGGCGTTGGTCACGG
+blaNDM1_riskaware_top4	blaNDM1	CCCGCTCAGCATCAATGCAG
+
+Top two complete-panel FOTR guides per gene
+----------------------------------------------------------------------------
+blaKPC	rank=1	blaKPC_riskaware_top3	hits=0	burden=0.0
+blaKPC	rank=2	blaKPC_riskaware_top5	hits=0	burden=0.0
+blaNDM1	rank=1	blaNDM1_riskaware_top3	hits=0	burden=0.0
+blaNDM1	rank=2	blaNDM1_riskaware_top4	hits=0	burden=0.0
+mcr1	rank=1	mcr1_riskaware_top1	hits=1	burden=2.0
+mcr1	rank=2	mcr1_riskaware_top3	hits=4	burden=8.0
+mecA	rank=1	mecA_riskaware_top2	hits=1	burden=2.0
+mecA	rank=2	mecA_riskaware_top4	hits=1	burden=2.0
+
+Validation
+----------------------------------------------------------------------------
+Expected total guides: 20
+Observed total guides: 20
+Expected guides per gene: 5
+All genes contain five guides: True
+Duplicate guide IDs: 0
+Status: PASS
+
+Scientific interpretation
+----------------------------------------------------------------------------
+The four added guides had no candidate off-target hits in the current three-reference-genome panel under the configured SpCas9 NGG search with a maximum of four mismatches. They must not be described as universally off-target-free. Their zero-hit status must be re-evaluated after expanding the analysis to clinical strains, plasmids, SCCmec, integrons, resistance islands, and other mobile genetic elements.

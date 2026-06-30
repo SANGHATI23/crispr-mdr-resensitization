@@ -1,0 +1,22 @@
+Expanded Panel Accession Download List QC
+========================================
+Input table: data_cas_offinder/expanded_panel/metadata/expanded_panel_accession_candidates.csv
+Input rows: 52
+Rows eligible for download: 52
+Unique accessions written: 36
+
+Target gene counts:
+target_gene
+mecA       16
+blaNDM1    16
+blaKPC     10
+mcr1       10
+Name: count, dtype: int64
+
+Panel category counts:
+panel_category
+complete_chromosome    52
+Name: count, dtype: int64
+
+Output accession list:
+data_cas_offinder/expanded_panel/metadata/expanded_panel_accessions_to_download.txt

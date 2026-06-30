@@ -1,0 +1,36 @@
+Top Risk-Aware Guide Selection Summary
+=====================================
+
+Input ranked table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_mlcb/tables/functional_offtarget_risk_ranked_guides.csv
+Original filtered rows for 4 genes: 145
+Deduplicated gene-spacer rows: 105
+Top guides selected per gene: 5
+
+blaKPC: 5 selected guides
+  Rank 1: GCCTTACTGCCCGAAGGCGG | penalized_score=0.975556 | predicted_risk=0.000214
+  Rank 2: AGCAGCAGCAACAACGGCGG | penalized_score=0.975455 | predicted_risk=0.000619
+  Rank 3: AACAAGGATGACAAGCACAG | penalized_score=0.974220 | predicted_risk=0.005557
+  Rank 4: AGCAGCAGCAGCAACAACGG | penalized_score=0.974036 | predicted_risk=0.006296
+  Rank 5: CGGCTCCATCGGTGTGTACG | penalized_score=0.972048 | predicted_risk=0.014246
+
+blaNDM1: 5 selected guides
+  Rank 1: AATGGTTCGGTATGCGGGCG | penalized_score=0.999889 | predicted_risk=0.000444
+  Rank 2: ACGCCCAATGGTTCGGTATG | penalized_score=0.975607 | predicted_risk=0.000013
+  Rank 3: CCATTGGGCGTTGGTCACGG | penalized_score=0.975478 | predicted_risk=0.000528
+  Rank 4: CCCGCTCAGCATCAATGCAG | penalized_score=0.975440 | predicted_risk=0.000679
+  Rank 5: GATCGCCAGCATCAATGCAG | penalized_score=0.975254 | predicted_risk=0.001421
+
+mcr1: 5 selected guides
+  Rank 1: GGCTGTGCCGTGTTCGGTGC | penalized_score=0.951163 | predicted_risk=0.000228
+  Rank 2: GCCGTTCTTCTGGTACTGGA | penalized_score=0.951039 | predicted_risk=0.000720
+  Rank 3: CGACGCCGTTCTTCTGGTAC | penalized_score=0.950954 | predicted_risk=0.001060
+  Rank 4: CTGCTGCTGCTGGCTGCTGC | penalized_score=0.950730 | predicted_risk=0.001957
+  Rank 5: GCTGCTGCTGGCTATGCTGC | penalized_score=0.949541 | predicted_risk=0.006714
+
+mecA: 5 selected guides
+  Rank 1: GCTGCTGCTGTTGCTGATGC | penalized_score=0.950625 | predicted_risk=0.002378
+  Rank 2: ACTGAACGTCCGATAAAGGT | penalized_score=0.944487 | predicted_risk=0.026932
+  Rank 3: AACGCTGCTGCTATCGGTGC | penalized_score=0.937797 | predicted_risk=0.053689
+  Rank 4: ATGGTTAACGCTGCTGCTAT | penalized_score=0.914741 | predicted_risk=0.048354
+  Rank 5: TATGACTGAACGTCCGATAA | penalized_score=0.902183 | predicted_risk=0.001026
+

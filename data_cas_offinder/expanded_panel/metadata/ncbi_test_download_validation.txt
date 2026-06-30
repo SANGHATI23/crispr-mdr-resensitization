@@ -1,0 +1,28 @@
+NCBI Test Download Validation
+========================================================================
+
+Assembly accession: GCA_000013465.1
+FASTA file: /Users/sanghati/Documents/crispr-mdr-resensitization/data_cas_offinder/expanded_panel/test_download/unzipped/ncbi_dataset/data/GCA_000013465.1/GCA_000013465.1_ASM1346v1_genomic.fna
+GFF file: /Users/sanghati/Documents/crispr-mdr-resensitization/data_cas_offinder/expanded_panel/test_download/unzipped/ncbi_dataset/data/GCA_000013465.1/genomic.gff
+
+FASTA statistics
+------------------------------------------------------------------------
+Number of FASTA records: 4
+Total sequence length: 2,917,469 bp
+FASTA IDs: ['CP000255.1', 'CP000256.1', 'CP000257.1', 'CP000258.1']
+
+GFF statistics
+------------------------------------------------------------------------
+Number of GFF sequence IDs: 4
+GFF sequence IDs: ['CP000255.1', 'CP000256.1', 'CP000257.1', 'CP000258.1']
+Feature counts: {'region': 4, 'gene': 2674, 'CDS': 2604, 'tRNA': 53, 'exon': 70, 'sequence_feature': 7, 'pseudogene': 18, 'rRNA': 16, 'transcript': 1}
+
+Compatibility checks
+------------------------------------------------------------------------
+GFF IDs absent from FASTA: []
+FASTA IDs without GFF features: []
+FASTA/GFF identifier compatibility: PASS
+
+Final status
+------------------------------------------------------------------------
+PASS

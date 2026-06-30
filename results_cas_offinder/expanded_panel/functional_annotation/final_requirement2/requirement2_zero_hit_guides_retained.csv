@@ -1,0 +1,2 @@
+target_gene,guide_id,total_offtarget_hits,coding_cds_hits,noncoding_or_intergenic_hits,amr_hits,virulence_hits,essential_like_hits,mobile_or_plasmid_hits,low_mismatch_hits,high_interest_hits,total_functional_burden,mean_functional_burden,functional_annotation_recommendation,recommendation_order,recommendation_clean,requirement2_rank_within_gene,requirement2_decision
+blaKPC,blaKPC_riskaware_top5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Strong_candidate_zero_detected_offtarget_burden,0.0,Strong zero-hit candidate,1,PRIORITIZE_OR_KEEP_AS_LOW_OFFTARGET_CANDIDATE

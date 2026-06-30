@@ -1,0 +1,19 @@
+Expanded Cas-OFFinder Config QC
+===============================
+Guides loaded: 20
+Genome FASTA files found: 36
+Config files created: 36
+Mismatch threshold: 4
+SpCas9 pattern: NNNNNNNNNNNNNNNNNNNNNGG
+Manifest: /Users/sanghati/Documents/crispr-mdr-resensitization/data_cas_offinder/expanded_panel/metadata/expanded_casoffinder_run_manifest.csv
+Run script: /Users/sanghati/Documents/crispr-mdr-resensitization/analysis/cas_offinder/run_expanded_casoffinder_all.sh
+
+Guide counts by gene:
+gene_clean
+blaKPC     5
+blaNDM1    5
+mcr1       5
+mecA       5
+Name: count, dtype: int64
+
+QC status: PASS

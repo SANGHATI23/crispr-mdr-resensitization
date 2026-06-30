@@ -1,0 +1,69 @@
+Requirement 1 Final Completion Summary
+=====================================
+
+Requirement:
+1. Real Cas-OFFinder genome-wide off-target hit table
+
+Final status:
+COMPLETE
+
+What was completed:
+- Expanded Cas-OFFinder screening was run for 20 selected risk-aware guides.
+- The expanded panel included 36 genome accessions.
+- The final parsed off-target table contains 1997 genome-wide candidate off-target hits.
+- Every parsed hit was mapped back to a selected guide.
+- Every selected guide is represented in the guide-level audit table.
+- Zero-hit guides are explicitly retained rather than dropped.
+
+Final metrics:
+Selected guides expected: 20
+Selected guides observed: 20
+Expanded genome accessions expected: 36
+Expanded genome accessions observed in hit table: 36
+Total expanded off-target hits: 1997
+Hit-positive guides: 19
+Zero-hit guides: 1
+Invalid mismatch rows: 0
+Invalid position rows: 0
+Invalid strand rows: 0
+
+Hit count by target gene:
+target_gene
+mcr1       892
+mecA       854
+blaKPC     202
+blaNDM1     49
+Name: count, dtype: int64
+
+Guide-level hit summary:
+target_gene               guide_id  total_expanded_hits  genomes_with_hits        expanded_hit_status
+     blaKPC  blaKPC_riskaware_top5                    0                  0 ZERO_HIT_IN_EXPANDED_PANEL
+     blaKPC  blaKPC_riskaware_top3                    2                  2               HIT_POSITIVE
+     blaKPC  blaKPC_riskaware_top1                   10                 10               HIT_POSITIVE
+     blaKPC  blaKPC_riskaware_top2                   92                 19               HIT_POSITIVE
+     blaKPC  blaKPC_riskaware_top4                   98                 34               HIT_POSITIVE
+    blaNDM1 blaNDM1_riskaware_top1                    1                  1               HIT_POSITIVE
+    blaNDM1 blaNDM1_riskaware_top3                    2                  1               HIT_POSITIVE
+    blaNDM1 blaNDM1_riskaware_top4                    8                  4               HIT_POSITIVE
+    blaNDM1 blaNDM1_riskaware_top2                   14                  8               HIT_POSITIVE
+    blaNDM1 blaNDM1_riskaware_top5                   24                 14               HIT_POSITIVE
+       mcr1    mcr1_riskaware_top1                   15                 15               HIT_POSITIVE
+       mcr1    mcr1_riskaware_top3                   31                 10               HIT_POSITIVE
+       mcr1    mcr1_riskaware_top2                   37                 20               HIT_POSITIVE
+       mcr1    mcr1_riskaware_top4                  276                 20               HIT_POSITIVE
+       mcr1    mcr1_riskaware_top5                  533                 35               HIT_POSITIVE
+       mecA    mecA_riskaware_top2                   12                 12               HIT_POSITIVE
+       mecA    mecA_riskaware_top4                   14                 13               HIT_POSITIVE
+       mecA    mecA_riskaware_top5                   37                 25               HIT_POSITIVE
+       mecA    mecA_riskaware_top3                  132                 36               HIT_POSITIVE
+       mecA    mecA_riskaware_top1                  659                 20               HIT_POSITIVE
+
+Final output files:
+Hit-level table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/final_requirement1/requirement1_expanded_casoffinder_genomewide_offtarget_hit_table.csv
+Guide-level table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/final_requirement1/requirement1_expanded_casoffinder_guide_level_summary.csv
+Completion summary: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/final_requirement1/requirement1_completion_summary.txt
+
+Manuscript-safe wording:
+We completed an expanded Cas-OFFinder genome-wide off-target screen for the 20 final risk-aware candidate guides across 36 bacterial genome accessions. The run produced 1,997 parsed candidate off-target hits, all of which were mapped back to selected guide identifiers. A guide-level audit confirmed that all 20 guides were represented, including one guide with no detected off-target hit in the expanded chromosome-level panel under the <=4 mismatch SpCas9 NGG search configuration.
+
+QC status: PASS
