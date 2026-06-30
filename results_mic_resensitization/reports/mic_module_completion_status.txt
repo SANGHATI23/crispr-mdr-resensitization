@@ -1,0 +1,33 @@
+MIC Resensitization Module Completion Status
+============================================
+
+Overall status:
+MIC wet-lab validation has NOT been performed.
+
+Completed now:
+1. MIC candidate guide template created.
+2. MIC experimental design/control-condition template created.
+3. MIC fold-change input template created.
+4. MIC fold-change calculation script created and tested.
+5. MIC validation planning report created.
+6. Manuscript-safe wording created.
+
+Current interpretation:
+This module does not claim experimental resensitization. It provides a validation-ready planning framework for future MIC testing.
+
+Best computational candidates for future MIC testing:
+1. blaKPC_riskaware_top5
+2. blaNDM1_riskaware_top1
+
+Caution-only candidates:
+1. mcr1_riskaware_top1
+2. mcr1_riskaware_top3
+3. mecA_riskaware_top2
+4. mecA_riskaware_top4
+
+Final status wording:
+MIC-resensitization wet-lab validation remains pending. However, computational MIC validation planning is complete, including candidate selection, control design, antibiotic context, fold-change calculation templates, and manuscript-safe interpretation.
+
+Completion label:
+MIC wet-lab validation: 0%
+MIC computational planning: complete

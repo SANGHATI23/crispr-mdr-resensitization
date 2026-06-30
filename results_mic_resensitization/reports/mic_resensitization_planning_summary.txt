@@ -1,0 +1,23 @@
+MIC Resensitization Planning Summary
+=============================================
+
+Status: MIC resensitization has NOT been experimentally performed.
+Purpose: This module creates a computational planning table for future MIC validation.
+
+Input files:
+- /Users/sanghati/Documents/crispr-mdr-resensitization/data_mic_resensitization/templates/mic_candidate_guides_template.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/data_mic_resensitization/templates/mic_experimental_design_template.csv
+
+Output files:
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_mic_resensitization/tables/mic_planning_candidate_guides.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_mic_resensitization/tables/mic_priority_and_backup_candidates.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_mic_resensitization/tables/mic_resensitization_experimental_design_template.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_mic_resensitization/tables/mic_candidate_manuscript_safe_interpretation.csv
+
+Key interpretation:
+- blaKPC_riskaware_top5 is the cleanest computational MIC-planning candidate.
+- blaNDM1_riskaware_top1 remains a strong low-recurrence computational candidate.
+- mcr1 and mecA candidates should be described cautiously because conserved off-target concern remains.
+
+Manuscript-safe wording:
+MIC-resensitization has not yet been experimentally validated. The current analysis identifies computationally prioritized candidate guides and control conditions for future MIC testing.

@@ -1,0 +1,19 @@
+MIC Fold-Change Analysis Template
+
+Status:
+No experimental MIC values have been added yet.
+
+Purpose:
+This script is ready to calculate MIC fold-reduction after future wet-lab MIC measurements are available.
+
+Calculation:
+fold_reduction = baseline_MIC_no_CRISPR / post_CRISPR_MIC
+log2_fold_reduction = log2(fold_reduction)
+
+Interpretation rule:
+>=4-fold reduction: strong resensitization signal
+>=2-fold reduction: moderate resensitization signal
+<2-fold reduction: no clear resensitization signal
+
+Important:
+Blank MIC values mean experimental validation is still pending.

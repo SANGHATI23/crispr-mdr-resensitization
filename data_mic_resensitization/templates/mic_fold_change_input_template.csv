@@ -1,0 +1,13 @@
+target_gene,guide_id,antibiotic,replicate,baseline_MIC_no_CRISPR,post_CRISPR_MIC,fold_reduction,log2_fold_reduction,resensitization_call,notes
+blaKPC,blaKPC_riskaware_top5,carbapenem,rep1,,,,,Pending_experimental_validation,Future MIC value needed
+blaKPC,blaKPC_riskaware_top5,carbapenem,rep2,,,,,Pending_experimental_validation,Future MIC value needed
+blaKPC,blaKPC_riskaware_top5,carbapenem,rep3,,,,,Pending_experimental_validation,Future MIC value needed
+blaNDM1,blaNDM1_riskaware_top1,carbapenem,rep1,,,,,Pending_experimental_validation,Future MIC value needed
+blaNDM1,blaNDM1_riskaware_top1,carbapenem,rep2,,,,,Pending_experimental_validation,Future MIC value needed
+blaNDM1,blaNDM1_riskaware_top1,carbapenem,rep3,,,,,Pending_experimental_validation,Future MIC value needed
+mcr1,mcr1_riskaware_top1,colistin,rep1,,,,,Pending_caution_candidate,Use only after further safety filtering
+mcr1,mcr1_riskaware_top1,colistin,rep2,,,,,Pending_caution_candidate,Use only after further safety filtering
+mcr1,mcr1_riskaware_top1,colistin,rep3,,,,,Pending_caution_candidate,Use only after further safety filtering
+mecA,mecA_riskaware_top2,oxacillin_or_cefoxitin,rep1,,,,,Pending_caution_candidate,Use only after further safety filtering
+mecA,mecA_riskaware_top2,oxacillin_or_cefoxitin,rep2,,,,,Pending_caution_candidate,Use only after further safety filtering
+mecA,mecA_riskaware_top2,oxacillin_or_cefoxitin,rep3,,,,,Pending_caution_candidate,Use only after further safety filtering

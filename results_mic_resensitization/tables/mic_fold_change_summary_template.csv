@@ -1,0 +1,5 @@
+target_gene,guide_id,antibiotic,replicates,mean_baseline_MIC,mean_post_CRISPR_MIC,mean_fold_reduction,mean_log2_fold_reduction
+blaKPC,blaKPC_riskaware_top5,carbapenem,3,,,,
+blaNDM1,blaNDM1_riskaware_top1,carbapenem,3,,,,
+mcr1,mcr1_riskaware_top1,colistin,3,,,,
+mecA,mecA_riskaware_top2,oxacillin_or_cefoxitin,3,,,,
