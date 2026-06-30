@@ -1,0 +1,76 @@
+Requirement 2 Completion Summary
+================================
+
+Final status
+------------
+Requirement 2 first-pass status: COMPLETE using GFF/GFF3 + keyword-derived functional annotation.
+Database-backed CARD/VFDB/DEG/mobile-element confirmation remains pending.
+
+What was completed
+------------------
+- Annotated the expanded Cas-OFFinder hit-level table using matched GFF files.
+- Assigned each candidate off-target hit a genomic context.
+- Assigned each hit a first-pass functional class.
+- Functional classes included AMR/resistance-related, virulence-related, essential-like, mobile/plasmid-related, coding-other, and annotated non-CDS-other.
+- Aggregated hit-level annotations into guide-level functional burden scores.
+- Ranked guides and assigned prioritization decisions for FOTR-CRISPR selection.
+
+Final metrics
+-------------
+Annotated off-target hits: 1997
+Genome accessions represented: 36
+GFF files used: 36
+Rows without overlap GFF file: 0
+Guide-level rows: 19
+Top guide rows exported: 8
+Deprioritized guide rows exported: 8
+
+Genomic context counts
+----------------------
+genomic_context
+Coding_CDS                   1966
+Annotated_non_CDS_feature      31
+Name: count, dtype: int64
+
+Primary functional class counts
+-------------------------------
+functional_class_primary
+Coding_other                 1698
+Essential_like                104
+AMR_or_resistance_related      77
+Virulence_related              72
+Annotated_non_CDS_other        30
+Mobile_or_plasmid_related      16
+Name: count, dtype: int64
+
+Guide-level recommendation counts
+---------------------------------
+functional_annotation_recommendation
+Avoid_or_deprioritize_high_functional_offtarget_burden       8
+Acceptable_candidate_moderate_functional_offtarget_burden    6
+Caution_candidate_elevated_functional_offtarget_burden       4
+Strong_candidate_low_functional_offtarget_burden             1
+Name: count, dtype: int64
+
+Top guides by gene after Requirement 2
+-------------------------------------
+target_gene               guide_id  requirement2_rank_within_gene  total_offtarget_hits  amr_hits  virulence_hits  essential_like_hits  mobile_or_plasmid_hits  high_interest_hits  total_functional_burden                     recommendation_clean requirement2_decision
+     blaKPC  blaKPC_riskaware_top3                              1                     2         0               0                    0                       1                   1                      9.0     Acceptable moderate-burden candidate        KEEP_AS_BACKUP
+     blaKPC  blaKPC_riskaware_top1                              2                    10         0               0                   10                       0                  10                     70.0 Avoid/deprioritize high-burden candidate          DEPRIORITIZE
+    blaNDM1 blaNDM1_riskaware_top1                              1                     1         0               0                    0                       0                   0                      3.0              Strong low-burden candidate            PRIORITIZE
+    blaNDM1 blaNDM1_riskaware_top3                              2                     2         0               0                    0                       2                   2                     12.0     Acceptable moderate-burden candidate        KEEP_AS_BACKUP
+       mcr1    mcr1_riskaware_top1                              1                    15         0               0                    2                       3                   5                     62.0        Caution elevated-burden candidate      USE_WITH_CAUTION
+       mcr1    mcr1_riskaware_top3                              2                    31         0               0                    0                       0                   0                     95.0        Caution elevated-burden candidate      USE_WITH_CAUTION
+       mecA    mecA_riskaware_top2                              1                    12         0               0                    0                       0                   0                     36.0     Acceptable moderate-burden candidate        KEEP_AS_BACKUP
+       mecA    mecA_riskaware_top4                              2                    14         0               0                    1                       0                   1                     46.0     Acceptable moderate-burden candidate        KEEP_AS_BACKUP
+
+Manuscript-safe wording
+-----------------------
+We extended the expanded Cas-OFFinder off-target table with matched GFF-based functional annotation across the 36-accession genome panel. Each of the 1,997 candidate off-target hits was assigned a genomic context and first-pass functional class based on overlapping genome features and keyword-derived biological categories. The annotated hit table identified 1,698 coding-other hits, 104 essential-like hits, 77 AMR/resistance-related hits, 72 virulence-related hits, 30 annotated non-CDS-other hits, and 16 mobile/plasmid-related hits. These hit-level annotations were aggregated into a guide-level functional off-target burden table to support FOTR-CRISPR candidate prioritization. This remains a computational first-pass annotation and will be strengthened using database-backed CARD, VFDB, DEG, and mobile-element mapping.
+
+Output files
+------------
+Final guide prioritization table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/final_requirement2/requirement2_final_guide_prioritization_table.csv
+Top guides by gene: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/final_requirement2/requirement2_top_guides_by_gene.csv
+Deprioritized guides: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/final_requirement2/requirement2_deprioritized_guides.csv
+Completion summary: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/final_requirement2/requirement2_completion_summary.txt

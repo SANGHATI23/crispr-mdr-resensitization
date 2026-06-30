@@ -1,0 +1,25 @@
+Exact manuscript insertion checklist
+
+1. Add the new subsection after the current integrated off-target safety results, preferably after Section 3.5.5 or before Section 3.6.
+   Suggested title:
+   3.6 Reviewer-Oriented Computational Validation Checks
+
+2. Insert Table X after this new subsection.
+   Table title:
+   Reviewer-oriented computational validation checks added to strengthen FOTR-CRISPR.
+
+3. Renumber the old Section 3.6 Practical Utility as Section 3.7 if needed.
+
+4. Add one sentence to Discussion:
+   Additional reviewer-oriented analyses showed that FOTR does not simply reproduce CFD or RS3 single-objective rankings, that conserved burden varies strongly across accessions and genes, and that the expanded 36-accession panel provides an auditable computational stress screen rather than an exhaustive clinical diversity panel.
+
+5. Replace or extend the current Limitations paragraph using final_limitations_update.txt.
+
+6. Do not overclaim:
+   Do not say direct CARD/RGI validation was completed unless you actually run RGI/CARD.
+   Do not say FOTR strongly agrees with RS3 or CFD.
+   Do not say the 36-accession panel represents all clinical strain diversity.
+   Do not say this is wet-lab validated.
+
+7. Safe final claim:
+   FOTR-CRISPR is strengthened by adversarial edge-case sensitivity analysis, orthogonal comparator-score overlap, accession-level burden confidence intervals, and transparent accession-panel statistics. Together, these additions support the framework as a robustness-tested and safety-context-aware computational prioritization workflow.

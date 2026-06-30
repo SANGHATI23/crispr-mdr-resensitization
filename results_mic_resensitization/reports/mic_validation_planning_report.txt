@@ -1,0 +1,40 @@
+MIC Resensitization Validation Planning Report
+=======================================================
+
+Current status
+- MIC resensitization has not been experimentally performed.
+- No wet-lab MIC reduction, growth-curve rescue, plasmid curing, or cleavage validation result is claimed.
+- The current output is a computational planning module for future validation.
+
+Why this step was created
+- Requirements 1 to 4 completed the computational off-target safety framework.
+- MIC validation is the next biological validation step, but it remains pending.
+- This module prepares candidate guides, control conditions, and fold-change analysis templates.
+
+Primary computational candidates for future MIC testing
+- blaKPC: blaKPC_riskaware_top5 (Primary_MIC_candidate)
+- blaNDM1: blaNDM1_riskaware_top1 (Primary_MIC_candidate)
+
+Caution-only candidates
+- mcr1: mcr1_riskaware_top1 (Caution_only_candidate)
+- mcr1: mcr1_riskaware_top3 (Caution_only_candidate)
+- mecA: mecA_riskaware_top2 (Caution_only_candidate)
+- mecA: mecA_riskaware_top4 (Caution_only_candidate)
+
+Future MIC calculation plan
+- Add baseline MIC values into data_mic_resensitization/templates/mic_fold_change_input_template.csv
+- Add post-CRISPR MIC values into the same file.
+- Re-run: python analysis/mic_resensitization/calculate_mic_fold_change.py
+- The script will calculate fold_reduction and log2_fold_reduction.
+
+Interpretation rule for future data
+- >=4-fold MIC reduction: strong resensitization signal.
+- >=2-fold MIC reduction: moderate resensitization signal.
+- <2-fold MIC reduction: no clear resensitization signal.
+
+Manuscript-safe wording
+MIC-resensitization experiments were not performed in the current study. Instead, the final FOTR-CRISPR guide set was translated into a validation-ready MIC planning framework, including prioritized candidate guides, proposed control conditions, antibiotic contexts, and a fold-change analysis template for future experimental measurements.
+
+Output files
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_mic_resensitization/tables/mic_validation_status_table.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_mic_resensitization/reports/mic_validation_planning_report.txt

@@ -1,0 +1,5 @@
+AGCAGCAGCAGCAACAACGGNNN	NZ_CP007659.1 Staphylococcus aureus strain H-EMRSA-15 chromosome, complete genome	2248426	cGCAGCAaCAGCAACtAtGGGGG	+	4
+AACGCTGCTGCTATCGGTGCNNN	NZ_CP007659.1 Staphylococcus aureus strain H-EMRSA-15 chromosome, complete genome	247804	AtCGgTGCTGCTATtGGTGCAGG	+	3
+AACGCTGCTGCTATCGGTGCNNN	NZ_CP007659.1 Staphylococcus aureus strain H-EMRSA-15 chromosome, complete genome	1525929	AAaGgTGCaGCgATCGGTGCTGG	-	4
+AACGCTGCTGCTATCGGTGCNNN	NZ_CP007659.1 Staphylococcus aureus strain H-EMRSA-15 chromosome, complete genome	1526100	AAaGCaGCaGCTATtGGTGCTGG	-	4
+TATGACTGAACGTCCGATAANNN	NZ_CP007659.1 Staphylococcus aureus strain H-EMRSA-15 chromosome, complete genome	1161022	TATGtCTGAACGTatcATAATGG	+	4

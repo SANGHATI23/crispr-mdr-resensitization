@@ -1,0 +1,22 @@
+Unseen Gene Candidate Guide Enumeration Summary
+==============================================
+
+Output all-guides table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/unseen_genes/unseen_gene_candidate_guides_all.csv
+Total candidate guides: 102
+
+Guides by gene:
+- vanA: 102
+
+Guides by gene and strand:
+- vanA strand +: 65
+- vanA strand -: 37
+
+Top 5 guides by simple on-target proxy:
+- vanA | CTCAGAGGAGCATGACGTAT | PAM=CGG | strand=+ | pos=39 | score=100.0 | region=early_coding_region
+- vanA | CTATTCAGCTGTACTCTCGC | PAM=CGG | strand=+ | pos=192 | score=100.0 | region=early_coding_region
+- vanA | AGTCAATAGCGCGGACGAAT | PAM=TGG | strand=+ | pos=549 | score=100.0 | region=middle_coding_region
+- vanA | CATGGCAAGTCAGGTGAAGA | PAM=TGG | strand=+ | pos=295 | score=100.0 | region=early_coding_region
+- vanA | TCAGCTTTGCATGGCAAGTC | PAM=AGG | strand=+ | pos=286 | score=100.0 | region=early_coding_region
+
+Interpretation:
+This script creates an initial SpCas9 NGG candidate-guide set for prospective unseen AMR genes. The simple_on_target_proxy is only a first-pass sequence suitability proxy and should be replaced or supplemented by RS3/Azimuth-style scoring before manuscript-level claims.

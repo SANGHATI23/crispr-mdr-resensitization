@@ -1,0 +1,32 @@
+Requirement 4: Off-target conservation across many strain genomes
+========================================================================
+
+Input Requirement 2 hit table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/final_requirement2_database_refined/requirement2_database_refined_hit_annotations.csv
+Input Requirement 3 guide table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/mobile_context_mapping/final_requirement3_complete/requirement3_final_integrated_mobile_element_mapping_ALL20.csv
+
+Total hit rows analyzed: 1997
+Total accessions screened: 36
+Guides retained in final ALL20 table: 20
+Unique off-target site keys: 289
+
+Guide conservation label counts:
+- Very_high_conservation_across_panel: 8
+- High_conservation_across_panel: 6
+- Low_conservation_rare_across_panel: 3
+- Moderate_conservation_across_panel: 2
+- No_detected_offtarget_conservation: 1
+
+Requirement 4 final decision counts:
+- REQ4_DEPRIORITIZE_VERY_HIGH_CONSERVED_OFFTARGET_RISK: 14
+- REQ4_MODERATE_CONSERVED_OFFTARGET_RISK: 3
+- REQ4_CAUTION_HIGH_CONSERVED_OFFTARGET_RISK: 2
+- REQ4_PRIORITIZE_ZERO_HIT_NO_CONSERVED_OFFTARGET: 1
+
+Output files:
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/offtarget_conservation_requirement4/requirement4_hit_level_conservation_ready_table.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/offtarget_conservation_requirement4/requirement4_offtarget_site_level_conservation.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/offtarget_conservation_requirement4/requirement4_guide_level_offtarget_conservation_ALL20.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/offtarget_conservation_requirement4/requirement4_top_guides_by_gene_offtarget_conservation.csv
+
+Interpretation:
+This analysis estimates whether predicted off-target hits are repeatedly observed across the 36-accession expanded genome panel. It provides a formal guide-level conserved off-target burden layer. These results remain computational predictions and do not represent experimental off-target validation.

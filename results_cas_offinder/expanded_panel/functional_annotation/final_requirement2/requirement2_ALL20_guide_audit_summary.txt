@@ -1,0 +1,24 @@
+Requirement 2 ALL-20 Guide Audit Summary
+=======================================
+
+Requirement 1 guide rows expected: 20
+Requirement 2 guide rows before zero-hit fix: 19
+Requirement 2 guide rows after zero-hit fix: 20
+Zero-hit guides retained: 1
+
+Zero-hit guides:
+target_gene              guide_id                         requirement2_decision
+     blaKPC blaKPC_riskaware_top5 PRIORITIZE_OR_KEEP_AS_LOW_OFFTARGET_CANDIDATE
+
+Top guides by gene after retaining zero-hit guides:
+target_gene               guide_id  requirement2_rank_within_gene  total_offtarget_hits  high_interest_hits  total_functional_burden                 recommendation_clean                         requirement2_decision
+     blaKPC  blaKPC_riskaware_top5                              1                   0.0                 0.0                      0.0            Strong zero-hit candidate PRIORITIZE_OR_KEEP_AS_LOW_OFFTARGET_CANDIDATE
+     blaKPC  blaKPC_riskaware_top3                              2                   2.0                 1.0                      9.0 Acceptable moderate-burden candidate                                KEEP_AS_BACKUP
+    blaNDM1 blaNDM1_riskaware_top1                              1                   1.0                 0.0                      3.0          Strong low-burden candidate                                    PRIORITIZE
+    blaNDM1 blaNDM1_riskaware_top3                              2                   2.0                 2.0                     12.0 Acceptable moderate-burden candidate                                KEEP_AS_BACKUP
+       mcr1    mcr1_riskaware_top1                              1                  15.0                 5.0                     62.0    Caution elevated-burden candidate                              USE_WITH_CAUTION
+       mcr1    mcr1_riskaware_top3                              2                  31.0                 0.0                     95.0    Caution elevated-burden candidate                              USE_WITH_CAUTION
+       mecA    mecA_riskaware_top2                              1                  12.0                 0.0                     36.0 Acceptable moderate-burden candidate                                KEEP_AS_BACKUP
+       mecA    mecA_riskaware_top4                              2                  14.0                 1.0                     46.0 Acceptable moderate-burden candidate                                KEEP_AS_BACKUP
+
+QC status: PASS if after-fix guide rows = 20.

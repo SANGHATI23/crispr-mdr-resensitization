@@ -1,0 +1,13 @@
+Black-and-white journal figures created.
+
+Figures:
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/figures_bw/figure1_top_guides_conserved_burden_bw.png
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/figures_bw/figure2_rank_shift_original_vs_final_bw.png
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/figures_bw/figure3_all20_integrated_burden_heatmap_bw.png
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/figures_bw/figure4_total_hits_by_target_gene_bw.png
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/figures_bw/figure5_journal_completion_status_bw.png
+
+Recommended use:
+- BIBM main track: use Figures 1, 2, and possibly 4.
+- Journal extension: use Figures 1 to 5.
+- Supplement: include full tables and extra heatmaps.

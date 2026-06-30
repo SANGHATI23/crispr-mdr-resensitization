@@ -1,0 +1,50 @@
+accession,contig_description,inferred_species_from_header,contig_label_class
+GCF_000364385.3,"NZ_CP006659.2 Klebsiella pneumoniae strain ATCC BAA-2146 chromosome 1, complete sequence",Klebsiella pneumoniae,chromosome_labeled
+GCF_000739495.1,"NZ_CP009114.1 Klebsiella pneumoniae strain carbapenem-resistant blaNDM-1 chromosome, complete genome",Klebsiella pneumoniae,chromosome_labeled
+GCF_000764615.1,"NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome",Klebsiella pneumoniae,chromosome_labeled
+GCF_000775955.1,"NZ_CP009461.1 Klebsiella pneumoniae strain XH209 chromosome, complete genome",Klebsiella pneumoniae,chromosome_labeled
+GCF_000807395.2,"NZ_CP010361.1 Klebsiella pneumoniae strain 32192 chromosome, complete genome",Klebsiella pneumoniae,chromosome_labeled
+GCF_000814305.1,"NZ_CP010392.1 Klebsiella pneumoniae strain 34618 chromosome, complete genome",Klebsiella pneumoniae,chromosome_labeled
+GCF_000968155.1,"NZ_FO834906.1 Klebsiella pneumoniae strain Kp52.145 chromosome, complete genome",Klebsiella pneumoniae,chromosome_labeled
+GCF_001022035.1,"NZ_CP011578.1 Klebsiella pneumoniae strain CAV1392 chromosome, complete genome",Klebsiella pneumoniae,chromosome_labeled
+GCF_001022175.1,"NZ_CP011624.1 Klebsiella pneumoniae strain CAV1344 chromosome, complete genome",Klebsiella pneumoniae,chromosome_labeled
+GCF_001022235.1,"NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome",Klebsiella pneumoniae,chromosome_labeled
+GCF_000597845.1,"NZ_CP007265.1 Escherichia coli strain ST540 chromosome, complete genome",Escherichia coli,chromosome_labeled
+GCF_000599625.1,"NZ_CP007390.1 Escherichia coli strain ST540 chromosome, complete genome",Escherichia coli,chromosome_labeled
+GCF_000599645.1,"NZ_CP007391.1 Escherichia coli strain ST540 chromosome, complete genome",Escherichia coli,chromosome_labeled
+GCF_000599665.1,"NZ_CP007392.1 Escherichia coli strain ST2747 chromosome, complete genome",Escherichia coli,chromosome_labeled
+GCF_000599685.1,"NZ_CP007393.1 Escherichia coli strain ST2747 chromosome, complete genome",Escherichia coli,chromosome_labeled
+GCF_000599705.1,"NZ_CP007394.1 Escherichia coli strain ST2747 chromosome, complete genome",Escherichia coli,chromosome_labeled
+GCF_000784925.1,"NZ_CP009859.1 Escherichia coli strain ECONIH1 chromosome, complete genome",Escherichia coli,chromosome_labeled
+GCF_000801185.2,"NZ_CP009106.2 Escherichia coli strain 94-3024 chromosome, complete genome",Escherichia coli,chromosome_labeled
+GCF_000814145.2,"NZ_CP010371.1 Escherichia coli strain 6409 chromosome, complete genome",Escherichia coli,chromosome_labeled
+GCF_000968155.1,"NZ_FO834905.1 Klebsiella pneumoniae strain Kp52.145 plasmid II, complete sequence",Klebsiella pneumoniae,plasmid_labeled
+GCF_000418345.1,"NC_021670.1 Staphylococcus aureus, complete sequence",Staphylococcus aureus,unclassified_contig_label
+GCF_000709475.1,"NZ_CP007447.1 Staphylococcus aureus strain XN108, complete genome",Staphylococcus aureus,unclassified_contig_label
+GCA_000013465.1,"CP000255.1 Staphylococcus aureus subsp. aureus USA300_FPR3757, complete genome",Staphylococcus aureus,unclassified_contig_label
+GCF_000597965.1,"NZ_CP007454.1 Staphylococcus aureus strain 502A isolate RN6607 chromosome, complete genome",Staphylococcus aureus,chromosome_labeled
+GCF_000626615.2,"NZ_CP007539.2 Staphylococcus aureus strain FDAARGOS_5 chromosome, complete genome",Staphylococcus aureus,chromosome_labeled
+GCF_000695215.1,"NZ_CP007659.1 Staphylococcus aureus strain H-EMRSA-15 chromosome, complete genome",Staphylococcus aureus,chromosome_labeled
+GCF_000695875.1,"NZ_CP007690.1 Staphylococcus aureus strain UA-S391_USA300 isolate abscess/wound isolate chromosome, complete genome",Staphylococcus aureus,chromosome_labeled
+GCF_000746505.1,"NZ_CP007499.1 Staphylococcus aureus strain 2395 USA500 chromosome, complete genome",Staphylococcus aureus,chromosome_labeled
+GCF_000769575.1,"NZ_CP009681.1 Staphylococcus aureus strain Gv69 chromosome, complete genome",Staphylococcus aureus,chromosome_labeled
+GCF_000801165.1,"NZ_CP009104.1 Escherichia coli strain RM9387 chromosome, complete genome",Escherichia coli,chromosome_labeled
+GCF_000815045.1,"NZ_CP010295.1 Staphylococcus aureus strain ATCC BAA1680 chromosome, complete genome",Staphylococcus aureus,chromosome_labeled
+GCF_000815085.1,"NZ_CP010296.1 Staphylococcus aureus strain ATCC BAA1680 chromosome, complete genome",Staphylococcus aureus,chromosome_labeled
+GCF_000815125.1,"NZ_CP010297.1 Staphylococcus aureus strain ATCC BAA1680 chromosome, complete genome",Staphylococcus aureus,chromosome_labeled
+GCF_000815165.1,"NZ_CP010298.1 Staphylococcus aureus strain ATCC BAA1680 chromosome, complete genome",Staphylococcus aureus,chromosome_labeled
+GCF_000815205.1,"NZ_CP010299.1 Staphylococcus aureus strain ATCC BAA1680 chromosome, complete genome",Staphylococcus aureus,chromosome_labeled
+GCF_000814145.2,"NZ_CP010373.2 Escherichia coli strain 6409 plasmid p6409-202.186kb, complete sequence",Escherichia coli,plasmid_labeled
+GCF_000364385.3,"NZ_CP006661.1 Klebsiella pneumoniae strain ATCC BAA-2146 plasmid pNDM-US, complete sequence",Klebsiella pneumoniae,plasmid_labeled
+GCF_000739495.1,"NZ_CP009115.1 Klebsiella pneumoniae strain carbapenem-resistant blaNDM-1 plasmid p2, complete sequence",Klebsiella pneumoniae,plasmid_labeled
+GCF_000764615.1,"NZ_CP008933.1 Klebsiella pneumoniae strain PMK1 plasmid pPMK1-NDM, complete sequence",Klebsiella pneumoniae,plasmid_labeled
+GCF_000764615.1,"NZ_CP008931.1 Klebsiella pneumoniae strain PMK1 plasmid pPMK1-B, complete sequence",Klebsiella pneumoniae,plasmid_labeled
+GCF_000364385.3,"NZ_CP006663.1 Klebsiella pneumoniae strain ATCC BAA-2146 plasmid pCuAs, complete sequence",Klebsiella pneumoniae,plasmid_labeled
+GCF_000764615.1,"NZ_CP008930.1 Klebsiella pneumoniae strain PMK1 plasmid pPMK1-A, complete sequence",Klebsiella pneumoniae,plasmid_labeled
+GCF_000807395.2,NZ_CP010574.1 Klebsiella pneumoniae strain 32192 plasmid unnamed,Klebsiella pneumoniae,plasmid_labeled
+GCF_000814305.1,"NZ_CP010393.1 Klebsiella pneumoniae strain 34618 plasmid p34618-207.543kb, complete sequence",Klebsiella pneumoniae,plasmid_labeled
+GCF_000756205.1,"NZ_CP009361.1 Staphylococcus aureus strain ATCC 25923 chromosome, complete genome",Staphylococcus aureus,chromosome_labeled
+GCF_000772025.1,"NZ_CP009554.1 Staphylococcus aureus strain FORC_001 chromosome, complete genome",Staphylococcus aureus,chromosome_labeled
+GCF_000807395.2,NZ_CP010576.1 Klebsiella pneumoniae strain 32192 plasmid unnamed,Klebsiella pneumoniae,plasmid_labeled
+GCF_000784925.1,"NZ_CP009862.1 Escherichia coli strain ECONIH1 plasmid pKPC-629, complete sequence",Escherichia coli,plasmid_labeled
+GCF_001022235.1,"NZ_CP011646.1 Klebsiella pneumoniae strain CAV1596 plasmid pKPC_CAV1596-97, complete sequence",Klebsiella pneumoniae,plasmid_labeled

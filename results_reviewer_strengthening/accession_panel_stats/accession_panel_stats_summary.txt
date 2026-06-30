@@ -1,0 +1,27 @@
+Accession-panel statistics for expanded off-target screen
+========================================================
+
+Input hit table: results_cas_offinder/expanded_panel/final_requirement1/requirement1_expanded_casoffinder_genomewide_offtarget_hit_table.csv
+Reported total accessions screened: 36
+Accessions with at least one predicted off-target hit: 36
+Total parsed off-target hit rows: 1997
+Unique guides with at least one hit: 19
+Unique target genes represented: 4
+
+Overall panel stats:
+ total_accessions_screened_reported  accessions_with_any_offtarget_hit  unique_target_genes  unique_guides_with_hits  total_hit_rows  unique_contig_descriptions_with_hits  plasmid_labeled_hit_contigs  chromosome_labeled_hit_contigs  unclassified_hit_contigs
+                                 36                                 36                    4                       19            1997                                    49                           13                              33                         3
+
+Gene-level accession distribution:
+target_gene  accessions_with_any_hit  total_hit_rows  mean_hits_per_accession_with_hits  median_hits_per_accession_with_hits  max_hits_in_single_accession  total_guides_with_hits_sum
+     blaKPC                       34             202                           5.941176                                  3.5                            17                          65
+    blaNDM1                       15              49                           3.266667                                  4.0                             6                          28
+       mcr1                       35             892                          25.485714                                 12.0                            73                         100
+       mecA                       36             854                          23.722222                                 17.0                            71                         106
+
+Reviewer-facing interpretation:
+This analysis makes the 36-accession screening panel auditable by summarizing which accessions, contig labels, and target-gene hit distributions contributed to the expanded off-target screen.
+It does not claim exhaustive coverage of all clinical strain diversity. Instead, it supports a transparent computational validation panel and identifies how off-target burden is distributed across the screened genomes.
+
+Recommended manuscript wording:
+To make the expanded genome panel auditable, we summarized accession-level and gene-level hit distributions across the 36 screened genomes. The panel produced 1,997 parsed candidate off-target hits across all four target genes. Accession-level summaries were used to distinguish broad recurrent off-target burden from isolated accession-specific signals. This panel is not intended to exhaustively represent all clinical strain diversity, but it provides a transparent computational stress panel for comparing guide-level off-target recurrence.

@@ -1,0 +1,38 @@
+GFF3 Functional Annotation Summary
+=================================
+
+Input hits: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/parsed/cas_offinder_all_genome_offtarget_hits_parsed.csv
+Annotated output: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/annotated/cas_offinder_offtarget_hits_gff_annotated.csv
+Total hits annotated: 190
+High-interest hits: 24
+
+Genomic context summary:
+          genomic_context  hit_count
+               Coding_CDS        187
+Intergenic_or_unannotated          3
+
+First-pass functional off-target class summary:
+first_pass_functional_offtarget_class  hit_count
+    AMR_or_resistance_related_keyword          5
+               Coding_or_gene_overlap        178
+               Essential_like_keyword          3
+            Intergenic_or_unannotated          3
+       Mobile_element_related_keyword          1
+
+Gene x genomic context summary:
+mlcb_gene           genomic_context  hit_count
+   blaKPC                Coding_CDS         20
+  blaNDM1                Coding_CDS          3
+  blaNDM1 Intergenic_or_unannotated          2
+     mcr1                Coding_CDS         89
+     mecA                Coding_CDS         75
+     mecA Intergenic_or_unannotated          1
+
+Mismatch x genomic context summary:
+ mismatch_count           genomic_context  hit_count
+              1                Coding_CDS          1
+              2                Coding_CDS          2
+              3                Coding_CDS         14
+              4                Coding_CDS        170
+              4 Intergenic_or_unannotated          3
+

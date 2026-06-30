@@ -1,0 +1,16 @@
+Reviewer-strengthening additions for FOTR-CRISPR
+================================================
+
+Four additional computational checks were added to strengthen the manuscript against likely reviewer concerns.
+
+First, because the functional off-target layer originally used GFF/GFF3-derived annotations with curated dictionary refinement, we generated a CARD/RGI-style direct-confirmation candidate set. This table identifies the subset of off-target hits most suitable for database-level confirmation, including AMR/resistance-related, virulence-related, essential-like, mobile-element-related, and high-confidence functional hits.
+
+Second, to test whether FOTR simply reproduces existing single-objective scoring behavior, we compared the final FOTR-selected guides against orthogonal CFD specificity and RS3 activity rankings. The comparator overlap was limited rather than complete: FOTR top-20 versus CFD top-20 overlapped by 9 guides with Jaccard 0.2903, while FOTR top-20 versus RS3 top-20 showed no overlap in the available comparison table. This should be framed carefully as evidence that FOTR is a distinct multi-objective prioritization framework, not as strong agreement with external tools.
+
+Third, to avoid reporting conserved off-target burden as point estimates only, we computed accession-level burden variance and approximate 95% confidence intervals for each guide. Clean candidates such as blaNDM1_riskaware_top1 showed very low mean accession burden and narrow confidence intervals, whereas high-concern guides such as mecA_riskaware_top1 and mcr1_riskaware_top5 showed substantially higher and wider burden intervals.
+
+Fourth, to make the 36-accession screen more transparent, we added accession-panel statistics. The expanded screen covered 36 reported accessions and produced 1,997 parsed candidate off-target hit rows across four target genes. The hit-containing contig set included 13 plasmid-labeled and 33 chromosome-labeled contigs, with mcr1 and mecA showing the highest gene-level hit burden.
+
+Suggested manuscript insertion:
+
+To strengthen the computational validation layer, we added four reviewer-oriented checks. First, high-interest dictionary-flagged off-target hits were exported as a CARD/RGI-style direct-confirmation candidate set. Second, FOTR-selected guides were compared against independent CFD specificity and RS3 activity rankings. Limited overlap with these single-objective comparators supports that FOTR does not simply reproduce one existing scoring dimension, but instead integrates activity, specificity, conservation, and functional safety evidence. Third, accession-level variance and approximate 95% confidence intervals were computed for conserved off-target burden, distinguishing consistently low-burden candidates from recurrent high-burden guides. Fourth, accession-panel statistics were generated to make the 36-genome screen auditable. Together, these additions strengthen the manuscript by converting likely reviewer concerns into explicit computational checks while preserving the claim boundary that FOTR is a computational prioritization framework, not experimental validation.

@@ -1,0 +1,46 @@
+Parsed Cas-OFFinder Output Summary
+=================================
+
+Total parsed off-target hits: 190
+Output CSV: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/parsed/cas_offinder_all_genome_offtarget_hits_parsed.csv
+
+Hits by genome:
+                        genome_label  hit_count
+                     Ecoli_reference         36
+     Klebsiella_pneumoniae_reference        146
+Staphylococcus_aureus_MRSA_reference          8
+
+Hits by gene:
+mlcb_gene  hit_count
+   blaKPC         20
+  blaNDM1          5
+     mcr1         89
+     mecA         76
+
+Hits by mismatch count:
+ mismatch_count  hit_count
+              1          1
+              2          2
+              3         14
+              4        173
+
+Hits by guide:
+        final_guide_id mlcb_gene  final_gene_rank  hit_count
+ blaKPC_riskaware_top1    blaKPC                1          1
+ blaKPC_riskaware_top2    blaKPC                2         10
+ blaKPC_riskaware_top4    blaKPC                4          9
+blaNDM1_riskaware_top1   blaNDM1                1          1
+blaNDM1_riskaware_top2   blaNDM1                2          2
+blaNDM1_riskaware_top5   blaNDM1                5          2
+   mcr1_riskaware_top1      mcr1                1          1
+   mcr1_riskaware_top2      mcr1                2          4
+   mcr1_riskaware_top3      mcr1                3          4
+   mcr1_riskaware_top4      mcr1                4         27
+   mcr1_riskaware_top5      mcr1                5         53
+   mecA_riskaware_top1      mecA                1         61
+   mecA_riskaware_top2      mecA                2          1
+   mecA_riskaware_top3      mecA                3         10
+   mecA_riskaware_top4      mecA                4          1
+   mecA_riskaware_top5      mecA                5          3
+
+Unmapped rows: 0

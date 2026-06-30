@@ -1,0 +1,35 @@
+target_gene,Best_Hit_ARO,Drug Class,Resistance Mechanism,AMR Gene Family,rgi_hit_rows,unique_guides,unique_accessions,best_identity_max
+blaKPC,TxR,tetracycline antibiotic,antibiotic efflux,ATP-binding cassette (ABC) antibiotic efflux pump,3,1,3,40.84
+blaKPC,bcr-1,bicyclomycin-like antibiotic,antibiotic efflux,major facilitator superfamily (MFS) antibiotic efflux pump,3,1,3,37.23
+blaNDM1,NDM-1,carbapenem; cephalosporin; penicillin beta-lactam,antibiotic inactivation,NDM beta-lactamase,7,1,4,100.0
+mcr1,macB,macrolide antibiotic,antibiotic efflux,ATP-binding cassette (ABC) antibiotic efflux pump,18,1,10,32.38
+mcr1,bcrA,peptide antibiotic,antibiotic efflux,ATP-binding cassette (ABC) antibiotic efflux pump,17,2,9,33.67
+mcr1,Acinetobacter baumannii AbaF,phosphonic acid antibiotic,antibiotic efflux,major facilitator superfamily (MFS) antibiotic efflux pump,10,1,10,30.47
+mcr1,Haemophilus influenzae PBP3 conferring resistance to beta-lactam antibiotics,cephalosporin; penicillin beta-lactam,antibiotic target alteration,Penicillin-binding protein mutations conferring resistance to beta-lactam antibiotics,10,1,10,52.37
+mcr1,Pseudomonas aeruginosa CpxR,macrolide antibiotic; fluoroquinolone antibiotic; monobactam; aminoglycoside antibiotic; carbapenem; cephalosporin; penicillin beta-lactam; tetracycline antibiotic; peptide antibiotic; aminocoumarin antibiotic; diaminopyrimidine antibiotic; sulfonamide antibiotic; phenicol antibiotic,antibiotic efflux,resistance-nodulation-cell division (RND) antibiotic efflux pump,10,1,10,48.68
+mcr1,TxR,tetracycline antibiotic,antibiotic efflux,ATP-binding cassette (ABC) antibiotic efflux pump,10,1,10,39.14
+mcr1,cmlv,phenicol antibiotic,antibiotic inactivation,chloramphenicol phosphotransferase,10,1,10,34.99
+mcr1,mdtA,aminocoumarin antibiotic,antibiotic efflux,resistance-nodulation-cell division (RND) antibiotic efflux pump,9,1,9,78.8
+mcr1,mdtB,aminocoumarin antibiotic,antibiotic efflux,resistance-nodulation-cell division (RND) antibiotic efflux pump,9,1,9,90.19
+mcr1,emrB,fluoroquinolone antibiotic,antibiotic efflux,major facilitator superfamily (MFS) antibiotic efflux pump,1,1,1,28.68
+mcr1,tetA(46),tetracycline antibiotic,antibiotic efflux,ATP-binding cassette (ABC) antibiotic efflux pump,1,1,1,27.87
+mecA,YojI,peptide antibiotic,antibiotic efflux,ATP-binding cassette (ABC) antibiotic efflux pump,10,1,10,100.0
+mecA,bcrA,peptide antibiotic,antibiotic efflux,ATP-binding cassette (ABC) antibiotic efflux pump,10,1,10,35.37
+mecA,lfrA,fluoroquinolone antibiotic,antibiotic efflux,major facilitator superfamily (MFS) antibiotic efflux pump,10,1,10,40.57
+mecA,otr(B),tetracycline antibiotic,antibiotic efflux,major facilitator superfamily (MFS) antibiotic efflux pump,10,1,10,27.15
+mecA,facT,elfamycin antibiotic,antibiotic efflux,major facilitator superfamily (MFS) antibiotic efflux pump,9,1,9,33.18
+mecA,cmlv,phenicol antibiotic,antibiotic inactivation,chloramphenicol phosphotransferase,8,1,8,35.4
+mecA,mtrA,macrolide antibiotic,antibiotic efflux,resistance-nodulation-cell division (RND) antibiotic efflux pump,6,1,6,26.47
+mecA,Escherichia coli soxS with mutation conferring antibiotic resistance,fluoroquinolone antibiotic; monobactam; carbapenem; cephalosporin; glycylcycline; penicillin beta-lactam; tetracycline antibiotic; rifamycin antibiotic; phenicol antibiotic; disinfecting agents and antiseptics,antibiotic target alteration; antibiotic efflux; reduced permeability to antibiotic,ATP-binding cassette (ABC) antibiotic efflux pump; major facilitator superfamily (MFS) antibiotic efflux pump; resistance-nodulation-cell division (RND) antibiotic efflux pump; General Bacterial Porin with reduced permeability to beta-lactams,2,1,2,28.28
+mecA,Klebsiella pneumoniae KpnH,macrolide antibiotic; fluoroquinolone antibiotic; aminoglycoside antibiotic; carbapenem; cephalosporin; penicillin beta-lactam; peptide antibiotic,antibiotic efflux,major facilitator superfamily (MFS) antibiotic efflux pump,2,1,2,93.36
+mecA,AAC(6')-Ib9,aminoglycoside antibiotic,antibiotic inactivation,AAC(6'),1,1,1,98.97
+mecA,APH(3'')-Ib,aminoglycoside antibiotic,antibiotic inactivation,APH(3''),1,1,1,99.63
+mecA,APH(6)-Id,aminoglycoside antibiotic,antibiotic inactivation,APH(6),1,1,1,99.64
+mecA,KPC-2,monobactam; carbapenem; cephalosporin; penicillin beta-lactam,antibiotic inactivation,KPC beta-lactamase,1,1,1,100.0
+mecA,OXA-9,penicillin beta-lactam,antibiotic inactivation,OXA beta-lactamase; OXA-9-like beta-lactamase,1,1,1,100.0
+mecA,TEM-1,monobactam; cephalosporin; penicillin beta-lactam,antibiotic inactivation,TEM beta-lactamase,1,1,1,100.0
+mecA,aadA,aminoglycoside antibiotic,antibiotic inactivation,ANT(3''),1,1,1,99.23
+mecA,dfrA14,diaminopyrimidine antibiotic,antibiotic target replacement,trimethoprim resistant dihydrofolate reductase dfr,1,1,1,100.0
+mecA,golS,monobactam; carbapenem; cephalosporin; penicillin beta-lactam; phenicol antibiotic,antibiotic efflux,resistance-nodulation-cell division (RND) antibiotic efflux pump,1,1,1,30.71
+mecA,mdtG,phosphonic acid antibiotic,antibiotic efflux,major facilitator superfamily (MFS) antibiotic efflux pump,1,1,1,27.42
+mecA,sul2,sulfonamide antibiotic,antibiotic target replacement,sulfonamide resistant sul,1,1,1,100.0

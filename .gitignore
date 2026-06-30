@@ -211,3 +211,31 @@ __pycache__/
 .env
 # Ignore large local datasets
 clinvar_data/
+
+# Local virtual environments with version suffixes
+.venv*/
+venv*/
+env*/
+
+# Local installer files
+*.pkg
+*.dmg
+
+# Temporary Cas-OFFinder outputs
+.temp_*_casoffinder.out
+
+# Local / raw external CRISPR tool files
+external_tools/
+tools/
+results_external/crisot/master_batch/
+results_external/crisot/reference/
+results_external/crisot/crisot_error.logV
+
+# Raw/reference files not committed until cleaned/documented
+mdr_reference_combined.fa
+
+# Draft/legacy scripts and documents
+scripts/README_v0.pdf
+
+# Non-manuscript duplicate figure
+figures/rna_accessibility_by_gene.png

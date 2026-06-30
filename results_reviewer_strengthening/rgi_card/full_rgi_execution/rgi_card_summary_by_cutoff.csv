@@ -1,0 +1,8 @@
+target_gene,Cut_Off,rgi_hit_rows
+blaKPC,Loose,6
+blaNDM1,Perfect,7
+mcr1,Loose,95
+mcr1,Strict,10
+mecA,Loose,57
+mecA,Perfect,6
+mecA,Strict,15

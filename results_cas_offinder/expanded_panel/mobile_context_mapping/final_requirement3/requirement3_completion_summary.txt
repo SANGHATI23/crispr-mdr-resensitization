@@ -1,0 +1,33 @@
+Requirement 3 Completion Summary
+================================
+
+Step completed: Requirement 3 mobile-context guide-level all-20 merge
+
+Requirement 2 all-20 input: results_cas_offinder/expanded_panel/functional_annotation/final_requirement2_database_refined/requirement2_database_refined_guide_summary_ALL20.csv
+Requirement 3 guide summary input: results_cas_offinder/expanded_panel/mobile_context_mapping/requirement3_guide_level_mobile_context_summary.csv
+
+Expected selected guides: 20
+Observed unique guides after merge: 20
+Zero-hit guides retained: 1
+
+Requirement 3 decision counts:
+- Deprioritize_high_mobile_context: 8
+- Caution_elevated_mobile_context: 5
+- Prioritize_low_mobile_context: 4
+- Backup_moderate_mobile_context: 2
+- Prioritize_zero_hit_low_mobile_context: 1
+
+Top 2 guides per gene after Requirement 3 mobile-context mapping:
+- blaKPC rank 1: blaKPC_riskaware_top5 | hits=0 | mobile_burden=0 | decision=Prioritize_zero_hit_low_mobile_context
+- blaKPC rank 2: blaKPC_riskaware_top3 | hits=2 | mobile_burden=0 | decision=Prioritize_low_mobile_context
+- blaNDM1 rank 1: blaNDM1_riskaware_top1 | hits=1 | mobile_burden=0 | decision=Prioritize_low_mobile_context
+- blaNDM1 rank 2: blaNDM1_riskaware_top5 | hits=24 | mobile_burden=0 | decision=Prioritize_low_mobile_context
+- mcr1 rank 1: mcr1_riskaware_top3 | hits=31 | mobile_burden=3 | decision=Backup_moderate_mobile_context
+- mcr1 rank 2: mcr1_riskaware_top1 | hits=15 | mobile_burden=14 | decision=Caution_elevated_mobile_context
+- mecA rank 1: mecA_riskaware_top2 | hits=12 | mobile_burden=14 | decision=Caution_elevated_mobile_context
+- mecA rank 2: mecA_riskaware_top4 | hits=14 | mobile_burden=24 | decision=Caution_elevated_mobile_context
+
+Output files:
+- results_cas_offinder/expanded_panel/mobile_context_mapping/final_requirement3/requirement3_mobile_context_guide_summary_ALL20.csv
+- results_cas_offinder/expanded_panel/mobile_context_mapping/final_requirement3/requirement3_top_guides_by_gene_ALL20.csv
+- results_cas_offinder/expanded_panel/mobile_context_mapping/final_requirement3/requirement3_completion_summary.txt

@@ -1,0 +1,5 @@
+AGCAGCAGCAGCAACAACGGNNN	NZ_CP007454.1 Staphylococcus aureus strain 502A isolate RN6607 chromosome, complete genome	1710074	cGCAGCAaCAGCAACtAtGGGGG	-	4
+GCTGCTGCTGGCTATGCTGCNNN	NZ_CP007454.1 Staphylococcus aureus strain 502A isolate RN6607 chromosome, complete genome	1697749	GCTGCTGgTtGCgcTGCTGCTGG	-	4
+AACGCTGCTGCTATCGGTGCNNN	NZ_CP007454.1 Staphylococcus aureus strain 502A isolate RN6607 chromosome, complete genome	893018	AtCGgTGCTGCTATtGGTGCAGG	-	3
+AACGCTGCTGCTATCGGTGCNNN	NZ_CP007454.1 Staphylococcus aureus strain 502A isolate RN6607 chromosome, complete genome	2371393	AAaGgTGCaGCgATCGGTGCTGG	+	4
+TATGACTGAACGTCCGATAANNN	NZ_CP007454.1 Staphylococcus aureus strain 502A isolate RN6607 chromosome, complete genome	2712727	TATGtCTGAACGTattATAATGG	-	4

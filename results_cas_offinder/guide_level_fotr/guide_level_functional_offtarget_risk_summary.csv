@@ -1,0 +1,17 @@
+final_guide_id,mlcb_gene,original_gene_rank,query_spacer,original_functional_risk_penalized_score,original_predicted_high_functional_offtarget_risk_probability,total_offtarget_hits,high_interest_hits,mismatch_1_hits,mismatch_2_hits,mismatch_3_hits,mismatch_4_hits,coding_cds_hits,intergenic_or_unannotated_hits,amr_or_resistance_keyword_hits,mobile_element_keyword_hits,essential_like_keyword_hits,unique_genomes_with_hits,functional_offtarget_burden_score,guide_level_fotr_recommendation,final_fotr_rank_within_gene
+blaKPC_riskaware_top1,blaKPC,1,GCCTTACTGCCCGAAGGCGG,0.9755563703560598,0.000213542966005,1,0,0,0,0,1,1,0,0,0,0,1,2.0,Strong_candidate_low_functional_offtarget_burden,1
+blaKPC_riskaware_top2,blaKPC,2,AGCAGCAGCAACAACGGCGG,0.9754550490180444,0.0006188283180662,10,1,0,0,1,9,10,0,0,0,0,2,24.0,Acceptable_candidate_moderate_functional_offtarget_burden,2
+blaKPC_riskaware_top4,blaKPC,4,AGCAGCAGCAGCAACAACGG,0.9740356525837816,0.0062964140551173,9,3,0,0,2,7,9,0,0,0,1,3,32.0,Caution_candidate_elevated_functional_offtarget_burden,3
+blaNDM1_riskaware_top2,blaNDM1,2,ACGCCCAATGGTTCGGTATG,0.975606622565998,1.253412625202089e-05,2,0,0,0,0,2,1,1,0,0,0,1,2.4,Strong_candidate_low_functional_offtarget_burden,1
+blaNDM1_riskaware_top5,blaNDM1,5,GATCGCCAGCATCAATGCAG,0.9752544926529434,0.0014210537784704,2,0,0,0,0,2,1,1,0,0,0,1,2.4,Strong_candidate_low_functional_offtarget_burden,2
+blaNDM1_riskaware_top1,blaNDM1,1,AATGGTTCGGTATGCGGGCG,0.9998889143378394,0.0004443426486421,1,1,0,0,0,1,1,0,1,1,0,1,11.0,Acceptable_candidate_moderate_functional_offtarget_burden,3
+mcr1_riskaware_top1,mcr1,1,GGCTGTGCCGTGTTCGGTGC,0.9511625113802524,0.0002280032594784,1,0,0,0,0,1,1,0,0,0,0,1,2.0,Strong_candidate_low_functional_offtarget_burden,1
+mcr1_riskaware_top3,mcr1,3,CGACGCCGTTCTTCTGGTAC,0.95095444882532,0.0010602534792087,4,0,0,0,0,4,4,0,0,0,0,1,8.0,Strong_candidate_low_functional_offtarget_burden,2
+mcr1_riskaware_top2,mcr1,2,GCCGTTCTTCTGGTACTGGA,0.9510394085090136,0.0007204147444343,4,1,0,0,1,3,4,0,0,0,0,2,12.0,Acceptable_candidate_moderate_functional_offtarget_burden,3
+mcr1_riskaware_top4,mcr1,4,CTGCTGCTGCTGGCTGCTGC,0.9507301755137516,0.0019573467254818,27,2,0,0,0,27,27,0,1,0,1,2,65.0,Avoid_or_deprioritize_high_functional_offtarget_burden,4
+mcr1_riskaware_top5,mcr1,5,GCTGCTGCTGGCTATGCTGC,0.949541044651661,0.0067138701738445,53,9,1,1,5,46,53,0,2,0,1,3,170.0,Avoid_or_deprioritize_high_functional_offtarget_burden,5
+mecA_riskaware_top2,mecA,2,ACTGAACGTCCGATAAAGGT,0.9444866355023336,0.0269315067711539,1,0,0,0,0,1,1,0,0,0,0,1,2.0,Strong_candidate_low_functional_offtarget_burden,1
+mecA_riskaware_top4,mecA,4,ATGGTTAACGCTGCTGCTAT,0.9147408451038812,0.0483536927552075,1,0,0,0,0,1,1,0,0,0,0,1,2.0,Strong_candidate_low_functional_offtarget_burden,2
+mecA_riskaware_top5,mecA,5,TATGACTGAACGTCCGATAA,0.902182562617796,0.0010258470897934,3,0,0,0,0,3,2,1,0,0,0,2,4.4,Strong_candidate_low_functional_offtarget_burden,3
+mecA_riskaware_top3,mecA,3,AACGCTGCTGCTATCGGTGC,0.9377973740263909,0.0536885526749249,10,1,0,0,1,9,10,0,0,0,0,3,24.0,Acceptable_candidate_moderate_functional_offtarget_burden,4
+mecA_riskaware_top1,mecA,1,GCTGCTGCTGTTGCTGATGC,0.950624972463529,0.0023781589263729,61,6,0,1,4,56,61,0,2,0,0,2,158.0,Avoid_or_deprioritize_high_functional_offtarget_burden,5

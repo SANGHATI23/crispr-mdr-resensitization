@@ -1,0 +1,28 @@
+Requirement 3 Direct SCCmec Evidence Summary
+===========================================
+
+Input hit context table: results_cas_offinder/expanded_panel/mobile_context_mapping/requirement3_hit_level_mobile_context_mapping.csv
+Input all-20 direct plasmid table: results_cas_offinder/expanded_panel/mobile_context_mapping/final_requirement3_direct_evidence/requirement3_all20_with_direct_plasmid_evidence.csv
+
+Hit rows evaluated: 1997
+Guide rows summarized before all-20 merge: 19
+Final all-20 rows after merge: 20
+Unique guides after merge: 20
+
+Overall SCCmec evidence strength counts:
+- No_direct_SCCmec_like_evidence: 18
+- Zero_hit_no_direct_SCCmec_like_evidence: 1
+- Strong_direct_SCCmec_like_evidence: 1
+
+mecA guide-level SCCmec evidence:
+- mecA_riskaware_top1 | total_hits=659 | sccmec_marker_hits=6 | sccmec_proxy_context_hits=10 | nearby_sccmec_feature_hits=10 | relevant_mecA_sccmec_hits=10 | strength=Strong_direct_SCCmec_like_evidence
+- mecA_riskaware_top2 | total_hits=12 | sccmec_marker_hits=0 | sccmec_proxy_context_hits=0 | nearby_sccmec_feature_hits=0 | relevant_mecA_sccmec_hits=0 | strength=No_direct_SCCmec_like_evidence
+- mecA_riskaware_top3 | total_hits=132 | sccmec_marker_hits=0 | sccmec_proxy_context_hits=0 | nearby_sccmec_feature_hits=0 | relevant_mecA_sccmec_hits=0 | strength=No_direct_SCCmec_like_evidence
+- mecA_riskaware_top4 | total_hits=14 | sccmec_marker_hits=0 | sccmec_proxy_context_hits=0 | nearby_sccmec_feature_hits=0 | relevant_mecA_sccmec_hits=0 | strength=No_direct_SCCmec_like_evidence
+- mecA_riskaware_top5 | total_hits=37 | sccmec_marker_hits=0 | sccmec_proxy_context_hits=0 | nearby_sccmec_feature_hits=0 | relevant_mecA_sccmec_hits=0 | strength=No_direct_SCCmec_like_evidence
+
+Output files:
+- results_cas_offinder/expanded_panel/mobile_context_mapping/direct_sccmec_mapping/requirement3_direct_sccmec_hit_level_mapping.csv
+- results_cas_offinder/expanded_panel/mobile_context_mapping/direct_sccmec_mapping/requirement3_direct_sccmec_guide_level_summary.csv
+- results_cas_offinder/expanded_panel/mobile_context_mapping/direct_sccmec_mapping/requirement3_all20_with_direct_plasmid_and_sccmec_evidence.csv
+- results_cas_offinder/expanded_panel/mobile_context_mapping/direct_sccmec_mapping/requirement3_direct_sccmec_mapping_summary.txt

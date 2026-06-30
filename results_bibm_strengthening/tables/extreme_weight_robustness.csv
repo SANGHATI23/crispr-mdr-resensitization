@@ -1,0 +1,13 @@
+source_file,weight_configuration,activity_weight,specificity_weight,functional_safety_weight,stable_gene_top1_count,total_genes,all_gene_top1_stable,top20_jaccard_vs_40_30_30
+results_mlcb/tables/functional_offtarget_risk_ranked_guides.csv,80_10_10,80,10,10,3,4,False,0.2903
+results_mlcb/tables/functional_offtarget_risk_ranked_guides.csv,10_80_10,10,80,10,3,4,False,0.6
+results_mlcb/tables/functional_offtarget_risk_ranked_guides.csv,10_10_80,10,10,80,3,4,False,0.5385
+results_mlcb/tables/functional_offtarget_risk_ranked_guides.csv,70_20_10,70,20,10,4,4,True,0.7391
+results_mlcb/tables/functional_offtarget_risk_ranked_guides.csv,70_10_20,70,10,20,4,4,True,0.6
+results_mlcb/tables/functional_offtarget_risk_ranked_guides.csv,20_70_10,20,70,10,3,4,False,0.9048
+results_mlcb/tables/functional_offtarget_risk_ranked_guides.csv,10_70_20,10,70,20,3,4,False,0.5385
+results_mlcb/tables/functional_offtarget_risk_ranked_guides.csv,20_10_70,20,10,70,3,4,False,0.6667
+results_mlcb/tables/functional_offtarget_risk_ranked_guides.csv,10_20_70,10,20,70,3,4,False,0.5385
+results_mlcb/tables/functional_offtarget_risk_ranked_guides.csv,90_5_5,90,5,5,3,4,False,0.2903
+results_mlcb/tables/functional_offtarget_risk_ranked_guides.csv,5_90_5,5,90,5,3,4,False,0.5385
+results_mlcb/tables/functional_offtarget_risk_ranked_guides.csv,5_5_90,5,5,90,3,4,False,0.4286

@@ -1,0 +1,9 @@
+target_gene,guide_id,total_offtarget_hits,coding_cds_hits,noncoding_or_intergenic_hits,amr_hits,virulence_hits,essential_like_hits,mobile_or_plasmid_hits,low_mismatch_hits,high_interest_hits,total_functional_burden,mean_functional_burden,functional_annotation_recommendation,recommendation_order,recommendation_clean,requirement2_rank_within_gene,requirement2_decision
+blaKPC,blaKPC_riskaware_top5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Strong_candidate_zero_detected_offtarget_burden,0.0,Strong zero-hit candidate,1,PRIORITIZE_OR_KEEP_AS_LOW_OFFTARGET_CANDIDATE
+blaKPC,blaKPC_riskaware_top3,2.0,2.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,9.0,4.5,Acceptable_candidate_moderate_functional_offtarget_burden,2.0,Acceptable moderate-burden candidate,2,KEEP_AS_BACKUP
+blaNDM1,blaNDM1_riskaware_top1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,3.0,Strong_candidate_low_functional_offtarget_burden,1.0,Strong low-burden candidate,1,PRIORITIZE
+blaNDM1,blaNDM1_riskaware_top3,2.0,2.0,0.0,0.0,0.0,0.0,2.0,0.0,2.0,12.0,6.0,Acceptable_candidate_moderate_functional_offtarget_burden,2.0,Acceptable moderate-burden candidate,2,KEEP_AS_BACKUP
+mcr1,mcr1_riskaware_top1,15.0,15.0,0.0,0.0,0.0,2.0,3.0,0.0,5.0,62.0,4.133333333333334,Caution_candidate_elevated_functional_offtarget_burden,3.0,Caution elevated-burden candidate,1,USE_WITH_CAUTION
+mcr1,mcr1_riskaware_top3,31.0,31.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,95.0,3.064516129032258,Caution_candidate_elevated_functional_offtarget_burden,3.0,Caution elevated-burden candidate,2,USE_WITH_CAUTION
+mecA,mecA_riskaware_top2,12.0,12.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,36.0,3.0,Acceptable_candidate_moderate_functional_offtarget_burden,2.0,Acceptable moderate-burden candidate,1,KEEP_AS_BACKUP
+mecA,mecA_riskaware_top4,14.0,14.0,0.0,0.0,0.0,1.0,0.0,0.0,1.0,46.0,3.2857142857142856,Acceptable_candidate_moderate_functional_offtarget_burden,2.0,Acceptable moderate-burden candidate,2,KEEP_AS_BACKUP

@@ -1,0 +1,34 @@
+Expanded Cas-OFFinder Genome Panel Requirements
+========================================================================
+
+Manifest records: 13
+Required sequences/genomes: 106
+Recommended additional sequences/genomes: 10
+Total planned panel size: 116
+
+Planned count by target gene
+------------------------------------------------------------------------
+target_gene
+all         8
+blaKPC     25
+blaNDM1    26
+mcr1       27
+mecA       30
+
+Planned count by panel category
+------------------------------------------------------------------------
+panel_category
+complete_chromosome             51
+complete_mobile_element         10
+complete_plasmid                22
+complete_plasmid_or_integron    10
+cross_species_genome            15
+negative_control_genome          8
+
+Important design rule
+------------------------------------------------------------------------
+The final panel must contain both bacterial chromosome/assembly sequences and complete plasmid or mobile-element sequences. A chromosome-only panel is insufficient for blaKPC, blaNDM1, mcr1, and mecA because these resistance determinants frequently occur in mobile genetic contexts.
+
+Next action
+------------------------------------------------------------------------
+Populate accession, strain, assembly quality, target-gene confirmation, plasmid replicon, SCCmec type, FASTA filename, and GFF filename before running the expanded Cas-OFFinder analysis.

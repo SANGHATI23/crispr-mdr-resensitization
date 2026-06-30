@@ -1,0 +1,12 @@
+metric,value
+total_rows,145
+unique_genes,4
+unique_spacers,105
+guides_for_gene_blaNDM1,46
+guides_for_gene_mcr1,42
+guides_for_gene_blaKPC,34
+guides_for_gene_mecA,23
+high_priority_text_label_0,145
+high_priority_score_quartile_label_0,85
+high_priority_score_quartile_label_1,60
+weak_functional_severity_low,145

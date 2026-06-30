@@ -1,0 +1,27 @@
+Full Tool Comparison Summary
+============================
+
+Input tool table: /Users/sanghati/Documents/crispr-mdr-resensitization/results/final_comparison_table.csv
+Input FOTR v2 table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_fotr_v2/all_guides_fotr_v2_functional_context_recommended.csv
+Output table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/tool_comparison/full_tool_comparison_table.csv
+
+Rows in final comparison table: 145
+Unique spacers: 105
+Genes: blaKPC, blaNDM1, mcr1, mecA
+
+Disagreement class counts:
+- Moderate_tool_disagreement: 69
+- High_tool_disagreement: 63
+- Low_tool_disagreement: 13
+
+Top 10 highest-disagreement guides:
+- blaNDM1 | TGGCGATCTGGTTTTCGATC | index=1.000 | class=High_tool_disagreement | FOTR_v2=75.56 | RNA=Structurally_Risky | recommendation=Not_recommended_structural_risk
+- blaNDM1 | TTTCGATCTGGTTTTCGATC | index=1.000 | class=High_tool_disagreement | FOTR_v2=80.21 | RNA=Moderate | recommendation=Moderate_priority_candidate
+- blaNDM1 | TTTCGATCTGGTTTTCGATC | index=1.000 | class=High_tool_disagreement | FOTR_v2=80.21 | RNA=Moderate | recommendation=Moderate_priority_candidate
+- blaNDM1 | CGTGGCGATCTGGTTTTCGA | index=0.996 | class=High_tool_disagreement | FOTR_v2=75.45 | RNA=Structurally_Risky | recommendation=Not_recommended_structural_risk
+- blaKPC | TTTAGCGACGGAATAGTGTA | index=0.958 | class=High_tool_disagreement | FOTR_v2=81.3 | RNA=Moderate | recommendation=Moderate_priority_candidate
+- mcr1 | GGTGCTGGTGGTGCTGGTTT | index=0.958 | class=High_tool_disagreement | FOTR_v2=75.0625 | RNA=Structurally_Risky | recommendation=Not_recommended_structural_risk
+- blaKPC | TTTAGCGACGGAATAGTGTA | index=0.958 | class=High_tool_disagreement | FOTR_v2=81.3 | RNA=Moderate | recommendation=Moderate_priority_candidate
+- blaKPC | GTCCTGTTCGAGTTTAGCGA | index=0.958 | class=High_tool_disagreement | FOTR_v2=75.35 | RNA=Structurally_Risky | recommendation=Not_recommended_structural_risk
+- blaKPC | GTCCTGTTCGAGTTTAGCGA | index=0.958 | class=High_tool_disagreement | FOTR_v2=75.35 | RNA=Structurally_Risky | recommendation=Not_recommended_structural_risk
+- mcr1 | TTAACCAGCACCACCGATCA | index=0.958 | class=High_tool_disagreement | FOTR_v2=74.0725 | RNA=Moderate | recommendation=Lower_priority_candidate

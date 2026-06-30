@@ -1,0 +1,70 @@
+Requirement 2 Functional Annotation Summary
+===========================================
+
+Purpose
+-------
+This step annotates the expanded Cas-OFFinder off-target hit table using matched GFF/GFF3 genome annotation files and keyword-derived functional classes.
+
+Input and annotation files
+--------------------------
+Input expanded off-target hit table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/final_requirement1/requirement1_expanded_casoffinder_genomewide_offtarget_hit_table.csv
+GFF/GFF3 annotation folder: /Users/sanghati/Documents/crispr-mdr-resensitization/data_cas_offinder/expanded_panel/annotations
+Input expanded off-target hits: 1997
+GFF feature rows loaded: 307521
+GFF files represented: 36
+
+Output QC
+---------
+Annotated output rows: 1997
+Rows with functional label: 1997
+Rows missing functional label: 0
+High-interest functional hits: 299
+Guide-level rows: 19
+
+Genomic context counts
+----------------------
+genomic_context
+Coding_CDS                   1966
+Annotated_non_CDS_feature      31
+Name: count, dtype: int64
+
+Primary functional class counts
+-------------------------------
+functional_class_primary
+Coding_other                 1698
+Essential_like                104
+AMR_or_resistance_related      77
+Virulence_related              72
+Annotated_non_CDS_other        30
+Mobile_or_plasmid_related      16
+Name: count, dtype: int64
+
+Keyword class counts
+--------------------
+AMR/resistance keyword hits: 77
+Virulence keyword hits: 72
+Essential-like keyword hits: 104
+Mobile/plasmid keyword hits: 16
+Low-mismatch hits <=2 mismatches: 38
+
+Guide-level recommendation counts
+---------------------------------
+functional_annotation_recommendation
+Avoid_or_deprioritize_high_functional_offtarget_burden       8
+Acceptable_candidate_moderate_functional_offtarget_burden    6
+Caution_candidate_elevated_functional_offtarget_burden       4
+Strong_candidate_low_functional_offtarget_burden             1
+Name: count, dtype: int64
+
+Output files
+------------
+Annotated hit-level table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/requirement2_expanded_offtarget_hits_functionally_annotated.csv
+High-interest functional hits: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/requirement2_high_interest_functional_offtargets.csv
+Guide-level functional burden table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/requirement2_guide_level_functional_offtarget_burden.csv
+Functional annotation summary: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/requirement2_functional_annotation_summary.txt
+
+Requirement 2 first-pass status: PASS for GFF3 + keyword-based annotation of all 1,997 expanded Cas-OFFinder hits.
+
+Manuscript-safe wording
+-----------------------
+We extended the expanded Cas-OFFinder hit table with matched GFF3-based functional annotation. Each candidate off-target hit was assigned a genomic context and first-pass functional class using overlapping genome features and keyword-derived biological categories, including AMR/resistance-related, virulence-related, essential-like, mobile/plasmid-related, coding-other, and noncoding/intergenic classes. These annotations were aggregated into a guide-level functional off-target burden table for downstream FOTR-CRISPR prioritization. This annotation remains a first-pass computational classification and should be strengthened with database-backed CARD, VFDB, DEG, and mobile-element mapping in the next stage.

@@ -1,0 +1,32 @@
+Combined Requirement 2 + Requirement 3 Final Summary
+====================================================
+
+Purpose:
+This table combines database-refined functional off-target burden from Requirement 2 with plasmid/mobile/integron/SCCmec/resistance-island context burden from Requirement 3.
+
+Input table: results_cas_offinder/expanded_panel/mobile_context_mapping/final_requirement3/requirement3_mobile_context_guide_summary_ALL20.csv
+Output all-20 table: results_cas_offinder/expanded_panel/mobile_context_mapping/final_requirement3_combined/requirement3_combined_requirement2_requirement3_final_guide_table_ALL20.csv
+Output top-guide table: results_cas_offinder/expanded_panel/mobile_context_mapping/final_requirement3_combined/requirement3_combined_top_guides_by_gene.csv
+
+Total guide rows: 20
+Unique guides: 20
+Target genes: 4
+
+Combined decision counts:
+- FINAL_DEPRIORITIZE_HIGH_FUNCTIONAL_AND_HIGH_MOBILE_CONTEXT: 7
+- FINAL_CAUTION_FUNCTIONAL_OR_MOBILE_CONTEXT: 4
+- FINAL_BACKUP_ACCEPTABLE_WITH_MONITORING: 3
+- FINAL_DEPRIORITIZE_HIGH_FUNCTIONAL_BURDEN: 3
+- FINAL_PRIORITIZE_ZERO_HIT_LOW_FUNCTIONAL_AND_MOBILE_CONTEXT: 1
+- FINAL_PRIORITIZE_LOW_FUNCTIONAL_AND_MOBILE_CONTEXT: 1
+- FINAL_DEPRIORITIZE_HIGH_MOBILE_CONTEXT: 1
+
+Final top 2 guides per gene after combined Requirement 2 + 3 scoring:
+- blaKPC rank 1: blaKPC_riskaware_top5 | Req2_decision=PRIORITIZE_OR_KEEP_AS_LOW_OFFTARGET_CANDIDATE | Req2_burden=0.0 | Req3_mobile_burden=0 | Final=FINAL_PRIORITIZE_ZERO_HIT_LOW_FUNCTIONAL_AND_MOBILE_CONTEXT
+- blaKPC rank 2: blaKPC_riskaware_top3 | Req2_decision=KEEP_AS_BACKUP | Req2_burden=18.0 | Req3_mobile_burden=0 | Final=FINAL_BACKUP_ACCEPTABLE_WITH_MONITORING
+- blaNDM1 rank 1: blaNDM1_riskaware_top1 | Req2_decision=PRIORITIZE | Req2_burden=3.0 | Req3_mobile_burden=0 | Final=FINAL_PRIORITIZE_LOW_FUNCTIONAL_AND_MOBILE_CONTEXT
+- blaNDM1 rank 2: blaNDM1_riskaware_top5 | Req2_decision=KEEP_AS_BACKUP | Req2_burden=62.0 | Req3_mobile_burden=0 | Final=FINAL_BACKUP_ACCEPTABLE_WITH_MONITORING
+- mcr1 rank 1: mcr1_riskaware_top1 | Req2_decision=USE_WITH_CAUTION | Req2_burden=67.0 | Req3_mobile_burden=14 | Final=FINAL_CAUTION_FUNCTIONAL_OR_MOBILE_CONTEXT
+- mcr1 rank 2: mcr1_riskaware_top3 | Req2_decision=DEPRIORITIZE | Req2_burden=199.0 | Req3_mobile_burden=3 | Final=FINAL_DEPRIORITIZE_HIGH_FUNCTIONAL_BURDEN
+- mecA rank 1: mecA_riskaware_top2 | Req2_decision=KEEP_AS_BACKUP | Req2_burden=36.0 | Req3_mobile_burden=14 | Final=FINAL_CAUTION_FUNCTIONAL_OR_MOBILE_CONTEXT
+- mecA rank 2: mecA_riskaware_top4 | Req2_decision=KEEP_AS_BACKUP | Req2_burden=50.0 | Req3_mobile_burden=24 | Final=FINAL_CAUTION_FUNCTIONAL_OR_MOBILE_CONTEXT

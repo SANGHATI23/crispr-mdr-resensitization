@@ -1,0 +1,68 @@
+Requirement 2 Database-Refined Completion Summary
+================================================
+
+Final status
+------------
+Requirement 2 status: DATABASE-REFINED COMPUTATIONAL ANNOTATION COMPLETE.
+This is a curated database-inspired refinement of GFF product annotations, not direct BLAST/HMM database alignment.
+
+Input metrics
+-------------
+Annotated hit-level rows: 1997
+All-guide rows retained: 20
+Genome accessions represented: 36
+GFF files used: 36
+
+Database-refined hit counts
+---------------------------
+DB-refined AMR/resistance hits: 503
+DB-refined virulence hits: 92
+DB-refined essential-like hits: 180
+DB-refined mobile/plasmid hits: 961
+High-confidence functional hits: 1218
+
+DB-refined primary class counts
+-------------------------------
+db_refined_functional_class
+DB_refined_coding_other                 737
+DB_refined_AMR_or_resistance_related    503
+DB_refined_mobile_or_plasmid_related    492
+DB_refined_essential_like               151
+DB_refined_virulence_related             72
+DB_refined_annotated_non_CDS_other       30
+DB_refined_other                         12
+Name: count, dtype: int64
+
+DB-refined guide recommendation counts
+--------------------------------------
+db_refined_recommendation
+Avoid_or_deprioritize_high_database_refined_burden       10
+Acceptable_candidate_moderate_database_refined_burden     6
+Caution_candidate_elevated_database_refined_burden        2
+Strong_candidate_zero_detected_offtarget_burden           1
+Strong_candidate_low_database_refined_burden              1
+Name: count, dtype: int64
+
+Top guides by gene after DB-refined Requirement 2
+------------------------------------------------
+target_gene               guide_id  db_refined_rank_within_gene  total_offtarget_hits  db_refined_high_confidence_functional_hits  db_refined_total_burden                             db_refined_recommendation                           db_refined_decision
+     blaKPC  blaKPC_riskaware_top5                            1                   0.0                                         0.0                      0.0       Strong_candidate_zero_detected_offtarget_burden PRIORITIZE_OR_KEEP_AS_LOW_OFFTARGET_CANDIDATE
+     blaKPC  blaKPC_riskaware_top3                            2                   2.0                                         2.0                     18.0 Acceptable_candidate_moderate_database_refined_burden                                KEEP_AS_BACKUP
+    blaNDM1 blaNDM1_riskaware_top1                            1                   1.0                                         0.0                      3.0          Strong_candidate_low_database_refined_burden                                    PRIORITIZE
+    blaNDM1 blaNDM1_riskaware_top3                            2                   2.0                                         2.0                     14.0 Acceptable_candidate_moderate_database_refined_burden                                KEEP_AS_BACKUP
+       mcr1    mcr1_riskaware_top1                            1                  15.0                                         5.0                     67.0    Caution_candidate_elevated_database_refined_burden                              USE_WITH_CAUTION
+       mcr1    mcr1_riskaware_top3                            2                  31.0                                        18.0                    199.0    Avoid_or_deprioritize_high_database_refined_burden                                  DEPRIORITIZE
+       mecA    mecA_riskaware_top2                            1                  12.0                                         0.0                     36.0 Acceptable_candidate_moderate_database_refined_burden                                KEEP_AS_BACKUP
+       mecA    mecA_riskaware_top4                            2                  14.0                                         1.0                     50.0 Acceptable_candidate_moderate_database_refined_burden                                KEEP_AS_BACKUP
+
+Manuscript-safe wording
+-----------------------
+We further refined the GFF-based off-target annotation using curated database-inspired functional dictionaries representing AMR/resistance, virulence, essential-gene, and mobile-element categories. This refinement was applied to all 1,997 expanded Cas-OFFinder candidate off-target hits and aggregated into an all-20-guide burden table, retaining the zero-hit guide identified in the expanded Cas-OFFinder audit. Because this step uses curated term matching over GFF product annotations rather than direct sequence alignment against CARD, VFDB, DEG, or mobile-element databases, the results are reported as database-refined computational annotations rather than experimentally or sequence-database-confirmed annotations.
+
+Output files
+------------
+DB-refined hit table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/final_requirement2_database_refined/requirement2_database_refined_hit_annotations.csv
+DB-refined all-20 guide table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/final_requirement2_database_refined/requirement2_database_refined_guide_summary_ALL20.csv
+DB-refined top guides: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/final_requirement2_database_refined/requirement2_database_refined_top_guides_by_gene_ALL20.csv
+DB-refined high-confidence hits: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/final_requirement2_database_refined/requirement2_database_refined_high_confidence_functional_hits.csv
+DB-refined summary: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/functional_annotation/final_requirement2_database_refined/requirement2_database_refined_completion_summary.txt

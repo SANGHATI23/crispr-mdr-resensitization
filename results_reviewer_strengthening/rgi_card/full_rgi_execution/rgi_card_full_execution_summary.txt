@@ -1,0 +1,26 @@
+Full CARD/RGI execution summary
+================================
+
+RGI input FASTA: results_reviewer_strengthening/rgi_card/full_rgi_execution/rgi_input_extracted_high_confidence_features.fna
+RGI raw output: results_reviewer_strengthening/rgi_card/full_rgi_execution/rgi_card_high_confidence_features.txt
+RGI total hit rows: 196
+
+Summary by target gene:
+target_gene  rgi_hit_rows  unique_guides_with_rgi_hits  unique_accessions_with_rgi_hits  unique_card_hits
+     blaKPC             6                            2                                6                 2
+    blaNDM1             7                            1                                4                 1
+       mcr1           105                            2                               10                11
+       mecA            78                            1                               20                20
+
+Summary by RGI cutoff:
+target_gene Cut_Off  rgi_hit_rows
+     blaKPC   Loose             6
+    blaNDM1 Perfect             7
+       mcr1   Loose            95
+       mcr1  Strict            10
+       mecA   Loose            57
+       mecA Perfect             6
+       mecA  Strict            15
+
+Reviewer-safe interpretation:
+RGI/CARD was executed on extracted high-confidence feature sequences overlapping predicted functional off-target sites. This provides direct database-backed confirmation for AMR-associated sequence content within the feature-level off-target context. RGI Perfect hits should be treated as strongest database-supported evidence, while Loose hits should be described as homolog-model or putative AMR-related evidence rather than definitive resistance-gene confirmation.

@@ -1,0 +1,5 @@
+Added check,Purpose,Key output,Reviewer value
+CARD/RGI-style confirmation subset,Identify dictionary-flagged functional hits suitable for direct database confirmation,High-interest candidate hit table by guide/gene,Makes annotation limitation auditable
+CFD/RS3 comparator overlap,Compare FOTR with orthogonal specificity/activity rankings,"CFD top-20 overlap 9/20, Jaccard 0.2903; RS3 top-20 overlap 0/20",Shows FOTR is not just a single-objective score replica
+Burden variance/CI,Quantify accession-level stability of conserved burden,"Mean, SD, SE, and 95% CI per guide",Adds uncertainty/stability interpretation
+Accession-panel statistics,Characterize the 36-genome off-target screen,"1,997 hits; 49 contig descriptions; 13 plasmid-labeled and 33 chromosome-labeled hit contigs",Clarifies panel scope and burden distribution

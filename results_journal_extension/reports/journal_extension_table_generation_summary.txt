@@ -1,0 +1,23 @@
+Journal Extension Computational Analysis Summary
+============================================================
+
+Scope:
+This journal extension is fully computational. Wet-lab MIC-resensitization validation was not performed.
+
+Journal-ready tables created:
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/tables/journal_table_all20_integrated_fotr_guides.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/tables/journal_table_database_refined_annotation_validation_summary.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/tables/journal_table_deprioritized_guides.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/tables/journal_table_mic_candidate_guides.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/tables/journal_table_mic_validation_planning_status.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/tables/journal_table_requirement_completion_status.csv
+- /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/tables/journal_table_top2_guides_per_gene.csv
+
+Primary computational conclusion:
+The final integrated FOTR-CRISPR ranking identifies blaKPC_riskaware_top5 and blaNDM1_riskaware_top1 as the cleanest computational candidates under the current 36-accession off-target, functional, mobile-context, and conservation framework.
+
+Safe MIC wording:
+MIC-resensitization experiments were not performed. The current work provides a validation-ready MIC planning framework only.
+
+Suggested journal claim:
+This study presents a computational FOTR-CRISPR framework that integrates genome-wide off-target discovery, functional annotation, mobile-genetic context, and strain-level off-target conservation to prioritize CRISPR-Cas9 guide RNAs against AMR genes.

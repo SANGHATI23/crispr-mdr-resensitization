@@ -1,0 +1,22 @@
+Negative Control Summary
+========================
+
+Input FOTR v2 table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_fotr_v2/all_guides_fotr_v2_functional_context_recommended.csv
+Output table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/negative_controls/negative_control_guides.csv
+
+Total negative-control rows: 180
+Genes represented: blaKPC, blaNDM1, mcr1, mecA
+
+Control type counts:
+- random_20nt_sequence: 100
+- extreme_high_gc_sequence: 20
+- extreme_low_gc_sequence: 20
+- lowest_fotr_v2_real_candidate: 20
+- structurally_risky_real_candidate: 20
+
+GC flag counts:
+- GC_reasonable: 136
+- GC_extreme: 44
+
+Interpretation:
+These controls provide expected-low-priority examples, including random 20-nt sequences, GC-extreme synthetic sequences, lowest-ranked real candidates, and structurally risky real candidates. They are intended as computational sanity checks rather than experimental negative controls.

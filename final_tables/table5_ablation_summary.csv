@@ -1,0 +1,5 @@
+gene,most_influential_removed_component,mean_absolute_rank_shift,max_rank_shift,spearman_rank_correlation,top10_jaccard_or_overlap
+blaKPC,without_rna_accessibility,1.5882,6,0.9746,0.6667
+blaNDM1,without_rna_accessibility,3.7826,12,0.9363,1.0
+mcr1,without_rna_accessibility,2.8333,10,0.9448,0.8182
+mecA,without_risk_penalties,0.5217,8,0.9881,1.0

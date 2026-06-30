@@ -1,0 +1,24 @@
+vanA Pareto-Front Ranking Summary
+=================================
+
+Total vanA guides analyzed: 102
+Pareto-front candidates: 4
+High-priority Pareto candidates: 4
+
+Objectives optimized:
+- unseen_gene_priority_score_v1: higher is better
+- escape_resilience_score: higher is better
+- simple_on_target_proxy: higher is better
+- gc_objective_score: acceptable GC is better
+- target_region_objective_score: early coding is better
+
+Top Pareto-ranked guide:
+- Spacer: CTCAGAGGAGCATGACGTAT
+- PAM: CGG
+- Position: 39
+- Target region: early_coding_region
+- Unseen-gene priority score v1: 100.0
+- Escape resilience score: 44.17
+- Escape resilience class: High_escape_resilience
+- Pareto support score: 86.04
+- Pareto recommendation: High_priority_pareto_candidate

@@ -1,0 +1,28 @@
+Unseen Gene Candidate Guide Ranking v1 Summary
+=============================================
+
+Input guides: /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/unseen_genes/unseen_gene_candidate_guides_all.csv
+Output ranked table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/unseen_genes/unseen_gene_candidate_guides_ranked_v1.csv
+Total ranked guides: 102
+
+Recommendation counts:
+- Moderate_priority_unseen_candidate: 39
+- High_priority_unseen_candidate: 36
+- Lower_priority_unseen_candidate: 17
+- Lower_priority_gc_extreme: 10
+
+Top 10 guides by gene:
+vanA:
+  - rank=1 | spacer=CTCAGAGGAGCATGACGTAT | PAM=CGG | strand=+ | pos=39 | region=early_coding_region | GC=50.0 | score=100.0 | label=High_priority_unseen_candidate
+  - rank=1 | spacer=CTATTCAGCTGTACTCTCGC | PAM=CGG | strand=+ | pos=192 | region=early_coding_region | GC=50.0 | score=100.0 | label=High_priority_unseen_candidate
+  - rank=1 | spacer=TCAGCTTTGCATGGCAAGTC | PAM=AGG | strand=+ | pos=286 | region=early_coding_region | GC=50.0 | score=100.0 | label=High_priority_unseen_candidate
+  - rank=1 | spacer=CATGGCAAGTCAGGTGAAGA | PAM=TGG | strand=+ | pos=295 | region=early_coding_region | GC=50.0 | score=100.0 | label=High_priority_unseen_candidate
+  - rank=5 | spacer=TAGGTAAACGTAGCTGCCAC | PAM=CGG | strand=- | pos=475 | region=middle_coding_region | GC=50.0 | score=97.0 | label=High_priority_unseen_candidate
+  - rank=5 | spacer=AGTCAATAGCGCGGACGAAT | PAM=TGG | strand=+ | pos=549 | region=middle_coding_region | GC=50.0 | score=97.0 | label=High_priority_unseen_candidate
+  - rank=5 | spacer=AACAGTGCCGCGTTAGTTGT | PAM=TGG | strand=+ | pos=664 | region=middle_coding_region | GC=50.0 | score=97.0 | label=High_priority_unseen_candidate
+  - rank=8 | spacer=GACCAAATCAGGCTGCAGTA | PAM=CGG | strand=+ | pos=694 | region=late_coding_region | GC=50.0 | score=94.0 | label=High_priority_unseen_candidate
+  - rank=8 | spacer=TTCCGTACTGCAGCCTGATT | PAM=TGG | strand=- | pos=696 | region=late_coding_region | GC=50.0 | score=94.0 | label=High_priority_unseen_candidate
+  - rank=8 | spacer=TATAAAGCGCTCGGCTGTAG | PAM=AGG | strand=+ | pos=838 | region=late_coding_region | GC=50.0 | score=94.0 | label=High_priority_unseen_candidate
+
+Interpretation:
+This v1 ranking provides a transparent first-pass prioritization of unseen AMR-gene guides. It uses sequence suitability, GC status, and target-region preference only. It should be treated as a prospective-screening layer, not as final FOTR v2-equivalent scoring until RNA accessibility, external off-target screening, conservation, and functional annotation are added.

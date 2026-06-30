@@ -1,0 +1,2 @@
+guide_id,target_gene,spacer,total_expanded_hits,genomes_with_hits,min_mismatch,max_mismatch,mismatch_1_hits,mismatch_2_hits,mismatch_3_hits,mismatch_4_hits,expanded_hit_status
+blaKPC_riskaware_top5,blaKPC,CGGCTCCATCGGTGTGTACG,0,0,,,0,0,0,0,ZERO_HIT_IN_EXPANDED_PANEL

@@ -1,0 +1,6 @@
+gene,fasta_path,file_exists,header,sequence_present,length_bp,valid_dna_alphabet,length_divisible_by_3,starts_with_atg,has_terminal_stop,validation_status,validation_notes
+vanA,data_journal_extension/unseen_genes/vanA.fa,Yes,vanA|source=NCBI_GenBank|type=CDS|provenance=manual_curated|accession=M97297.1|protein_id=AAA65956.1|location=6979..8010|context=Tn1546,Yes,1032,Yes,Yes,Yes,Yes,Pass,No issues detected.
+tetM,data_journal_extension/unseen_genes/tetM.fa,No,,No,0,No,No,No,No,Missing_sequence,No sequence found.
+ermB,data_journal_extension/unseen_genes/ermB.fa,No,,No,0,No,No,No,No,Missing_sequence,No sequence found.
+aac6Ib,data_journal_extension/unseen_genes/aac6Ib.fa,No,,No,0,No,No,No,No,Missing_sequence,No sequence found.
+qnrS,data_journal_extension/unseen_genes/qnrS.fa,No,,No,0,No,No,No,No,Missing_sequence,No sequence found.

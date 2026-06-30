@@ -1,0 +1,27 @@
+Requirement 3 Mobile Context Mapping Summary
+===========================================
+
+Input hit table: results_cas_offinder/expanded_panel/functional_annotation/final_requirement2_database_refined/requirement2_database_refined_hit_annotations.csv
+GFF folder: data_cas_offinder/expanded_panel/annotations
+Window size: +/- 10000 bp
+Total mapped hits: 1997
+Total guide rows summarized: 19
+
+Hit-level context signals:
+- mobile_context_flag: 356
+- plasmid_context_flag: 31
+- integron_context_flag: 2
+- sccmec_context_flag: 10
+- resistance_island_context_flag: 353
+- operon_proxy_flag: 0
+
+Guide-level mobile-context decision counts:
+- High_mobile_context_signal_review_or_deprioritize: 8
+- Elevated_mobile_context_signal: 5
+- Low_mobile_context_signal: 4
+- Moderate_mobile_context_signal: 2
+
+Output files:
+- results_cas_offinder/expanded_panel/mobile_context_mapping/requirement3_hit_level_mobile_context_mapping.csv
+- results_cas_offinder/expanded_panel/mobile_context_mapping/requirement3_guide_level_mobile_context_summary.csv
+- results_cas_offinder/expanded_panel/mobile_context_mapping/requirement3_context_class_counts.csv

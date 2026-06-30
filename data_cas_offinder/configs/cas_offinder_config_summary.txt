@@ -1,0 +1,40 @@
+Cas-OFFinder Config File Summary
+================================
+
+Guide input file: /Users/sanghati/Documents/crispr-mdr-resensitization/results_final_selection/top5_per_gene_risk_aware_guides.csv
+Genome folder: /Users/sanghati/Documents/crispr-mdr-resensitization/data_cas_offinder/genomes
+Cas-OFFinder pattern: NNNNNNNNNNNNNNNNNNNNNGG
+Allowed mismatches: 4
+
+Total guides: 20
+Genome FASTA files found: 3
+
+Guide query format used:
+20-nt spacer + NNN
+
+Created config files:
+- /Users/sanghati/Documents/crispr-mdr-resensitization/data_cas_offinder/configs/cas_offinder_Ecoli_reference_top5_all4genes.txt
+- /Users/sanghati/Documents/crispr-mdr-resensitization/data_cas_offinder/configs/cas_offinder_Klebsiella_pneumoniae_reference_top5_all4genes.txt
+- /Users/sanghati/Documents/crispr-mdr-resensitization/data_cas_offinder/configs/cas_offinder_Staphylococcus_aureus_MRSA_reference_top5_all4genes.txt
+
+Selected guides:
+blaKPC_riskaware_top1 | blaKPC | rank=1 | query=GCCTTACTGCCCGAAGGCGGNNN | mismatches=4
+blaKPC_riskaware_top2 | blaKPC | rank=2 | query=AGCAGCAGCAACAACGGCGGNNN | mismatches=4
+blaKPC_riskaware_top3 | blaKPC | rank=3 | query=AACAAGGATGACAAGCACAGNNN | mismatches=4
+blaKPC_riskaware_top4 | blaKPC | rank=4 | query=AGCAGCAGCAGCAACAACGGNNN | mismatches=4
+blaKPC_riskaware_top5 | blaKPC | rank=5 | query=CGGCTCCATCGGTGTGTACGNNN | mismatches=4
+blaNDM1_riskaware_top1 | blaNDM1 | rank=1 | query=AATGGTTCGGTATGCGGGCGNNN | mismatches=4
+blaNDM1_riskaware_top2 | blaNDM1 | rank=2 | query=ACGCCCAATGGTTCGGTATGNNN | mismatches=4
+blaNDM1_riskaware_top3 | blaNDM1 | rank=3 | query=CCATTGGGCGTTGGTCACGGNNN | mismatches=4
+blaNDM1_riskaware_top4 | blaNDM1 | rank=4 | query=CCCGCTCAGCATCAATGCAGNNN | mismatches=4
+blaNDM1_riskaware_top5 | blaNDM1 | rank=5 | query=GATCGCCAGCATCAATGCAGNNN | mismatches=4
+mcr1_riskaware_top1 | mcr1 | rank=1 | query=GGCTGTGCCGTGTTCGGTGCNNN | mismatches=4
+mcr1_riskaware_top2 | mcr1 | rank=2 | query=GCCGTTCTTCTGGTACTGGANNN | mismatches=4
+mcr1_riskaware_top3 | mcr1 | rank=3 | query=CGACGCCGTTCTTCTGGTACNNN | mismatches=4
+mcr1_riskaware_top4 | mcr1 | rank=4 | query=CTGCTGCTGCTGGCTGCTGCNNN | mismatches=4
+mcr1_riskaware_top5 | mcr1 | rank=5 | query=GCTGCTGCTGGCTATGCTGCNNN | mismatches=4
+mecA_riskaware_top1 | mecA | rank=1 | query=GCTGCTGCTGTTGCTGATGCNNN | mismatches=4
+mecA_riskaware_top2 | mecA | rank=2 | query=ACTGAACGTCCGATAAAGGTNNN | mismatches=4
+mecA_riskaware_top3 | mecA | rank=3 | query=AACGCTGCTGCTATCGGTGCNNN | mismatches=4
+mecA_riskaware_top4 | mecA | rank=4 | query=ATGGTTAACGCTGCTGCTATNNN | mismatches=4
+mecA_riskaware_top5 | mecA | rank=5 | query=TATGACTGAACGTCCGATAANNN | mismatches=4

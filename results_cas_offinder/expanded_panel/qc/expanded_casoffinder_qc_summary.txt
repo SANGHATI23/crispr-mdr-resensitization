@@ -1,0 +1,41 @@
+Expanded Cas-OFFinder Completeness QC
+====================================
+Expected selected guides: 20
+Observed selected guides in audit: 20
+Expanded genome configs/runs expected: 36
+Unique accessions in hit table: 36
+Total expanded off-target hits: 1997
+Hit-positive guides: 19
+Zero-hit guides in expanded panel: 1
+Invalid mismatch rows: 0
+Invalid position rows: 0
+Invalid strand rows: 0
+
+Hit count by target gene:
+target_gene
+mcr1       892
+mecA       854
+blaKPC     202
+blaNDM1     49
+Name: total_expanded_hits, dtype: int64
+
+Top guides by expanded hit count:
+              guide_id target_gene  total_expanded_hits  genomes_with_hits
+   mecA_riskaware_top1        mecA                  659                 20
+   mcr1_riskaware_top5        mcr1                  533                 35
+   mcr1_riskaware_top4        mcr1                  276                 20
+   mecA_riskaware_top3        mecA                  132                 36
+ blaKPC_riskaware_top4      blaKPC                   98                 34
+ blaKPC_riskaware_top2      blaKPC                   92                 19
+   mcr1_riskaware_top2        mcr1                   37                 20
+   mecA_riskaware_top5        mecA                   37                 25
+   mcr1_riskaware_top3        mcr1                   31                 10
+blaNDM1_riskaware_top5     blaNDM1                   24                 14
+
+Zero-hit guides:
+             guide_id target_gene               spacer
+blaKPC_riskaware_top5      blaKPC CGGCTCCATCGGTGTGTACG
+
+Audit table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/qc/expanded_casoffinder_guide_completeness_audit.csv
+Zero-hit table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/qc/expanded_casoffinder_zero_hit_guides.csv
+QC status: PASS

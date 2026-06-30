@@ -1,0 +1,20 @@
+Comparator overlap analysis using CFD and RS3
+============================================
+
+Purpose:
+This analysis provides an orthogonal computational comparator check for the FOTR guide ranking.
+It does not claim to reproduce the full CRISPOR or CHOPCHOP web workflows.
+Instead, it compares FOTR-selected guides against independent CFD specificity and RS3 activity rankings already generated in the project.
+
+Reviewer-facing interpretation:
+A high overlap would suggest that FOTR largely reproduces single-score tools.
+A partial overlap is more informative for this manuscript because FOTR intentionally integrates activity, specificity, conservation, functional off-target burden, and safety context.
+
+                             comparison  fotr_set_size  comparator_set_size  overlap_count  jaccard                                                                                                               interpretation
+FOTR selected top20 vs CFD-ranked top20             20                   20              9   0.2903 Orthogonal CFD specificity ranking partially overlaps with FOTR, indicating FOTR is not simply reproducing CFD-only ranking.
+FOTR selected top20 vs RS3-ranked top20             20                   20              0   0.0000                                                      RS3 activity ranking is compared as an orthogonal activity-score check.
+         FOTR top10 vs CFD-ranked top10             10                   10              2   0.1111             Top-10 overlap evaluates whether highest-priority FOTR guides also appear under independent specificity ranking.
+         FOTR top10 vs RS3-ranked top10             10                   10              0   0.0000                                                        Top-10 overlap evaluates agreement with independent activity ranking.
+
+Recommended manuscript wording:
+As an orthogonal comparator check, FOTR-selected guides were compared with CFD specificity and RS3 activity rankings generated on the same candidate pool. The overlap analysis showed that FOTR does not simply replicate either single-objective comparator. Instead, partial overlap supports the intended multi-objective behavior: guides retained by FOTR balance activity, specificity, conservation, and functional off-target safety rather than optimizing only one score.

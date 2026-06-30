@@ -1,0 +1,21 @@
+Black-and-white manuscript figures created successfully.
+
+Input:
+/Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/offtarget_conservation_requirement4/final_requirement4_complete/requirement4_final_integrated_conserved_offtarget_table_ALL20.csv
+
+Outputs:
+/Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/manuscript_figures_bw/figure1_top2_guides_conserved_burden_bw.png
+/Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/manuscript_figures_bw/figure1_top2_guides_conserved_burden_bw.pdf
+/Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/manuscript_figures_bw/figure2_rank_shift_original_vs_final_bw.png
+/Users/sanghati/Documents/crispr-mdr-resensitization/results_cas_offinder/expanded_panel/manuscript_figures_bw/figure2_rank_shift_original_vs_final_bw.pdf
+
+Figure 1:
+Top two guides per gene after integrated FOTR screening, plotted by conserved off-target burden.
+
+Figure 2:
+Original risk-aware rank versus final integrated rank within each gene.
+
+Interpretation:
+- Lower conserved off-target burden is better.
+- Rank shifts show the effect of adding genome-wide off-target hits, functional annotation, mobile-context mapping, and strain-level off-target conservation.
+- blaKPC_riskaware_top5 and blaNDM1_riskaware_top1 are expected to appear as the cleanest computational candidates.

@@ -1,0 +1,33 @@
+Requirement 3 Direct Plasmid/Chromosome Contig Mapping Summary
+=============================================================
+
+Input hit-level context table: results_cas_offinder/expanded_panel/mobile_context_mapping/requirement3_hit_level_mobile_context_mapping.csv
+Genome FASTA folder: data_cas_offinder/expanded_panel/genomes
+
+Hit rows evaluated: 1997
+FASTA headers parsed: 81
+Guide rows summarized: 19
+
+Hit-level direct contig class counts:
+- Chromosome_labeled_contig: 1963
+- Plasmid_labeled_contig: 25
+- Unclassified_contig: 9
+
+Guide-level direct plasmid mapping decision counts:
+- No_direct_plasmid_contig_evidence_detected: 11
+- Direct_plasmid_contig_evidence_present: 8
+
+Guides with direct plasmid-contig evidence:
+- blaKPC | blaKPC_riskaware_top2 | plasmid_contig_hits=1 | total_hits=92 | fraction=0.011
+- blaNDM1 | blaNDM1_riskaware_top3 | plasmid_contig_hits=1 | total_hits=2 | fraction=0.500
+- blaNDM1 | blaNDM1_riskaware_top4 | plasmid_contig_hits=8 | total_hits=8 | fraction=1.000
+- mcr1 | mcr1_riskaware_top3 | plasmid_contig_hits=1 | total_hits=31 | fraction=0.032
+- mcr1 | mcr1_riskaware_top4 | plasmid_contig_hits=10 | total_hits=276 | fraction=0.036
+- mcr1 | mcr1_riskaware_top5 | plasmid_contig_hits=2 | total_hits=533 | fraction=0.004
+- mecA | mecA_riskaware_top1 | plasmid_contig_hits=1 | total_hits=659 | fraction=0.002
+- mecA | mecA_riskaware_top4 | plasmid_contig_hits=1 | total_hits=14 | fraction=0.071
+
+Output files:
+- results_cas_offinder/expanded_panel/mobile_context_mapping/direct_plasmid_mapping/requirement3_direct_plasmid_hit_level_mapping.csv
+- results_cas_offinder/expanded_panel/mobile_context_mapping/direct_plasmid_mapping/requirement3_direct_plasmid_guide_level_summary.csv
+- results_cas_offinder/expanded_panel/mobile_context_mapping/direct_plasmid_mapping/requirement3_direct_plasmid_mapping_summary.txt

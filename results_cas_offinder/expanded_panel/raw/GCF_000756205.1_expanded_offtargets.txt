@@ -1,0 +1,6 @@
+GCTGCTGCTGGCTATGCTGCNNN	NZ_CP009361.1 Staphylococcus aureus strain ATCC 25923 chromosome, complete genome	2200077	GCTGCTGgTtGCgcTGCTGCTGG	+	4
+GCTGCTGCTGGCTATGCTGCNNN	NZ_CP009361.1 Staphylococcus aureus strain ATCC 25923 chromosome, complete genome	2200353	GgTGCaGCTGGCTgTGCTGtAGG	+	4
+ACTGAACGTCCGATAAAGGTNNN	NZ_CP009361.1 Staphylococcus aureus strain ATCC 25923 chromosome, complete genome	1166894	ACTcAACaTCCGATAAtGtTTGG	-	4
+AACGCTGCTGCTATCGGTGCNNN	NZ_CP009361.1 Staphylococcus aureus strain ATCC 25923 chromosome, complete genome	218164	AtCGgTGCTGCTATtGGTGCAGG	+	3
+AACGCTGCTGCTATCGGTGCNNN	NZ_CP009361.1 Staphylococcus aureus strain ATCC 25923 chromosome, complete genome	1508711	AAaGgTGCaGCaATCGGTGCTGG	-	4
+TATGACTGAACGTCCGATAANNN	NZ_CP009361.1 Staphylococcus aureus strain ATCC 25923 chromosome, complete genome	1160786	TATGtCTGAACGTatcATAATGG	+	4

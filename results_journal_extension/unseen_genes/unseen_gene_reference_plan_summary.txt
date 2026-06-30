@@ -1,0 +1,16 @@
+Unseen Gene Reference Plan Summary
+==================================
+
+Input panel: /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/unseen_genes/unseen_amr_gene_panel.csv
+Output table: /Users/sanghati/Documents/crispr-mdr-resensitization/results_journal_extension/unseen_genes/unseen_gene_reference_plan.csv
+Total genes planned: 5
+
+Planned sequence collection:
+- vanA: source=CARD or NCBI RefSeq | type=coding_sequence | planned_fasta=data_journal_extension/unseen_genes/vanA.fa
+- tetM: source=CARD or NCBI RefSeq | type=coding_sequence | planned_fasta=data_journal_extension/unseen_genes/tetM.fa
+- ermB: source=CARD or NCBI RefSeq | type=coding_sequence | planned_fasta=data_journal_extension/unseen_genes/ermB.fa
+- aac6Ib: source=CARD or NCBI RefSeq | type=coding_sequence | planned_fasta=data_journal_extension/unseen_genes/aac6Ib.fa
+- qnrS: source=CARD or NCBI RefSeq | type=coding_sequence | planned_fasta=data_journal_extension/unseen_genes/qnrS.fa
+
+Interpretation:
+This table defines the sequence-collection plan for prospective unseen AMR genes. It is intentionally separated from the guide-generation step so that sequence provenance, gene naming, and target scope can be audited before adding FASTA inputs.

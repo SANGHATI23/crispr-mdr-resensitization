@@ -1,0 +1,9 @@
+target_gene,guide_id,total_offtarget_hits,coding_cds_hits,noncoding_or_intergenic_hits,amr_hits,virulence_hits,essential_like_hits,mobile_or_plasmid_hits,low_mismatch_hits,high_interest_hits,total_functional_burden,mean_functional_burden,functional_annotation_recommendation,recommendation_order,recommendation_clean,requirement2_rank_within_gene,requirement2_decision
+blaKPC,blaKPC_riskaware_top1,10,10,0,0,0,10,0,0,10,70.0,7.0,Avoid_or_deprioritize_high_functional_offtarget_burden,4,Avoid/deprioritize high-burden candidate,2,DEPRIORITIZE
+blaKPC,blaKPC_riskaware_top2,92,92,0,3,9,1,1,0,14,352.0,3.8260869565217392,Avoid_or_deprioritize_high_functional_offtarget_burden,4,Avoid/deprioritize high-burden candidate,3,DEPRIORITIZE
+blaKPC,blaKPC_riskaware_top4,98,98,0,0,24,12,0,0,36,481.0,4.908163265306122,Avoid_or_deprioritize_high_functional_offtarget_burden,4,Avoid/deprioritize high-burden candidate,4,DEPRIORITIZE
+blaNDM1,blaNDM1_riskaware_top4,8,8,0,8,0,0,0,8,8,104.0,13.0,Avoid_or_deprioritize_high_functional_offtarget_burden,4,Avoid/deprioritize high-burden candidate,5,DEPRIORITIZE
+mcr1,mcr1_riskaware_top4,276,276,0,22,0,30,0,0,52,1080.0,3.9130434782608696,Avoid_or_deprioritize_high_functional_offtarget_burden,4,Avoid/deprioritize high-burden candidate,4,DEPRIORITIZE
+mcr1,mcr1_riskaware_top5,533,533,0,15,11,23,8,20,77,1969.0,3.694183864915572,Avoid_or_deprioritize_high_functional_offtarget_burden,4,Avoid/deprioritize high-burden candidate,5,DEPRIORITIZE
+mecA,mecA_riskaware_top3,132,132,0,16,6,1,0,0,23,542.0,4.106060606060606,Avoid_or_deprioritize_high_functional_offtarget_burden,4,Avoid/deprioritize high-burden candidate,4,DEPRIORITIZE
+mecA,mecA_riskaware_top1,659,658,0,13,21,20,1,10,65,2331.0,3.5371775417298936,Avoid_or_deprioritize_high_functional_offtarget_burden,4,Avoid/deprioritize high-burden candidate,5,DEPRIORITIZE

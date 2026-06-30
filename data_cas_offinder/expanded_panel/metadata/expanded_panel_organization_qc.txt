@@ -1,0 +1,14 @@
+Expanded Panel Download Organization QC
+=======================================
+Download root: /Users/sanghati/Documents/crispr-mdr-resensitization/data_cas_offinder/expanded_panel/ncbi_downloads/expanded_panel_36_accessions
+Genome output folder: /Users/sanghati/Documents/crispr-mdr-resensitization/data_cas_offinder/expanded_panel/genomes
+Annotation output folder: /Users/sanghati/Documents/crispr-mdr-resensitization/data_cas_offinder/expanded_panel/annotations
+
+Genome files copied: 36
+GFF/GFF3 files copied: 36
+Unique genome accessions: 36
+Unique GFF accessions: 36
+Accessions with genome but no GFF: 0
+Accessions with GFF but no genome: 0
+
+QC status: PASS

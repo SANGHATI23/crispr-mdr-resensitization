@@ -1,0 +1,27 @@
+vanA Clinical-Priority Layer Summary
+====================================
+
+Total vanA guides analyzed: 102
+Pareto-front candidates carried forward: 4
+High-priority clinical Pareto candidates: 4
+
+Clinical-priority components:
+- clinical_priority_component
+- treatment_relevance_component
+- mobility_context_component
+
+Top clinical-priority Pareto guide:
+- Spacer: CTCAGAGGAGCATGACGTAT
+- PAM: CGG
+- Position: 39
+- Target region: early_coding_region
+- Resistance category: glycopeptide_resistance
+- Primary drug class: vancomycin
+- Expected target context: mobile_element_or_gene_cluster
+- Pareto support score: 86.04
+- Clinical priority score: 100.0
+- Clinical Pareto support score: 91.62
+- Final label: High_priority_clinical_pareto_candidate
+
+Boundary statement:
+This layer is a target-side clinical-priority interpretation module. It does not claim experimental cleavage, antimicrobial resensitization, clinical efficacy, or patient-level utility.

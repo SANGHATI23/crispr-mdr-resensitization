@@ -1,0 +1,42 @@
+Requirement 3 Direct Integron / IS / Transposon Evidence Summary
+================================================================
+
+Input hit context table: results_cas_offinder/expanded_panel/mobile_context_mapping/requirement3_hit_level_mobile_context_mapping.csv
+Input all-20 plasmid+SCCmec table: results_cas_offinder/expanded_panel/mobile_context_mapping/direct_sccmec_mapping/requirement3_all20_with_direct_plasmid_and_sccmec_evidence.csv
+
+Hit rows evaluated: 1997
+Guide rows summarized before all-20 merge: 19
+Final all-20 rows after merge: 20
+Unique guides after merge: 20
+
+Hit-level direct mobile marker counts:
+- direct_integron_marker_flag: 1
+- direct_insertion_sequence_marker_flag: 65
+- direct_transposon_marker_flag: 53
+- direct_conjugation_marker_flag: 5
+- direct_mobile_element_any_flag: 112
+
+Guide-level direct mobile-element evidence strength counts:
+- No_direct_mobile_element_evidence: 8
+- Low_direct_mobile_element_evidence: 6
+- Moderate_direct_mobile_element_evidence: 5
+- Zero_hit_no_direct_mobile_element_evidence: 1
+
+Guides with any direct mobile-element marker evidence:
+- mecA | mecA_riskaware_top1 | any_mobile_hits=33 | integron=0 | IS=12 | transposon=20 | conjugation=1 | strength=Moderate_direct_mobile_element_evidence
+- mcr1 | mcr1_riskaware_top4 | any_mobile_hits=25 | integron=0 | IS=23 | transposon=3 | conjugation=4 | strength=Moderate_direct_mobile_element_evidence
+- blaKPC | blaKPC_riskaware_top4 | any_mobile_hits=17 | integron=0 | IS=7 | transposon=10 | conjugation=0 | strength=Moderate_direct_mobile_element_evidence
+- mcr1 | mcr1_riskaware_top5 | any_mobile_hits=11 | integron=0 | IS=4 | transposon=7 | conjugation=0 | strength=Moderate_direct_mobile_element_evidence
+- mecA | mecA_riskaware_top3 | any_mobile_hits=9 | integron=0 | IS=3 | transposon=6 | conjugation=0 | strength=Low_direct_mobile_element_evidence
+- blaNDM1 | blaNDM1_riskaware_top4 | any_mobile_hits=8 | integron=1 | IS=8 | transposon=6 | conjugation=0 | strength=Moderate_direct_mobile_element_evidence
+- mecA | mecA_riskaware_top5 | any_mobile_hits=3 | integron=0 | IS=3 | transposon=0 | conjugation=0 | strength=Low_direct_mobile_element_evidence
+- blaKPC | blaKPC_riskaware_top2 | any_mobile_hits=2 | integron=0 | IS=1 | transposon=1 | conjugation=0 | strength=Low_direct_mobile_element_evidence
+- mecA | mecA_riskaware_top2 | any_mobile_hits=2 | integron=0 | IS=2 | transposon=0 | conjugation=0 | strength=Low_direct_mobile_element_evidence
+- mcr1 | mcr1_riskaware_top1 | any_mobile_hits=1 | integron=0 | IS=1 | transposon=0 | conjugation=0 | strength=Low_direct_mobile_element_evidence
+- mecA | mecA_riskaware_top4 | any_mobile_hits=1 | integron=0 | IS=1 | transposon=0 | conjugation=0 | strength=Low_direct_mobile_element_evidence
+
+Output files:
+- results_cas_offinder/expanded_panel/mobile_context_mapping/direct_integron_is_transposon_mapping/requirement3_direct_integron_is_transposon_hit_level_mapping.csv
+- results_cas_offinder/expanded_panel/mobile_context_mapping/direct_integron_is_transposon_mapping/requirement3_direct_integron_is_transposon_guide_level_summary.csv
+- results_cas_offinder/expanded_panel/mobile_context_mapping/direct_integron_is_transposon_mapping/requirement3_all20_with_direct_plasmid_sccmec_integron_is_transposon_evidence.csv
+- results_cas_offinder/expanded_panel/mobile_context_mapping/direct_integron_is_transposon_mapping/requirement3_direct_integron_is_transposon_mapping_summary.txt
