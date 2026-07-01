@@ -1,0 +1,20 @@
+Independent RNAfold validation summary
+Input rows: 90
+RNAfold metric rows: 90
+Spearman comparison rows: 30
+
+Top absolute Spearman correlations:
+        independent_RNAfold_metric              comparison_target  n  spearman_rho      p_value  absolute_rho
+       rnafold_accessibility_proxy weak_functional_severity_label 90      0.714136 2.748960e-15      0.714136
+rnafold_center20_unpaired_fraction weak_functional_severity_label 90      0.714136 2.748960e-15      0.714136
+rnafold_center20_unpaired_fraction                mlcb_base_score 90      0.693227 3.680856e-14      0.693227
+rnafold_center20_unpaired_fraction        simple_risk_aware_score 90      0.693227 3.680856e-14      0.693227
+       rnafold_accessibility_proxy                mlcb_base_score 90      0.693227 3.680856e-14      0.693227
+       rnafold_accessibility_proxy        simple_risk_aware_score 90      0.693227 3.680856e-14      0.693227
+       rnafold_accessibility_proxy                on_target_score 90      0.693227 3.680856e-14      0.693227
+rnafold_center20_unpaired_fraction                on_target_score 90      0.693227 3.680856e-14      0.693227
+  rnafold_global_unpaired_fraction weak_functional_severity_label 90      0.638977 1.227394e-11      0.638977
+  rnafold_global_unpaired_fraction                mlcb_base_score 90      0.631088 2.599933e-11      0.631088
+
+Reviewer-safe interpretation:
+RNAfold-derived secondary-structure metrics were computed directly from the 100-bp local genomic context sequences. These metrics were not used to construct the DNABERT-2 embeddings or the weak functional severity labels. Therefore, Spearman correlations between RNAfold metrics and guide-ranking or weak-risk outputs provide an independent computational validation signal. This should not be described as experimental validation.
