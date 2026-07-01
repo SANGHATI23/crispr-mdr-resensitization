@@ -1,0 +1,19 @@
+Cross-gene held-out DNABERT evaluation
+======================================
+
+Input metadata: results_mlcb/tables/mlcb_guide_dataset_with_local_context_embedding_ids.csv
+Input embeddings: results_mlcb/embeddings/dnabert2_local_context_embeddings.npy
+Gene column: mlcb_gene
+Label column: weak_functional_severity_label
+Embedding shape: (90, 768)
+
+Per-model summary across held-out genes:
+                 model  mean_balanced_accuracy  std_balanced_accuracy  mean_macro_f1  std_macro_f1  mean_roc_auc  std_roc_auc
+   Logistic regression                0.713942               0.323357       0.581173      0.283642       0.61250     0.335876
+      Ridge classifier                0.688942               0.282234       0.451564      0.040154       0.50625     0.274004
+Random forest, depth=3                0.684135               0.275693       0.450327      0.038401       0.65000     0.212132
+             k-NN, k=3                0.490625               0.345111       0.480952      0.352638       0.52500     0.388909
+     Majority baseline                0.250000               0.288675       0.146825      0.209530       0.50000     0.000000
+
+Interpretation note:
+This leave-one-gene-out analysis tests whether DNABERT-2 local-context embeddings generalize across AMR gene boundaries rather than only learning within-gene patterns. ROC-AUC is reported as NaN for held-out genes where the test split contains only one class.

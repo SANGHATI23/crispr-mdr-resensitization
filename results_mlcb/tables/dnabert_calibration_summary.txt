@@ -1,0 +1,17 @@
+DNABERT calibration analysis
+============================
+
+Input metadata: results_mlcb/tables/mlcb_guide_dataset_with_local_context_embedding_ids.csv
+Input embeddings: results_mlcb/embeddings/dnabert2_local_context_embeddings.npy
+Label column: weak_functional_severity_label
+Samples: 90
+Positive labels: 28
+Negative labels: 62
+
+                                       model  brier_score  log_loss  ece_10_bins  roc_auc  balanced_accuracy_at_0.5  macro_f1_at_0.5
+        DNABERT logistic probe, uncalibrated     0.046875  0.238572     0.053518 0.959101                  0.940092         0.935815
+      DNABERT logistic probe + Platt scaling     0.043842  0.189712     0.105946 0.989631                  0.964286         0.973545
+DNABERT logistic probe + isotonic regression     0.031695  0.489111     0.051341 0.960541                  0.956221         0.960727
+
+Interpretation note:
+Calibration metrics are computed from out-of-fold predicted probabilities. ECE uses 10 equal-width probability bins. Calibration should be interpreted as probability reliability for weak functional severity labels, not as experimental safety validation.
