@@ -1,0 +1,28 @@
+Local-context DNABERT-2 multi-probe leakage-aware ablation
+========================================================================
+
+Dataset: results_mlcb/tables/mlcb_guide_dataset_with_local_context_embedding_ids.csv
+Embeddings: results_mlcb/embeddings/dnabert2_local_context_embeddings.npy
+Number of guides: 90
+Embedding shape: 90 x 768
+Label column: weak_functional_severity_label
+Label counts: {0: np.int64(62), 1: np.int64(28)}
+Leakage-aware annotation features: ['position', 'gc_content', 'position_azimuthfile', 'gc_content_azimuthfile', 'number_of_reference_matches']
+
+Summary table:
+    feature_set                probe balanced_accuracy        macro_f1         roc_auc  balanced_accuracy_mean  balanced_accuracy_std  macro_f1_mean  macro_f1_std  roc_auc_mean  roc_auc_std
+annotation_only random_forest_depth3   0.753 +/- 0.133 0.748 +/- 0.121 0.892 +/- 0.080                0.753205               0.132929       0.747809      0.121329      0.892479     0.079881
+annotation_only               knn_k3   0.744 +/- 0.144 0.743 +/- 0.156 0.778 +/- 0.150                0.744231               0.144148       0.743499      0.156467      0.778312     0.149784
+annotation_only     ridge_classifier   0.744 +/- 0.090 0.752 +/- 0.086 0.677 +/- 0.134                0.743590               0.090347       0.751771      0.085754      0.677308     0.134211
+annotation_only  logistic_regression   0.728 +/- 0.090 0.731 +/- 0.087 0.692 +/- 0.134                0.727564               0.089657       0.730974      0.086588      0.692094     0.133844
+   dnabert_only               knn_k3   0.963 +/- 0.051 0.972 +/- 0.038 0.959 +/- 0.056                0.963333               0.050553       0.972094      0.038333      0.959017     0.056240
+   dnabert_only     ridge_classifier   0.947 +/- 0.040 0.947 +/- 0.030 0.927 +/- 0.101                0.947308               0.039615       0.946963      0.030063      0.926667     0.101105
+   dnabert_only  logistic_regression   0.940 +/- 0.060 0.934 +/- 0.066 0.954 +/- 0.087                0.940256               0.059554       0.934217      0.066037      0.954444     0.087171
+   dnabert_only random_forest_depth3   0.940 +/- 0.053 0.934 +/- 0.049 0.994 +/- 0.014                0.939615               0.052678       0.934086      0.049094      0.993846     0.013760
+         hybrid               knn_k3   0.963 +/- 0.051 0.972 +/- 0.038 0.959 +/- 0.056                0.963333               0.050553       0.972094      0.038333      0.959017     0.056240
+         hybrid     ridge_classifier   0.947 +/- 0.040 0.947 +/- 0.030 0.927 +/- 0.101                0.947308               0.039615       0.946963      0.030063      0.926667     0.101105
+         hybrid  logistic_regression   0.940 +/- 0.060 0.934 +/- 0.066 0.954 +/- 0.087                0.940256               0.059554       0.934217      0.066037      0.954444     0.087171
+         hybrid random_forest_depth3   0.940 +/- 0.053 0.934 +/- 0.049 0.994 +/- 0.014                0.939615               0.052678       0.934086      0.049094      0.993846     0.013760
+
+Interpretation guide:
+If DNABERT-only remains above annotation-only across logistic regression, ridge, k-NN, and limited-depth random forest, the local-context foundation-model signal is less likely to be a single-probe artifact.
