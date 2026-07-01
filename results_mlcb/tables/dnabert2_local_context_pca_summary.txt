@@ -1,0 +1,10 @@
+DNABERT-2 local-context PCA summary
+Embedding matrix shape: (90, 768)
+Metadata rows: 90
+PC1 variance explained: 42.0520%
+PC2 variance explained: 15.7900%
+Genes: blaKPC, blaNDM1, mcr1, mecA
+Weak severity label counts:
+weak_label_name
+Low weak severity     62
+High weak severity    28
