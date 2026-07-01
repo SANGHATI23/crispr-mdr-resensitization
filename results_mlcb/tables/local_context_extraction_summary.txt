@@ -1,0 +1,5 @@
+Local genomic context extraction summary
+Input rows: 90
+context_status
+found    90
+Name: count, dtype: int64
