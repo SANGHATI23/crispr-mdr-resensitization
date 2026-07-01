@@ -1,0 +1,5 @@
+model_row,feature_set,balanced_accuracy_mean,balanced_accuracy_std,macro_f1_mean,macro_f1_std,roc_auc_mean,roc_auc_std,n_guides,n_features,cv_folds,target
+Majority baseline,No features,0.5,0.0,0.40774193548387105,0.009481895778515525,0.5,0.0,90,1,5,weak_functional_severity_label
+Annotation-only logistic probe,Leakage-aware biological annotation features,0.7275641025641025,0.08019125724372979,0.730974025974026,0.0774470368376133,0.6920940170940171,0.11971335721376485,90,5,5,weak_functional_severity_label
+DNABERT-only logistic probe,100-bp local-context DNABERT-2 embeddings,0.9402564102564103,0.05326672369057877,0.9342167832167831,0.0590656196142202,0.9544444444444444,0.07796802130155035,90,768,5,weak_functional_severity_label
+Hybrid logistic probe,100-bp local-context DNABERT-2 + leakage-aware annotation features,0.9402564102564103,0.05326672369057877,0.9342167832167831,0.0590656196142202,0.9544444444444444,0.07796802130155035,90,773,5,weak_functional_severity_label
