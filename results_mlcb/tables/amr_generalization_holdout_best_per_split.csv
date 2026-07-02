@@ -1,0 +1,8 @@
+split_type,heldout_group,model,train_n,test_n,train_neg,train_pos,test_neg,test_pos,train_positive_rate,test_positive_rate,train_both_classes,test_both_classes,reportable_for_auc,interpretation,accuracy,balanced_accuracy,macro_f1,roc_auc,note
+gene_holdout,blaKPC,logistic_regression,78,12,60,18,2,10,0.2308,0.8333,1,1,1,Strict gene-out stress test,0.8333,0.5,0.4545,0.85,
+gene_holdout,mcr1,random_forest_depth3,80,10,54,26,8,2,0.325,0.2,1,1,1,Strict gene-out stress test,0.8,0.5,0.4444,0.5,
+guide_position_holdout,blaKPC_early,logistic_regression,86,4,60,26,2,2,0.3023,0.5,1,1,1,Unseen local target-region stress test,0.5,0.5,0.3333,1.0,
+guide_position_holdout,mcr1_late,logistic_regression,86,4,59,27,3,1,0.314,0.25,1,1,1,Unseen local target-region stress test,0.5,0.6667,0.5,0.3333,
+guide_position_holdout,mcr1_middle,logistic_regression,87,3,60,27,2,1,0.3103,0.3333,1,1,1,Unseen local target-region stress test,0.6667,0.5,0.4,1.0,
+mechanism_holdout,beta_lactamase,ridge_classifier,62,28,60,2,2,26,0.0323,0.9286,1,1,1,Mechanism transfer stress test,0.6071,0.5577,0.449,0.4808,
+mechanism_holdout,colistin_resistance,random_forest_depth3,80,10,54,26,8,2,0.325,0.2,1,1,1,Mechanism transfer stress test,0.8,0.5,0.4444,0.5,

@@ -1,0 +1,8 @@
+Split type,Held-out group,Best probe,Train n,Test n,Test negatives,Test positives,Balanced accuracy,Macro-F1,ROC-AUC,Interpretation
+Gene holdout,blaKPC,Logistic regression,78,12,2,10,0.5,0.4545,0.85,Strict gene-out stress test
+Gene holdout,mcr1,"Random forest, depth 3",80,10,8,2,0.5,0.4444,0.5,Strict gene-out stress test
+Guide-position holdout,blaKPC_early,Logistic regression,86,4,2,2,0.5,0.3333,1.0,Unseen local target-region stress test
+Guide-position holdout,mcr1_late,Logistic regression,86,4,3,1,0.6667,0.5,0.3333,Unseen local target-region stress test
+Guide-position holdout,mcr1_middle,Logistic regression,87,3,2,1,0.5,0.4,1.0,Unseen local target-region stress test
+Mechanism holdout,beta_lactamase,Ridge classifier,62,28,2,26,0.5577,0.449,0.4808,Mechanism transfer stress test
+Mechanism holdout,colistin_resistance,"Random forest, depth 3",80,10,8,2,0.5,0.4444,0.5,Mechanism transfer stress test
