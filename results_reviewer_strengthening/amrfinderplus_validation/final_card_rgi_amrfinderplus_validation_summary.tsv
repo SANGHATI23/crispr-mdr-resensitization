@@ -1,0 +1,4 @@
+validation_layer	database	input_feature_sequences	total_amr_hit_rows	perfect_rows	strict_rows	loose_rows	perfect_strict_rows	perfect_strict_unique_features	interpretation	amrfinder_unique_features	overlap_with_card_perfect_strict_unique_features	percent_card_perfect_strict_unique_features_confirmed_by_amrfinder
+CARD/RGI	CARD v4.0.1	1161	196.0	13.0	25.0	158.0	38.0	30.0	Primary AMR database confirmation layer; Perfect/Strict treated as strongest CARD-supported evidence.			
+AMRFinderPlus	NCBI AMRFinderPlus database	1161	17.0						Independent NCBI AMR database support for 17 hits, including NDM carbapenemase features and one mecA-associated multi-AMR feature region.			
+CARD/RGI_vs_AMRFinderPlus_overlap	CARD v4.0.1 + NCBI AMRFinderPlus	1161					38.0	30.0	AMRFinderPlus independently confirmed 8 of 30 CARD/RGI Perfect/Strict unique feature-level calls.	9.0	8.0	26.67

@@ -1,0 +1,3 @@
+target_gene	amrfinder_hit_rows	unique_features	unique_elements	element_symbols	classes	subclasses	min_identity	mean_identity	min_coverage	mean_coverage
+blaNDM1	8	8	2	blaNDM; blaNDM-1	BETA-LACTAM	CARBAPENEM	100.0	100.0	97.78	99.7225
+mecA	9	1	9	aac(6')-Ib'; aadA1; aph(3'')-Ib; aph(6)-Id; blaKPC-2; blaOXA-9; blaTEM-1; dfrA14; sul2	AMINOGLYCOSIDE; BETA-LACTAM; SULFONAMIDE; TRIMETHOPRIM	BETA-LACTAM; CARBAPENEM; GENTAMICIN; STREPTOMYCIN; SULFONAMIDE; TRIMETHOPRIM	100.0	100.0	100.0	100.0

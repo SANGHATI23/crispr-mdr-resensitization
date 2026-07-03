@@ -1,0 +1,4 @@
+rgi_id_col	rgi_all_rows	rgi_all_unique_features	amrfinder_unique_features	overlap_with_rgi_all_features	rgi_perfect_strict_rows	rgi_perfect_strict_unique_features	overlap_with_rgi_perfect_strict_features	percent_of_rgi_perfect_strict_features_confirmed_by_amrfinder
+ORF_ID	196	196	9	0	38	38	0	0.0
+Contig	196	187	9	8	38	30	8	26.67
+ID	196	31	9	0	38	13	0	0.0

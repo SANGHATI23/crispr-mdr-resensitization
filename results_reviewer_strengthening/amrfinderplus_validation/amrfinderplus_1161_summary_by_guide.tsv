@@ -1,0 +1,3 @@
+target_gene	guide_id	amrfinder_hit_rows	unique_features	element_symbols	classes	subclasses	methods	min_identity	min_coverage
+blaNDM1	blaNDM1_riskaware_top4	8	8	blaNDM; blaNDM-1	BETA-LACTAM	CARBAPENEM	ALLELEX; BLASTX	100.0	97.78
+mecA	mecA_riskaware_top1	9	1	aac(6')-Ib'; aadA1; aph(3'')-Ib; aph(6)-Id; blaKPC-2; blaOXA-9; blaTEM-1; dfrA14; sul2	AMINOGLYCOSIDE; BETA-LACTAM; SULFONAMIDE; TRIMETHOPRIM	BETA-LACTAM; CARBAPENEM; GENTAMICIN; STREPTOMYCIN; SULFONAMIDE; TRIMETHOPRIM	ALLELEX; EXACTX	100.0	100.0

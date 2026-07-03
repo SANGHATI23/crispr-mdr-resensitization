@@ -1,0 +1,13 @@
+gene	record_index	header	length	N_count	GG_sites_proxy	file
+blaKPC	0	blaKPC_var1	344	0	26	/content/drive/MyDrive/crispr_mdr_fotr_journal_extension/github_repo/crispr-mdr-resensitization/data/targets_multistrain/blaKPC_multi.fasta
+blaKPC	1	blaKPC_var2	344	0	26	/content/drive/MyDrive/crispr_mdr_fotr_journal_extension/github_repo/crispr-mdr-resensitization/data/targets_multistrain/blaKPC_multi.fasta
+blaKPC	2	blaKPC_var3	344	0	27	/content/drive/MyDrive/crispr_mdr_fotr_journal_extension/github_repo/crispr-mdr-resensitization/data/targets_multistrain/blaKPC_multi.fasta
+blaNDM1	0	blaNDM1_var1	331	0	25	/content/drive/MyDrive/crispr_mdr_fotr_journal_extension/github_repo/crispr-mdr-resensitization/data/targets_multistrain/blaNDM1_multi.fasta
+blaNDM1	1	blaNDM1_var2	331	0	25	/content/drive/MyDrive/crispr_mdr_fotr_journal_extension/github_repo/crispr-mdr-resensitization/data/targets_multistrain/blaNDM1_multi.fasta
+blaNDM1	2	blaNDM1_var3	331	0	25	/content/drive/MyDrive/crispr_mdr_fotr_journal_extension/github_repo/crispr-mdr-resensitization/data/targets_multistrain/blaNDM1_multi.fasta
+mcr1	0	mcr1_var1	339	0	33	/content/drive/MyDrive/crispr_mdr_fotr_journal_extension/github_repo/crispr-mdr-resensitization/data/targets_multistrain/mcr1_multi.fasta
+mcr1	1	mcr1_var2	339	0	33	/content/drive/MyDrive/crispr_mdr_fotr_journal_extension/github_repo/crispr-mdr-resensitization/data/targets_multistrain/mcr1_multi.fasta
+mcr1	2	mcr1_var3	339	0	33	/content/drive/MyDrive/crispr_mdr_fotr_journal_extension/github_repo/crispr-mdr-resensitization/data/targets_multistrain/mcr1_multi.fasta
+mecA	0	mecA_var1	326	0	23	/content/drive/MyDrive/crispr_mdr_fotr_journal_extension/github_repo/crispr-mdr-resensitization/data/targets_multistrain/mecA_multi.fasta
+mecA	1	mecA_var2	326	0	23	/content/drive/MyDrive/crispr_mdr_fotr_journal_extension/github_repo/crispr-mdr-resensitization/data/targets_multistrain/mecA_multi.fasta
+mecA	2	mecA_var3	326	0	23	/content/drive/MyDrive/crispr_mdr_fotr_journal_extension/github_repo/crispr-mdr-resensitization/data/targets_multistrain/mecA_multi.fasta
