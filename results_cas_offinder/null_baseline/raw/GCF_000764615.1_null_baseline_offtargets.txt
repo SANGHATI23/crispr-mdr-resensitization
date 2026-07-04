@@ -1,0 +1,86 @@
+ATCGCCAGCATCAATGCAGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	748905	gTCGtCAGCATCAcaGCAGCGGG	+	4
+ATCGCCAGCATCAATGCAGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3501190	AaCGCCAGCAcCAAcGCcGCCGG	-	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	674005	CACCAGATAAACCGggAaCcAGG	+	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	1847709	CgtCAGATAAgCCGCCAGCcAGG	+	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2859276	CgCCAtATAAACCGCtgGCACGG	+	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2891015	CAgCAGcTcAACCGCCtGCATGG	-	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2499630	gAgCAGATcAAgCGCCAGCAGGG	+	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2595021	tACCAccTtAACCGCCAGCAGGG	+	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3457678	CAgCAGATtAAaCGCCAGCACGG	-	3
+CACCAGATAAACCGCCAGCANNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3708778	aACCAGATgAACCGgCAGCgAGG	-	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	4446588	CACCAcATAAACCGCCgGacCGG	-	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	5177530	CACgAGAaAAACaGaCAGCAGGG	-	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	4810993	CAgCAtATAgACCaCCAGCAGGG	+	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	5226057	gACCAGATtAACCGCCAGtcGGG	-	4
+CGCCCAATGGTTCGGTATGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2031636	CGCCgAAgtGTTCGGTATtCTGG	-	4
+CGCGACCGGGTGCATAATATNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	826352	CaCGtCCGGGTGCAgAgTATCGG	+	4
+CGCGACCGGGTGCATAATATNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	1604614	CGCGACCGGGTGCgTgATATAGG	-	2
+CGCGACCGGGTGCATAATATNNN	NZ_CP008933.1 Klebsiella pneumoniae strain PMK1 plasmid pPMK1-NDM, complete sequence	47956	CGCGACCGGGTGCATAATATTGG	-	0
+CGCGACCGGGTGCATAATATNNN	NZ_CP008933.1 Klebsiella pneumoniae strain PMK1 plasmid pPMK1-NDM, complete sequence	56544	CGCGACCGGGTGCATAATATTGG	-	0
+CGCGACCGGGTGCATAATATNNN	NZ_CP008933.1 Klebsiella pneumoniae strain PMK1 plasmid pPMK1-NDM, complete sequence	65132	CGCGACCGGGTGCATAATATTGG	-	0
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	25320	CgcCTGCTcGCcGCTGCTGGCGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	1570909	CTGCTGCTcGCTGCTGagGGCGG	-	3
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2120466	CTGCcGCTGGCcGCTGCTGcGGG	-	3
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2841019	CTGCTGgTcGCTGCTGCTGcTGG	-	3
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3029894	CctCgGCgGGCTGCTGCTGGCGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3084814	CgGCgGCgaGCTGCTGCTGGAGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2509562	CaGCTtCTGGCTGacGCTGGTGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3209266	CgtacGCTGGCTGCTGCTGGTGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3292381	CgcCTGCTGGCgGgTGCTGGCGG	+	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3411683	CTGCTGaTGGCgGCgGCaGGGGG	+	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3447216	CaGCTGCTGGCTGaaGCTGcTGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3871813	CTcCgGCgGtCTGCTGCTGGCGG	+	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3873118	CTtCacCTGGCTGCTGCgGGCGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3502193	CTGCTGCTGGCcGCcGgTtGCGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3507626	CcGCTGCTGGCTGCTGgTGGAGG	+	2
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	4260535	CgcCTGCTGGCTGCgaCTGGCGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	4983617	CTGCTGCTGGCcGCcaCcGGCGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	4810881	CTGCgGCacGCTGCTGCTGGGGG	-	3
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP008930.1 Klebsiella pneumoniae strain PMK1 plasmid pPMK1-A, complete sequence	170931	CTGgctCTGGCTGCTGaTGGCGG	+	4
+GCCGCTGCATTGATGCTGAGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	1641526	GCCGCcGCAgTGATGCTGgcGGG	-	4
+GCCGCTGCATTGATGCTGAGNNN	NZ_CP008933.1 Klebsiella pneumoniae strain PMK1 plasmid pPMK1-NDM, complete sequence	47997	GCCGCTGCATTGATGCTGAGCGG	+	0
+GCCGCTGCATTGATGCTGAGNNN	NZ_CP008933.1 Klebsiella pneumoniae strain PMK1 plasmid pPMK1-NDM, complete sequence	56585	GCCGCTGCATTGATGCTGAGCGG	+	0
+GCCGCTGCATTGATGCTGAGNNN	NZ_CP008933.1 Klebsiella pneumoniae strain PMK1 plasmid pPMK1-NDM, complete sequence	65173	GCCGCTGCATTGATGCTGAGCGG	+	0
+GCTGGTTATGCGTTTGCTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	546848	GCTGtTTATGaGcTTcCTGCTGG	+	4
+GCTGGTTATGCGTTTGCTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	64686	GCTGtTTATGCGcaTtCTGCTGG	-	4
+GCTGGTTATGCGTTTGCTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2873986	GCTGGTcATcaGTTTGCTGaGGG	+	4
+GCTGGTTATGCGTTTGCTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2508228	GCTGcTgATGCGTaTtCTGCAGG	+	4
+GCTGGTTATGCGTTTGCTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3681985	cCTGGTgATGCGTgTGCTGgCGG	+	4
+GCTGGTTATGCGTTTGCTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	4144345	GCTGGaTATGCcgcTGCTGCAGG	-	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	609684	GGcGaTcCTGCTgTCGGTGCTGG	+	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	884889	GcTGCTGCTGCTgTCGcTGgTGG	-	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	357291	GGTGCTGCTGCTgTtGccGCTGG	-	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	488670	GGataTGCTGCTgTCGGTGCTGG	+	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	1646788	GGTGaTGCTGCTtTCaGcGCTGG	-	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	1405569	GGTGgTGaTGaTcTCGGTGCTGG	-	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2172551	GGTGCaGCTGgTATCGGTatTGG	-	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3072822	GtTtCTGgTGCTgTCGGTGCTGG	+	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2433141	GGcGaTGgTGCaATCGGTGCCGG	-	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3316456	GaTGCTGtTGtcATCGGTGCCGG	+	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3541810	tGTGCcGCTGCTgcCGGTGCTGG	+	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	5238913	GGTGCgGCTGCTtTtGGTGCCGG	+	3
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP008930.1 Klebsiella pneumoniae strain PMK1 plasmid pPMK1-A, complete sequence	39799	GGTGCTGCTGtTATCccTGgCGG	-	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	28098	GGcGCTGCTGGcGCTgTgGCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	716708	GcTGgTGCTGGcGCTATgGCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	306460	GGTGCTGCcGGaGCTgTCGCCGG	-	3
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	340662	GGTGaTGCTGGTGgTgcCGCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	357291	GGTGCTGCTGcTGtTgcCGCTGG	-	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	518860	GGcGCTGtTGGTGCTATgGCTGG	-	3
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2162330	GGTGCTGCTGGcGgTATgGgCGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2760110	GGTGgTGCTGGTGCTtTgtCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3037633	cGTGCTGCTGtTGCTggCGCAGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2550013	GGTGCTGCTGccGgTATCGCCGG	+	3
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3266232	GGTGCcGCTGcTGCTAaCcCAGG	-	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3459169	aGaGCTGCTGGTGaTtTCGCAGG	-	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	4181481	GGcGCTGCTGGTGCTccaGCCGG	-	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3769033	GGTGgTGCTGGTGCTcTCcCTGG	-	3
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	4285511	GcTGCTGCcGGTGCTggCGCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	4689412	GGcGCTGCcGGTGCTggCGCTGG	+	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	201831	GGTGCTGcTGCTGgTGCTgTTGG	-	3
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	1106896	GGTGCTGGcGCTGCTGCTggCGG	-	3
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	1765272	GGTGCTGcTGCaGCTGCTcgAGG	-	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	1529454	ccgGCTGGTGCTGCTGCTATCGG	-	3
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2658414	GtTGCTGGaGCTGCTGCagTGGG	+	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3936137	GGTGtTGGTaCTGCTGgTgTCGG	-	4
+GTGACCAACGCCCAATGGTTNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	2246381	aTGACCAACGCCCAgTGGcTGGG	+	3
+TTGTCATCCTTGTTAGGCGGNNN	NZ_CP008929.1 Klebsiella pneumoniae strain PMK1 chromosome, complete genome	3037895	TTGTtATCCcTGTgcGGCGGCGG	+	4

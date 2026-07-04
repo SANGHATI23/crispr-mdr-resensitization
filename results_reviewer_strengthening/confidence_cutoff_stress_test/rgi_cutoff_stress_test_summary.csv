@@ -1,0 +1,4 @@
+cutoff_scenario,allowed_cutoffs,total_rgi_hit_rows,genes_with_any_rgi_hit,total_unique_guides_with_rgi_hits_summed_by_gene,total_unique_card_hits_summed_by_gene
+Perfect_only,Perfect,13,2,2,7
+Perfect_Strict,Perfect+Strict,38,3,3,13
+Perfect_Strict_Loose,Perfect+Strict+Loose,196,4,6,34

@@ -1,0 +1,4 @@
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP007499.1 Staphylococcus aureus strain 2395 USA500 chromosome, complete genome	2256884	GcTGCTGCTGcTGCcATaGCAGG	-	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP007499.1 Staphylococcus aureus strain 2395 USA500 chromosome, complete genome	2368291	GcTGCTGCTGGaGCatTCGCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP007499.1 Staphylococcus aureus strain 2395 USA500 chromosome, complete genome	735384	GGTatTGCaGtTGCTATCGCTGG	+	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP007499.1 Staphylococcus aureus strain 2395 USA500 chromosome, complete genome	2810466	GGTGCcGGTGCTGCaGgTATAGG	-	3

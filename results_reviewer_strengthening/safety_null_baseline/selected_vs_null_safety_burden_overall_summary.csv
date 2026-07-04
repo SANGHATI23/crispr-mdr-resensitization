@@ -1,0 +1,2 @@
+n_genes,n_null_guides,n_unique_null_queries,n_accessions_screened,null_total_raw_hit_rows,null_median_hits_per_guide,null_mean_hits_per_guide,selected_median_hits_per_guide,selected_mean_hits_per_guide,genes_where_selected_mean_hits_lower_than_null_mean,scope_note
+4,20,17,36,1566,45.0,78.3,19.5,99.85,1,Null baseline uses 5 random non-selected candidate-guide records per gene from the same candidate pools. This first null comparison uses genomewide Cas-OFFinder hit burden proxy; database-refined annotation can be added later if the full null annotation layer is rerun.

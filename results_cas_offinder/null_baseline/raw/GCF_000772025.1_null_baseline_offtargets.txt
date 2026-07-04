@@ -1,0 +1,5 @@
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP009554.1 Staphylococcus aureus strain FORC_001 chromosome, complete genome	2310237	GcTGCTGCTGGaGCatTCGCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP009554.1 Staphylococcus aureus strain FORC_001 chromosome, complete genome	2196662	GcTGCTGCTGcTGCcATaGCAGG	-	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP009554.1 Staphylococcus aureus strain FORC_001 chromosome, complete genome	820615	GGTGgTGGTaCaGCTGgTATGGG	+	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP009554.1 Staphylococcus aureus strain FORC_001 chromosome, complete genome	2112193	GGTGgTatTGCTGCTGCaATCGG	-	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP009554.1 Staphylococcus aureus strain FORC_001 chromosome, complete genome	2736153	GGTGCcGGTGCTGCaGgTATAGG	-	3

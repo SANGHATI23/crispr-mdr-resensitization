@@ -1,0 +1,5 @@
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP007690.1 Staphylococcus aureus strain UA-S391_USA300 isolate abscess/wound isolate chromosome, complete genome	723617	GGTatTGCaGtTGCTATCGCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP007690.1 Staphylococcus aureus strain UA-S391_USA300 isolate abscess/wound isolate chromosome, complete genome	2174315	GcTGCTGCTGcTGCcATaGCAGG	-	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP007690.1 Staphylococcus aureus strain UA-S391_USA300 isolate abscess/wound isolate chromosome, complete genome	2285604	GcTGCTGCTGGaGCatTCGCTGG	+	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP007690.1 Staphylococcus aureus strain UA-S391_USA300 isolate abscess/wound isolate chromosome, complete genome	2100449	GGTGgTatTGCTGCTGCaATTGG	-	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP007690.1 Staphylococcus aureus strain UA-S391_USA300 isolate abscess/wound isolate chromosome, complete genome	2725245	GGTGCcGGTGCTGCaGgTATAGG	-	3

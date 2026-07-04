@@ -1,0 +1,2 @@
+n_genes,n_genes_where_safety_changed_top_pick,fraction_genes_where_safety_changed_top_pick,mean_top3_jaccard,mean_top3_discordance_rate,scope_note
+4,2,0.5,0.675,0.25,"Computed within current risk-aware top-5 shortlist because conserved burden is available for the risk-aware shortlist, not all 145 candidates."

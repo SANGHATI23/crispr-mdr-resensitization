@@ -1,0 +1,13 @@
+cutoff_scenario,allowed_cutoffs,target_gene,rgi_hit_rows,unique_guides_with_rgi_hits,unique_accessions_with_rgi_hits,unique_card_hits,cutoffs_observed,card_hit_names
+Perfect_only,Perfect,blaKPC,0,0,0,0,None,None
+Perfect_only,Perfect,blaNDM1,7,1,4,1,Perfect,NDM-1
+Perfect_only,Perfect,mcr1,0,0,0,0,None,None
+Perfect_only,Perfect,mecA,6,1,2,6,Perfect,KPC-2; OXA-9; TEM-1; YojI; dfrA14; sul2
+Perfect_Strict,Perfect+Strict,blaKPC,0,0,0,0,None,None
+Perfect_Strict,Perfect+Strict,blaNDM1,7,1,4,1,Perfect,NDM-1
+Perfect_Strict,Perfect+Strict,mcr1,10,1,10,1,Strict,Haemophilus influenzae PBP3 conferring resistance to beta-lactam antibiotics
+Perfect_Strict,Perfect+Strict,mecA,21,1,12,11,Perfect;Strict,AAC(6')-Ib9; APH(3'')-Ib; APH(6)-Id; KPC-2; Klebsiella pneumoniae KpnH; OXA-9; TEM-1; YojI; aadA; dfrA14; sul2
+Perfect_Strict_Loose,Perfect+Strict+Loose,blaKPC,6,2,6,2,Loose,TxR; bcr-1
+Perfect_Strict_Loose,Perfect+Strict+Loose,blaNDM1,7,1,4,1,Perfect,NDM-1
+Perfect_Strict_Loose,Perfect+Strict+Loose,mcr1,105,2,10,11,Loose;Strict,Acinetobacter baumannii AbaF; Haemophilus influenzae PBP3 conferring resistance to beta-lactam antibiotics; Pseudomonas aeruginosa CpxR; TxR; bcrA; cmlv; emrB; macB; mdtA; mdtB; tetA(46)
+Perfect_Strict_Loose,Perfect+Strict+Loose,mecA,78,1,20,20,Loose;Perfect;Strict,AAC(6')-Ib9; APH(3'')-Ib; APH(6)-Id; Escherichia coli soxS with mutation conferring antibiotic resistance; KPC-2; Klebsiella pneumoniae KpnH; OXA-9; TEM-1; YojI; aadA; bcrA; cmlv; dfrA14; facT; golS; lfrA; mdtG; mtrA; otr(B); sul2

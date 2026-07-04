@@ -1,0 +1,5 @@
+target_gene,rgi_hit_rows_Perfect_Strict,rgi_hit_rows_Perfect_Strict_Loose,rgi_hit_rows_Perfect_only,unique_accessions_with_rgi_hits_Perfect_Strict,unique_accessions_with_rgi_hits_Perfect_Strict_Loose,unique_accessions_with_rgi_hits_Perfect_only,unique_card_hits_Perfect_Strict,unique_card_hits_Perfect_Strict_Loose,unique_card_hits_Perfect_only,unique_guides_with_rgi_hits_Perfect_Strict,unique_guides_with_rgi_hits_Perfect_Strict_Loose,unique_guides_with_rgi_hits_Perfect_only,amrfinder_hit_rows,amrfinder_unique_features,amrfinder_element_symbols
+blaKPC,0,6,0,0,6,0,0,2,0,0,2,0,0,0,None
+blaNDM1,7,7,7,4,4,4,1,1,1,1,1,1,8,8,blaNDM; blaNDM-1
+mcr1,10,105,0,10,10,0,1,11,0,1,2,0,0,0,None
+mecA,21,78,6,12,20,2,11,20,6,1,1,1,9,1,aac(6')-Ib'; aadA1; aph(3'')-Ib; aph(6)-Id; blaKPC-2; blaOXA-9; blaTEM-1; dfrA14; sul2

@@ -1,0 +1,5 @@
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP009681.1 Staphylococcus aureus strain Gv69 chromosome, complete genome	1855937	GGTatTGCaGtTGCTATCGCTGG	-	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP009681.1 Staphylococcus aureus strain Gv69 chromosome, complete genome	2318791	GcTGCTGCTGcTGCcATaGCAGG	-	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP009681.1 Staphylococcus aureus strain Gv69 chromosome, complete genome	2434906	GcTGCTGCTGGaGCatTCGCTGG	+	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP009681.1 Staphylococcus aureus strain Gv69 chromosome, complete genome	2243223	GGTGgTatTGCTGCTGCaATTGG	-	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP009681.1 Staphylococcus aureus strain Gv69 chromosome, complete genome	2875861	GGTGCcGGTGCTGCaGgTATAGG	-	3

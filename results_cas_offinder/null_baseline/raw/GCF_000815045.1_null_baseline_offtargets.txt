@@ -1,0 +1,4 @@
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP010295.1 Staphylococcus aureus strain ATCC BAA1680 chromosome, complete genome	709718	GGTatTGCaGtTGCTATCGCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP010295.1 Staphylococcus aureus strain ATCC BAA1680 chromosome, complete genome	2285211	GcTGCTGCTGGaGCatTCGCTGG	+	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP010295.1 Staphylococcus aureus strain ATCC BAA1680 chromosome, complete genome	2099809	GGTGgTatTGCTGCTGCaATTGG	-	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP010295.1 Staphylococcus aureus strain ATCC BAA1680 chromosome, complete genome	2725096	GGTGCcGGTGCTGCaGgTATAGG	-	3

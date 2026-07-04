@@ -1,0 +1,19 @@
+cutoff_scenario,allowed_cutoffs,target_gene,guide_id,rgi_hit_rows,unique_accessions_with_rgi_hits,unique_card_hits,cutoffs_observed,card_hit_names
+Perfect_only,Perfect,blaKPC,blaKPC_riskaware_top2,0,0,0,None,None
+Perfect_only,Perfect,blaKPC,blaKPC_riskaware_top4,0,0,0,None,None
+Perfect_only,Perfect,blaNDM1,blaNDM1_riskaware_top4,7,4,1,Perfect,NDM-1
+Perfect_only,Perfect,mcr1,mcr1_riskaware_top4,0,0,0,None,None
+Perfect_only,Perfect,mcr1,mcr1_riskaware_top5,0,0,0,None,None
+Perfect_only,Perfect,mecA,mecA_riskaware_top1,6,2,6,Perfect,KPC-2; OXA-9; TEM-1; YojI; dfrA14; sul2
+Perfect_Strict,Perfect+Strict,blaKPC,blaKPC_riskaware_top2,0,0,0,None,None
+Perfect_Strict,Perfect+Strict,blaKPC,blaKPC_riskaware_top4,0,0,0,None,None
+Perfect_Strict,Perfect+Strict,blaNDM1,blaNDM1_riskaware_top4,7,4,1,Perfect,NDM-1
+Perfect_Strict,Perfect+Strict,mcr1,mcr1_riskaware_top4,0,0,0,None,None
+Perfect_Strict,Perfect+Strict,mcr1,mcr1_riskaware_top5,10,10,1,Strict,Haemophilus influenzae PBP3 conferring resistance to beta-lactam antibiotics
+Perfect_Strict,Perfect+Strict,mecA,mecA_riskaware_top1,21,12,11,Perfect;Strict,AAC(6')-Ib9; APH(3'')-Ib; APH(6)-Id; KPC-2; Klebsiella pneumoniae KpnH; OXA-9; TEM-1; YojI; aadA; dfrA14; sul2
+Perfect_Strict_Loose,Perfect+Strict+Loose,blaKPC,blaKPC_riskaware_top2,3,3,1,Loose,bcr-1
+Perfect_Strict_Loose,Perfect+Strict+Loose,blaKPC,blaKPC_riskaware_top4,3,3,1,Loose,TxR
+Perfect_Strict_Loose,Perfect+Strict+Loose,blaNDM1,blaNDM1_riskaware_top4,7,4,1,Perfect,NDM-1
+Perfect_Strict_Loose,Perfect+Strict+Loose,mcr1,mcr1_riskaware_top4,58,10,7,Loose,Pseudomonas aeruginosa CpxR; TxR; bcrA; emrB; macB; mdtA; tetA(46)
+Perfect_Strict_Loose,Perfect+Strict+Loose,mcr1,mcr1_riskaware_top5,47,10,5,Loose;Strict,Acinetobacter baumannii AbaF; Haemophilus influenzae PBP3 conferring resistance to beta-lactam antibiotics; bcrA; cmlv; mdtB
+Perfect_Strict_Loose,Perfect+Strict+Loose,mecA,mecA_riskaware_top1,78,20,20,Loose;Perfect;Strict,AAC(6')-Ib9; APH(3'')-Ib; APH(6)-Id; Escherichia coli soxS with mutation conferring antibiotic resistance; KPC-2; Klebsiella pneumoniae KpnH; OXA-9; TEM-1; YojI; aadA; bcrA; cmlv; dfrA14; facT; golS; lfrA; mdtG; mtrA; otr(B); sul2

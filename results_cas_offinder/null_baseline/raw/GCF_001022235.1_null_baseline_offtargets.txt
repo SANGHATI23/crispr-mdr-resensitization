@@ -1,0 +1,82 @@
+AAACTCGAACAGGACTTTGGNNN	NZ_CP011645.1 Klebsiella pneumoniae strain CAV1596 plasmid pKPC_CAV1596-78, complete sequence	61846	AAACTCGAACAGGACTTTGGCGG	-	0
+AAACTCGAACAGGACTTTGGNNN	NZ_CP011646.1 Klebsiella pneumoniae strain CAV1596 plasmid pKPC_CAV1596-97, complete sequence	38107	AAACTCGAACAGGACTTTGGCGG	-	0
+ATCGCCAGCATCAATGCAGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	141047	gTCGtCAGCATCAcaGCAGCGGG	+	4
+ATCGCCAGCATCAATGCAGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	3024500	AaCGCCAGCAcCAAcGCcGCCGG	-	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	85854	CACCAGATAAACCGggAaCcAGG	+	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	1275221	CgtCAGATAAgCCGCCAGCcAGG	+	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	1933276	gAgCAGATcAAgCGCCAGCAGGG	+	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2040876	tACCAccTtAACCGCCAGCAGGG	+	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2281060	CgCCAtATAAACCGCtgGCACGG	+	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2312194	CAgCAGcTcAACCGCCtGCATGG	-	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2943267	CAgCAGATtAAaCGCCAGCACGG	-	3
+CACCAGATAAACCGCCAGCANNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	3215318	aACCAGATgAACCGgCAGCgAGG	-	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	4650573	gACCAGATtAACCGCCAGtcGGG	+	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	4260634	CAgCAtATAgACCaCCAGCAGGG	+	4
+CACCAGATAAACCGCCAGCANNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	4933531	CACCAGcTtAgCCGtCAGCAAGG	-	4
+CGCCCAATGGTTCGGTATGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	1465337	CGCCgAAgtGTTCGGTATtCTGG	-	4
+CGCGACCGGGTGCATAATATNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	219272	CaCGtCCGGGTGCAgAgTATCGG	+	4
+CGCGACCGGGTGCATAATATNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	1027533	CGCGACCGGGTGCgTgATATAGG	-	2
+CGCGACCGGGTGCATAATATNNN	NZ_CP011644.1 Klebsiella pneumoniae strain CAV1596 plasmid pCAV1596-41, complete sequence	36563	CGCGACCGGcTGCAgAAcAgCGG	-	4
+CTCCATCGGTGTGTACGCGGNNN	NZ_CP011645.1 Klebsiella pneumoniae strain CAV1596 plasmid pKPC_CAV1596-78, complete sequence	61823	CTCCATCGGTGTGTACGCGaTGG	-	1
+CTCCATCGGTGTGTACGCGGNNN	NZ_CP011646.1 Klebsiella pneumoniae strain CAV1596 plasmid pKPC_CAV1596-97, complete sequence	38084	CTCCATCGGTGTGTACGCGaTGG	-	1
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	995011	CTGCTGCTcGCTGCTGagGGCGG	-	3
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	1943209	CaGCTtCTGGCTGacGCTGGTGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2262803	CTGCTGgTcGCTGCTGCTGcTGG	-	3
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	1553815	CTGCcGCTGGCcGCTGCTGcGGG	-	3
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2451080	CctCgGCgGGCTGCTGCTGGCGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2561659	CcGCgGCgaGCTGCTGCTGGAGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2702730	CgtacGCTGGCTGCTGCTGGTGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2785847	CgcCTGCTGGCgGgTGCTGGCGG	+	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2897265	CTGCTGaTGGCgGCgGCaGGGGG	+	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2932805	CaGCTGCTGGCTGaaGCTGcTGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	3025507	CTGCTGCTGGCcGCcGgTtGCGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	3030941	CcGCTGCTGGCTGCTGgTGGAGG	+	2
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	3745528	CgcCTGCTGGCTGCgaCTGGCGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	3342234	CTcCgGCgGtCTGCTGCTGGCGG	+	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	4260522	CTGCgGCacGCTGCTGCTGGGGG	-	3
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	4808161	CgtCTGCTcGCcGCTGCTGGCGG	-	4
+CTGCTGCTGGCTGCTGCTGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	4440940	CTGCTGCTGGCcGCcaCcGGCGG	-	4
+GCTAAACTCGAACAGGACTTNNN	NZ_CP011645.1 Klebsiella pneumoniae strain CAV1596 plasmid pKPC_CAV1596-78, complete sequence	61849	GCTAAACTCGAACAGGACTTTGG	-	0
+GCTAAACTCGAACAGGACTTNNN	NZ_CP011646.1 Klebsiella pneumoniae strain CAV1596 plasmid pKPC_CAV1596-97, complete sequence	38110	GCTAAACTCGAACAGGACTTTGG	-	0
+GCTGGTTATGCGTTTGCTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	1096529	GCTGGTgATGCGTccGCTGaTGG	-	4
+GCTGGTTATGCGTTTGCTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	1941875	GCTGcTgATGCGTaTtCTGCAGG	+	4
+GCTGGTTATGCGTTTGCTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2295166	GCTGGTcATcaGTTTGCTGaGGG	+	4
+GCTGGTTATGCGTTTGCTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2595888	GCTGaTTATGacTTTGCTtCCGG	-	4
+GCTGGTTATGCGTTTGCTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	3635003	GCTGGaTATGCcgcTGCTGCAGG	-	4
+GCTGGTTATGCGTTTGCTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	4854250	GCTGtTTATGCGcaTtCTGCTGG	-	4
+GCTGGTTATGCGTTTGCTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	5363373	GCTGtTTATGaGcTTcCTGCTGG	+	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	22685	GGcGaTcCTGCTgTCGGTGCTGG	+	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	272610	GcTGCTGCTGCTgTCGcTGgTGG	-	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	1069566	GGTGaTGCTGCTtTCaGcGCTGG	-	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	827801	GGTGgTGaTGaTcTCGGTGCTGG	-	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2549668	GtTtCTGgTGCTgTCGGTGCTGG	+	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2809922	GaTGCTGtTGtcATCGGTGCCGG	+	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	3065125	tGTGCcGCTGCTgcCGGTGCTGG	+	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	4050171	GGcGCTGCTGCTgaaGGTGCGGG	-	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	4640418	GGTGCTGCTGCTtTtGGTGCCGG	-	2
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	5138197	GGTGCTGCTGCTgTtGccGCTGG	-	4
+GGTGCTGCTGCTATCGGTGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	5268622	GGataTGCTGCTgTCGGTGCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	1995870	GGTGCTGCTGccGgTATCGCCGG	+	3
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2207110	GGTGgTGCTGGTGCTtTgtCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2458819	cGTGCTGCTGtTGCTggCGCAGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	1598698	GGTGCTGCTGGcGgTATgGgCGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2737321	GGcGCTGCTGGTGCTgcCGgAGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2759699	GGTGCcGCTGcTGCTAaCcCAGG	-	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2944599	aGaGCTGCTGGTGaTtTCGCAGG	-	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	3265786	GGTGgTGCTGGTGCTcTCcCTGG	-	3
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	3771901	GcTGCTGCcGGTGCTggCGCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	4165176	GGcGCTGCcGGTGCTggCGCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	3672160	GGcGCTGCTGGTGCTccaGCCGG	-	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	4810939	GGcGCTGCTGGcGCTgTgGCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	5087383	GGTGCTGCcGGaGCTgTCGCCGG	-	3
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	5121584	GGTGaTGCTGGTGgTgcCGCTGG	+	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	5138197	GGTGCTGCTGcTGtTgcCGCTGG	-	4
+GGTGCTGCTGGTGCTATCGCNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	5335385	GGcGCTGtTGGTGCTATgGCTGG	-	3
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	953146	ccgGCTGGTGCTGCTGCTATCGG	-	3
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	507399	GGTGCTGGcGCTGCTGCTggCGG	-	3
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	1187578	GGTGCTGcTGCaGCTGCTcgAGG	-	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2105575	GtTGCTGGaGCTGCTGCagTGGG	+	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	4982759	GGTGgTGcTGCTGgTGCTgTTGG	-	4
+GGTGCTGGTGCTGCTGCTATNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	4640424	GGTatcGGTGCTGCTGCTtTTGG	-	4
+GTGACCAACGCCCAATGGTTNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	1680241	aTGACCAACGCCCAgTGGcTGGG	+	3
+TTGTCATCCTTGTTAGGCGGNNN	NZ_CP011647.1 Klebsiella pneumoniae strain CAV1596 chromosome, complete genome	2459081	TTGTtATCCcTGTgcGGCGGCGG	+	4
