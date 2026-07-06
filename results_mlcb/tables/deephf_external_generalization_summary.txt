@@ -1,0 +1,36 @@
+DeepHF large-scale external CRISPR guide generalization experiment
+
+External datasets evaluated:
+external_dataset                                       input_file  n_guides sequence_encoded_shape auxiliary_feature_shape  score_min  score_median  score_max  top_quartile_threshold  positive_rate
+       DeepHF_WT  /content/deephf_extracted/wt_seq_data_array.pkl     55604            (55604, 22)             (55604, 11)   0.018182      0.801859        1.0                0.896144       0.250000
+       DeepHF_HF  /content/deephf_extracted/hf_seq_data_array.pkl     56888            (56888, 22)             (56888, 11)   0.008547      0.500584        1.0                0.635574       0.250000
+      DeepHF_ESP /content/deephf_extracted/esp_seq_data_array.pkl     58617            (58617, 22)             (58617, 11)   0.007143      0.341355        1.0                0.496129       0.250013
+
+Best model by balanced accuracy:
+external_dataset                                            DeepHF_WT
+feature_set               encoded guide sequence + auxiliary features
+model                                           random forest depth=5
+n_guides                                                        55604
+positive_rate                                                    0.25
+balanced_accuracy_mean                                       0.719181
+balanced_accuracy_std                                        0.007212
+macro_f1_mean                                                0.668429
+macro_f1_std                                                 0.005934
+roc_auc_mean                                                 0.787239
+roc_auc_std                                                  0.005033
+
+Top results:
+external_dataset                                 feature_set                 model  n_guides  positive_rate  balanced_accuracy_mean  balanced_accuracy_std  macro_f1_mean  macro_f1_std  roc_auc_mean  roc_auc_std
+       DeepHF_WT encoded guide sequence + auxiliary features random forest depth=5     55604       0.250000                0.719181               0.007212       0.668429      0.005934      0.787239     0.005033
+       DeepHF_WT                      encoded guide sequence random forest depth=5     55604       0.250000                0.718978               0.006904       0.671673      0.006843      0.796449     0.004753
+      DeepHF_ESP encoded guide sequence + auxiliary features      ridge classifier     58617       0.250013                0.717583               0.005249       0.671025      0.003941      0.793152     0.005234
+      DeepHF_ESP encoded guide sequence + auxiliary features   logistic regression     58617       0.250013                0.717436               0.005435       0.672944      0.003985      0.793228     0.005191
+       DeepHF_WT encoded guide sequence + auxiliary features      ridge classifier     55604       0.250000                0.715788               0.004510       0.668248      0.003665      0.787289     0.005114
+       DeepHF_WT encoded guide sequence + auxiliary features   logistic regression     55604       0.250000                0.714948               0.004905       0.669396      0.004208      0.787381     0.005185
+       DeepHF_HF encoded guide sequence + auxiliary features      ridge classifier     56888       0.250000                0.714305               0.003956       0.667297      0.003271      0.788295     0.003960
+       DeepHF_HF encoded guide sequence + auxiliary features   logistic regression     56888       0.250000                0.713438               0.003381       0.668718      0.002764      0.788363     0.003898
+      DeepHF_ESP encoded guide sequence + auxiliary features random forest depth=5     58617       0.250013                0.705369               0.006227       0.661443      0.005025      0.781417     0.005465
+      DeepHF_ESP                      encoded guide sequence random forest depth=5     58617       0.250013                0.703356               0.004877       0.660272      0.003385      0.783254     0.006461
+
+Reviewer-safe interpretation:
+This large-scale external experiment applies the same weak-supervision candidate-ranking logic to DeepHF CRISPR guide-activity datasets containing more than 55,000 guides per condition. It addresses the scale/generalization concern of the 90-guide AMR analysis by showing that the evaluation protocol can be applied to substantially larger public CRISPR guide datasets. It does not experimentally validate the AMR guide rankings.

@@ -1,0 +1,2 @@
+analysis,embedding_input,embedding_model,n_guides,distance_metric,same_gene_nearest_neighbor_fraction,empirical_random_baseline,interpretation
+Nearest-neighbor gene consistency,100-bp AMR target-centered local genomic context,Frozen DNABERT-2,90,Cosine distance,0.9778,0.3888,Local-context DNABERT-2 embeddings strongly preserve AMR gene/local-context structure.

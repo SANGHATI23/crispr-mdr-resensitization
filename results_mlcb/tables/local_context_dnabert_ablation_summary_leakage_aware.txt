@@ -1,0 +1,21 @@
+Leakage-aware local-context DNABERT-2 ablation summary
+====================================================
+
+Dataset: results_mlcb/tables/mlcb_guide_dataset_with_local_context_embedding_ids.csv
+Embeddings: results_mlcb/embeddings/dnabert2_local_context_embeddings.npy
+Target: weak_functional_severity_label
+Number of guides: 90
+CV folds: 5
+
+                     model_row                                                        feature_set  balanced_accuracy_mean  balanced_accuracy_std  macro_f1_mean  macro_f1_std  roc_auc_mean  roc_auc_std  n_guides  n_features  cv_folds                         target
+             Majority baseline                                                        No features                0.500000               0.000000       0.407742      0.009482      0.500000     0.000000        90           1         5 weak_functional_severity_label
+Annotation-only logistic probe                       Leakage-aware biological annotation features                0.727564               0.080191       0.730974      0.077447      0.692094     0.119713        90           5         5 weak_functional_severity_label
+   DNABERT-only logistic probe                          100-bp local-context DNABERT-2 embeddings                0.940256               0.053267       0.934217      0.059066      0.954444     0.077968        90         768         5 weak_functional_severity_label
+         Hybrid logistic probe 100-bp local-context DNABERT-2 + leakage-aware annotation features                0.940256               0.053267       0.934217      0.059066      0.954444     0.077968        90         773         5 weak_functional_severity_label
+
+Leakage-aware annotation columns used:
+- position
+- gc_content
+- position_azimuthfile
+- gc_content_azimuthfile
+- number_of_reference_matches

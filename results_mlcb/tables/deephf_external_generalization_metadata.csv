@@ -1,0 +1,4 @@
+external_dataset,input_file,n_guides,sequence_encoded_shape,auxiliary_feature_shape,score_min,score_median,score_max,top_quartile_threshold,positive_rate
+DeepHF_WT,/content/deephf_extracted/wt_seq_data_array.pkl,55604,"(55604, 22)","(55604, 11)",0.01818181818181818,0.8018587841924413,1.0,0.8961444409843626,0.25
+DeepHF_HF,/content/deephf_extracted/hf_seq_data_array.pkl,56888,"(56888, 22)","(56888, 11)",0.008547008547008548,0.5005842638321688,1.0,0.6355737689354428,0.25
+DeepHF_ESP,/content/deephf_extracted/esp_seq_data_array.pkl,58617,"(58617, 22)","(58617, 11)",0.0071428571428571435,0.34135511642883776,1.0,0.49612871443575896,0.25001279492297457

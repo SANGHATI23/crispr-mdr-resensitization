@@ -1,0 +1,13 @@
+DNABERT-2 local-context nearest-neighbor summary
+Embedding matrix shape: (90, 768)
+Metadata rows: 90
+Nearest-neighbor metric: cosine distance
+Same-gene nearest-neighbor fraction: 0.9778
+Empirical random baseline from gene frequencies: 0.3888
+
+Gene counts:
+mlcb_gene
+mecA       52
+blaNDM1    16
+blaKPC     12
+mcr1       10

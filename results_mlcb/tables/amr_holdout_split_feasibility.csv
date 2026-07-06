@@ -1,0 +1,20 @@
+split_type,heldout_group,train_n,train_neg,train_pos,train_positive_rate,train_both_classes,test_n,test_neg,test_pos,test_positive_rate,test_both_classes,reportable_for_auc,interpretation
+gene_holdout,blaKPC,78,60,18,0.2308,1,12,2,10,0.8333,1,1,Strict gene-out stress test
+gene_holdout,blaNDM1,74,62,12,0.1622,1,16,0,16,1.0,0,0,Strict gene-out stress test
+gene_holdout,mcr1,80,54,26,0.325,1,10,8,2,0.2,1,1,Strict gene-out stress test
+gene_holdout,mecA,38,10,28,0.7368,1,52,52,0,0.0,0,0,Strict gene-out stress test
+mechanism_holdout,beta_lactamase,62,60,2,0.0323,1,28,2,26,0.9286,1,1,Mechanism transfer stress test
+mechanism_holdout,colistin_resistance,80,54,26,0.325,1,10,8,2,0.2,1,1,Mechanism transfer stress test
+mechanism_holdout,methicillin_resistance,38,10,28,0.7368,1,52,52,0,0.0,0,0,Mechanism transfer stress test
+guide_position_holdout,blaKPC_early,86,60,26,0.3023,1,4,2,2,0.5,1,1,Tests unseen local target region
+guide_position_holdout,blaKPC_middle,86,62,24,0.2791,1,4,0,4,1.0,0,0,Tests unseen local target region
+guide_position_holdout,blaKPC_late,86,62,24,0.2791,1,4,0,4,1.0,0,0,Tests unseen local target region
+guide_position_holdout,blaNDM1_early,85,62,23,0.2706,1,5,0,5,1.0,0,0,Tests unseen local target region
+guide_position_holdout,blaNDM1_middle,85,62,23,0.2706,1,5,0,5,1.0,0,0,Tests unseen local target region
+guide_position_holdout,blaNDM1_late,84,62,22,0.2619,1,6,0,6,1.0,0,0,Tests unseen local target region
+guide_position_holdout,mcr1_early,87,59,28,0.3218,1,3,3,0,0.0,0,0,Tests unseen local target region
+guide_position_holdout,mcr1_middle,87,60,27,0.3103,1,3,2,1,0.3333,1,1,Tests unseen local target region
+guide_position_holdout,mcr1_late,86,59,27,0.314,1,4,3,1,0.25,1,1,Tests unseen local target region
+guide_position_holdout,mecA_early,73,45,28,0.3836,1,17,17,0,0.0,0,0,Tests unseen local target region
+guide_position_holdout,mecA_middle,73,45,28,0.3836,1,17,17,0,0.0,0,0,Tests unseen local target region
+guide_position_holdout,mecA_late,72,44,28,0.3889,1,18,18,0,0.0,0,0,Tests unseen local target region
