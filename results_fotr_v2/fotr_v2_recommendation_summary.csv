@@ -1,0 +1,15 @@
+gene,fotr_v2_recommendation_status,guide_count,mean_fotr_v2,max_fotr_v2
+blaKPC,High_priority_recommended,1,92.85,92.85
+blaKPC,Lower_priority_candidate,6,64.47933333333333,76.638
+blaKPC,Moderate_priority_candidate,13,83.97923076923077,87.71
+blaKPC,Not_recommended_structural_risk,14,71.96828571428571,82.71
+blaNDM1,High_priority_recommended,8,91.54625,92.61
+blaNDM1,Moderate_priority_candidate,21,84.48142857142857,89.64
+blaNDM1,Not_recommended_structural_risk,17,79.34764705882354,82.35
+mcr1,High_priority_recommended,1,96.61,96.61
+mcr1,Lower_priority_candidate,2,76.77250000000001,79.4725
+mcr1,Moderate_priority_candidate,15,83.73866666666666,89.25
+mcr1,Not_recommended_structural_risk,24,76.146125,82.91
+mecA,High_priority_recommended,1,90.0,90.0
+mecA,Moderate_priority_candidate,2,83.43,83.56
+mecA,Not_recommended_structural_risk,20,77.6505,84.37

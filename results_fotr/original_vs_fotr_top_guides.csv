@@ -1,0 +1,9 @@
+selection_type,gene,position,strand,spacer,pam,final_score,specificity_score,conservation_score,rna_accessibility_class,spacer_accessibility_score,rna_structure_risk,fotr_risk_score,fotr_priority_score
+FOTR_Top,blaKPC,47,+,TTGTCATCCTTGTTAGGCGG,CGG,92.0,100.0,100.0,Accessible,0.75,10.0,0.0,91.1
+Original_Top_By_Final_Score,blaKPC,81,-,AGCAGCAGCAGCAACAACGG,CGG,92.8,100.0,100.0,Moderate,0.55,42.0,0.0,82.54
+FOTR_Top,blaNDM1,306,-,ACGCCCGCATACCGAACCAT,TGG,92.0,100.0,100.0,Accessible,0.85,6.0,0.0,93.7
+Original_Top_By_Final_Score,blaNDM1,221,+,AATGGTTCGGTATGCGGGCG,TGG,93.6,100.0,100.0,Structurally_Risky,0.25,66.0,0.0,73.18
+FOTR_Top,mcr1,32,-,ACCATCCAGTACCAGAAGAA,CGG,91.2,100.0,100.0,Accessible,1.0,0.0,0.0,97.36
+Original_Top_By_Final_Score,mcr1,220,+,TCGCCGGTGCTGCTGGTCAG,TGG,92.8,100.0,100.0,Moderate,0.5,38.0,0.0,82.14
+FOTR_Top,mecA,56,+,ACTGAACGTCCGATAAAGGT,TGG,92.0,100.0,100.0,Accessible,0.6,16.0,0.0,87.2
+Original_Top_By_Final_Score,mecA,56,+,ACTGAACGTCCGATAAAGGT,TGG,92.0,100.0,100.0,Accessible,0.6,16.0,0.0,87.2

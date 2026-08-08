@@ -211,3 +211,15 @@ __pycache__/
 .env
 # Ignore large local datasets
 clinvar_data/
+
+# Local virtual environments with version suffixes
+.venv*/
+venv*/
+env*/
+
+# Local installer files
+*.pkg
+*.dmg
+
+# Temporary Cas-OFFinder outputs
+.temp_*_casoffinder.out
